@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.box{
+    display: flex;
+}
+
+section .buscador{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+header nav ul{
+    list-style: none;
+
+}
+
+header .menu img{
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 5%;
+    height: 5%;
+}
+
+header .logo-sitio img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 7%;
+    height: 7%;
+}
+
+header .catalogo{
+    display: flex;
+    display: inline;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.navbar li{
+    display: inline;
+}
+
+.knu{
+    background-image: url("../assets/img/VANS/KNU.png");
+    height: 200px;
+}
+
+.classic{
+    background-image: url("../assets/img/vans/autentico.webp");
+    height: 200px;
+}
+
+.chino{
+    background-image: url("../assets/img/Vans/Chino/Authentic.jpg");
+    height: 200px;
+}
+
+.banner{
+    background-image: url("../assets/img/vans-banner-posta.jpg");
+    width: 100%;
+    height: 250px;
+    background-position: 10% 59%;
+    background-size: cover;
+}
+
+.bannerVertical{
+    background-image: url("../assets/img/ZAPAS/IMAGEN.jpg");
+    width: 30%;
+    height: 100%;
+    background-position: 10% 59%;
+    background-size: cover;
+}
+
+.imageZapaUno{
+    width: 200px;
+}
+
+.imageZapaDos{
+    width: 200px;
+}
+
+.imageZapaTres{
+    width: 200px;
+}
+
+section .title-novedades{
+    display: flex;
+    justify-content: center;
+}
+
+section .novedades{
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(3,1fr);
+    justify-items: center;
+}
+
+section .novedades img{
+    display: grid;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+}
+
+section .novedades h3{
+    display: grid;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    color:white;
+    border-radius: 20px;
+    font-size: smaller;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template: repeat(1,125px) / repeat(2,1fr);
+    height: 100%;
+}
+
+.info-empresa li{
+    display: grid;
+    text-align: left;
+}
+
+.info li{
+    display: grid;
+    text-align: right;
+    padding: 0;
+    line-height: .625rem;
+}
+
+.coppy{
+    display: grid;
+    text-align: left;
+    align-self: flex-end;
+}
+
+.tarjetas li img{
+    width: 5%;
+    height: 6%;
+}
+
+.tarjetas ul{
+    display: grid;
+    text-align: right;
+    list-style: none;
+    display: inline;
+}
+
+.tarjetas ul li{
+    display: inline;
+}
+
