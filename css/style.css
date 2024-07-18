@@ -19,6 +19,16 @@ section .buscador{
     justify-content: flex-end;
 }
 
+header .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header .logo-sitio{
+    display: flex;
+}
+
 header nav ul{
     list-style: none;
 
@@ -125,21 +135,13 @@ footer{
     font-size: smaller;
     padding: 10px;
     margin: 10px;
-    display: grid;
-    grid-template: repeat(1,125px) / repeat(2,1fr);
+    display: flex;
     height: 100%;
 }
 
 .info-empresa li{
-    display: grid;
+    display: flex;
     text-align: left;
-}
-
-.info li{
-    display: grid;
-    text-align: right;
-    padding: 0;
-    line-height: .625rem;
 }
 
 .coppy{
@@ -148,19 +150,35 @@ footer{
     align-self: flex-end;
 }
 
-.tarjetas li img{
-    width: 5%;
-    height: 6%;
+.info{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
-.tarjetas ul{
-    display: grid;
-    text-align: right;
+.info li{
+    list-style: none;
+}
+
+.info .info-general{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: end;
+    position: relative;
+}
+
+
+.info .tarjetas li{
+    display: flex;
     list-style: none;
     display: inline;
+    flex-direction: column-reverse;
 }
 
-.tarjetas ul li{
+.info .tarjetas li img{
     display: inline;
+    width: 40px;
+    height: 25px;
+    text-align: right;
 }
-
