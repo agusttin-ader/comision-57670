@@ -237,3 +237,9 @@ main .general-zapatillas .columna-cuatro{
     flex-direction: row;
     gap: 5%;
 }
+
+main .paginas{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
