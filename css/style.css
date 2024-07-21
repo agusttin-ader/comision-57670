@@ -4,8 +4,15 @@
     padding: 1px;
     box-sizing: border-box;
 }
+
+html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
+}
+
 body{
     font-family: "Poppins", sans-serif;
+    padding-right: 20px;
 }
 
 .box{
@@ -96,6 +103,7 @@ header section .catalogo{
     height: 250px;
     background-position: 10% 59%;
     background-size: cover;
+
 }
 
 .bannerVertical{
@@ -194,4 +202,38 @@ footer{
     width: 40px;
     height: 25px;
     text-align: right;
+}
+
+main .general-zapatillas{
+    display: flex;
+    object-fit: contain;
+}
+
+main .general-zapatillas .seleccion-talle .vertical-img img{
+    display: flex;
+    height: 600px;
+    width: auto;
+}
+
+main .general-zapatillas .columna-uno{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+main .general-zapatillas .columna-dos{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+main .general-zapatillas .columna-tres{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+main .general-zapatillas .columna-cuatro{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
 }
