@@ -246,6 +246,7 @@ main .paginas{
 main .compra-proceso{
     display: flex;
     flex-direction: row;
+    padding: 30px;
     width: 100%;
     justify-content: space-between;
 }
@@ -254,14 +255,13 @@ main .compra-proceso article ul li{
     list-style: none;
 }
 
-main .compra-proceso article ul li h2{
-    fot
-}
 
 main .compra-proceso article .zapas-img{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
 }
 
 main .compra-proceso article .principal img{
@@ -277,9 +277,10 @@ main .compra-proceso article .secundarias img{
 
 main .compra-proceso article .info-compra{
     display: flex;
-    position: relative;
+    position: absolute;
     flex-direction: column;
-    left: 100%;
+    left: 600px;
+    bottom: 20px;
 }
 
 
