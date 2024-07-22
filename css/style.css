@@ -166,7 +166,6 @@ footer{
 }
 
 .coppy{
-    display: grid;
     text-align: left;
     align-self: flex-end;
 }
@@ -242,4 +241,50 @@ main .paginas{
     display: flex;
     justify-content: center;
     align-self: center;
+}
+
+main .compra-proceso{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+main .compra-proceso article ul li{
+    list-style: none;
+}
+
+main .compra-proceso article ul li h2{
+    fot
+}
+
+main .compra-proceso article .zapas-img{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+main .compra-proceso article .principal img{
+    display: flex;
+    width: 450px;
+    height: auto;
+}
+
+main .compra-proceso article .secundarias img{
+    width: 150px;
+    gap: 1px;
+}
+
+main .compra-proceso article .info-compra{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 100%;
+}
+
+
+main .interes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
