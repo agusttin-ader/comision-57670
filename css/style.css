@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%!important;
-    overflow-x: hidden!important;
-}
-
 body{
     font-family: "Poppins", sans-serif;
     padding-right: 20px;
@@ -289,3 +284,4 @@ main .interes{
     flex-direction: row;
     justify-content: space-between;
 }
+
