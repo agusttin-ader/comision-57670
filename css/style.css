@@ -16,7 +16,7 @@ body{
 
 header .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 header .navbar .menu{
@@ -58,15 +58,15 @@ header .logo-sitio img{
 
 header .navbar .buscador{
     display: flex;
-    flex-direction: row-reverse;
-}
-
-header .navbar .buscador .cuenta{
-    display: flex;
     align-self: flex-start;
     justify-self: flex-start;
     justify-content: right;
 }
+
+header .navbar{
+display: block;
+}
+
 
 header section .catalogo{
     display: flex;
@@ -199,7 +199,6 @@ footer{
 
 main .general-zapatillas{
     display: flex;
-    object-fit: contain;
 }
 
 main .general-zapatillas .seleccion-talle .vertical-img img{
@@ -208,27 +207,10 @@ main .general-zapatillas .seleccion-talle .vertical-img img{
     width: auto;
 }
 
-main .general-zapatillas .columna-uno{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-}
-main .general-zapatillas .columna-dos{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-}
-
-main .general-zapatillas .columna-tres{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-}
-
-main .general-zapatillas .columna-cuatro{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
+main .general-zapatillas .modelos{
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(4,1fr);
+    object-fit: contain;
 }
 
 main .paginas{
