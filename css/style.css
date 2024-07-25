@@ -64,7 +64,8 @@ header .navbar .buscador{
 }
 
 header .navbar{
-display: block;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
