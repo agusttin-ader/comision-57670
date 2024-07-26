@@ -235,6 +235,14 @@ main .compra-proceso .articulo-compra{
     justify-content: center;
 }
 
+.colores{
+    display: flex;
+}
+
+.talles-compra{
+    display: flex;
+}
+
 main .compra-proceso article ul li{
     list-style: none;
 }
