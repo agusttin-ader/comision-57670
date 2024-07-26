@@ -8,6 +8,8 @@
 body{
     font-family: "Poppins", sans-serif;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column ;
 }
 
 .box{
@@ -153,6 +155,7 @@ footer{
     display: flex;
     height: 100%;
     width: auto;
+    flex-wrap: nowrap;
 }
 
 .info-empresa li{
@@ -200,6 +203,7 @@ footer{
 
 main .general-zapatillas{
     display: flex;
+    flex-wrap: nowrap;
 }
 
 main .general-zapatillas .seleccion-talle .vertical-img img{
@@ -209,8 +213,9 @@ main .general-zapatillas .seleccion-talle .vertical-img img{
 }
 
 main .general-zapatillas .modelos{
-    display: grid;
-    grid-template: repeat(3,1fr) / repeat(4,1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     object-fit: contain;
 }
 
@@ -236,9 +241,6 @@ main .compra-proceso article ul li{
 main .compra-proceso article .zapas-img{
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 20px;
-    bottom: 20px;
 }
 
 main .compra-proceso article .principal img{
@@ -254,10 +256,7 @@ main .compra-proceso article .secundarias img{
 
 main .compra-proceso article .info-compra{
     display: flex;
-    position: absolute;
     flex-direction: column;
-    left: 600px;
-    bottom: 20px;
 }
 
 
