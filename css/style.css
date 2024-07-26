@@ -164,9 +164,9 @@ footer{
     text-align: left;
 }
 
-.coppy{
-    text-align: left;
-    align-self: flex-end;
+.info-empresa{
+    display: flex;
+    flex-direction: column;
 }
 
 .info{
@@ -187,6 +187,10 @@ footer{
     position: relative;
 }
 
+.info .tarjetas{
+    display: flex;
+    align-items: center ;
+}
 
 .info .tarjetas li{
     display: flex;
