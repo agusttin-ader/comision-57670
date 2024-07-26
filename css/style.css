@@ -63,6 +63,7 @@ header .navbar .buscador{
     align-self: flex-start;
     justify-self: flex-start;
     justify-content: right;
+    align-items: center;
 }
 
 header .navbar{
@@ -239,6 +240,10 @@ main .compra-proceso .articulo-compra{
     display: flex;
 }
 
+.colores form{
+    display: flex;
+}
+
 .talles-compra{
     display: flex;
 }
@@ -263,6 +268,28 @@ main .compra-proceso article .secundarias img{
     gap: 1px;
 }
 
+main .interaccion{
+    display: grid;
+}
+
+main .interaccion a{
+    width: 100%;
+}
+
+main .interaccion a button{
+    background-color: rgb(128, 18, 18);
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+main .interaccion a button{
+    width: 100%;
+}
+.txt-comprar{
+    padding: 25px 25px;
+    font-size: 6vh;
+}
 main .interes{
     display: flex;
     flex-direction: row;
