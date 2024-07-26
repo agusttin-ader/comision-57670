@@ -217,6 +217,7 @@ main .general-zapatillas .modelos{
     justify-content: center;
     flex-wrap: wrap;
     object-fit: contain;
+    min-width: 58.9375rem;
 }
 
 main .paginas{
@@ -225,18 +226,18 @@ main .paginas{
     align-self: center;
 }
 
-main .compra-proceso{
+.info-compra ul li h2{
+    font-size: calc(1.325rem + 1.5vw);
+}
+
+main .compra-proceso .articulo-compra{
     display: flex;
-    flex-direction: row;
-    padding: 30px;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main .compra-proceso article ul li{
     list-style: none;
 }
-
 
 main .compra-proceso article .zapas-img{
     display: flex;
@@ -245,20 +246,14 @@ main .compra-proceso article .zapas-img{
 
 main .compra-proceso article .principal img{
     display: flex;
-    width: 450px;
+    width: 30vw;
     height: auto;
 }
 
 main .compra-proceso article .secundarias img{
-    width: 150px;
+    width: 10vw;
     gap: 1px;
 }
-
-main .compra-proceso article .info-compra{
-    display: flex;
-    flex-direction: column;
-}
-
 
 main .interes{
     display: flex;
