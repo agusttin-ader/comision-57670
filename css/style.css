@@ -421,3 +421,145 @@ main .interaccion-fin a{
     align-items: center;
     width: 100%;
 }
+
+main .interes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* FIN SECCION FINALIZA COMPRA */
+
+/* SECCION SOPORTE */
+
+main .main{
+    padding: 40px;
+}
+
+main .soporte{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+main .soporte select{
+    background-color: rgb(128, 18, 18);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+main h2{
+    display: table;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+main section .form{
+    justify-content:space-between ;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+main section .form .formulario{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    max-width: 600px;
+}
+
+main section .form .formulario h3{
+    font-size: x-large;
+}
+
+
+main section .form .formulario label{
+    width: 34%;
+    display: inline-block;
+    line-height: 14px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+main section .form .formulario input{
+    padding: 8px 0;
+    height: auto;
+    display: inline-block;
+    width: 65%;
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+main section .form .formulario textarea{
+    padding: 8px 0;
+    display: inline-block;
+    width: 65%;
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+main section .form .formulario .nombre{
+    display: flex;
+    align-items: center;
+    text-indent: 5px;
+}
+main section .form .formulario .apellido{
+    display: flex;
+    align-items: center;
+    text-indent: 5px;
+}
+
+main section .form .formulario .mail{
+    display: flex;
+    align-items: center;
+    text-indent: 5px;
+}
+
+main section .form .formulario .telefono{
+    display: flex;
+    align-items: center;
+    text-indent: 5px;
+}
+
+main section .form .formulario .zona{
+    display: flex;
+    align-items: center;
+}
+
+main section .form .formulario .mensaje{
+    display: flex;
+    align-items: center;
+    text-indent: 5px;
+}
+
+main section .form .formulario .archivo{
+    display: flex;
+    align-items: center;
+    text-indent: 5px;
+}
+
+main section .form .formulario a button{
+    width: 160px;
+    background-color: rgb(128, 18, 18);
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+main section .form .formulario a{
+    width: 20%;
+    padding: 15px 0;
+    height: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px 0 10px 100%;
+}

@@ -44,47 +44,65 @@
         <div>
             <img class="banner" src="" alt="">
         </div>
-        <section>
-            <div>
-            <h1>SOPORTE</h1>
-            <select name="PREGUNTAS FRECUENTES" id="">
-                <option value="PREGUNTAS FRECUENTES">PREGUNTAS FRECUENTES</option>
-                <option value="Cuando llega mi pedido?">Cuando llega mi pedido?</option>
-                <option value="Cambios y devoluciones">Cambios y devoluciones</option>
-                <option value="Quiero retirar mi producto">Quiero retirar mi producto</option>
-            </select>
-        </div>
-        </section>
-        <section>
-            <div>
-                <h2>¡ESCRIBINOS TUS DATOS Y TE RESPONDEREMOS A LA BREVEDAD!</h2>
-                <form action="" class="formulario">
-                    <label for="Nombre">Nombre: </label>
-                    <input type="text" name="" id="">
-                    <label for="Apellido">Apellido: </label>
-                    <input type="text">
-                    <label for="Email">Email: </label>
-                    <input type="email" name="" id="">
-                    <label for="Telefono">Telefono: </label>
-                    <input type="tel" name="" id="">
-                    <label for="Zona">Zona: </label>
-                    <select name="" id="">
-                        <option value="CABA">CABA</option>
-                        <option value="GBA ZONA NORTE">GBA ZONA NORTE</option>
-                        <option value="GBA ZONA OESTE">GBA ZONA OESTE</option>
-                        <option value="GBA ZONA SUR">GBA ZONA SUR</option>
+        <div class="main">
+            <section class="soporte">
+                <div>
+                    <h2><u>SOPORTE</u></h2>
+                </div>
+                <div>
+                    <select name="PREGUNTAS FRECUENTES" id="">
+                        <option value="PREGUNTAS FRECUENTES">PREGUNTAS FRECUENTES</option>
+                        <option value="Cuando llega mi pedido?">Cuando llega mi pedido?</option>
+                        <option value="Cambios y devoluciones">Cambios y devoluciones</option>
+                        <option value="Quiero retirar mi producto">Quiero retirar mi producto</option>
                     </select>
-                    <label for="Mensaje">Mensaje: </label>
-                    <input type="text">
-                    <label for="Adjunto">Adjunto: </label>
-                    <input type="file" name="" id="">
-                    <a href="./datos-enviados.html"><input type="button" value="ENVIAR"></a>
+                </div>
+            </section>
+            <section>
+            <div class="form">
+                <h2><u>¡ESCRIBINOS TUS DATOS Y TE RESPONDEREMOS A LA BREVEDAD!</u></h2>
+                <form action="" class="formulario">
+                    <div class="nombre">
+                        <label for="Nombre">Nombre:</label>
+                        <input type="name" name="" id="" data-field="nombre" maxlength="50" minlength="2">
+                    </div>
+                    <div class="apellido">
+                        <label for="Apellido">Apellido:</label>
+                        <input type="name" name="" id="" data-field="apellido" maxlength="50" minlength="2">
+                    </div>
+                    <div class="mail">
+                        <label for="Email">Email:</label>
+                        <input type="email" name="" id="" data-reference="email" data-type="mail" data-field="email">
+                    </div>
+                    <div class="telefono">
+                        <label for="Telefono">Telefono:</label>
+                        <input type="tel" name="" id="" data-reference="telefono" data-type="tel" data-field="telefono">
+                    </div>
+                    <div class="zona">
+                        <label for="Zona">Zona:</label>
+                        <select name="" id="">
+                            <option value="CABA">Seleccione una zona</option>
+                            <option value="CABA">CABA</option>
+                            <option value="GBA ZONA NORTE">GBA ZONA NORTE</option>
+                            <option value="GBA ZONA OESTE">GBA ZONA OESTE</option>
+                            <option value="GBA ZONA SUR">GBA ZONA SUR</option>
+                        </select>
+                    </div>
+                    <div class="mensaje">
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea name="" id="" data-type="mensaje" data-field="mensaje" maxlength="500"></textarea>
+                    </div>
+                    <div class="archivo">
+                        <label for="Adjunto">Ajuntar archivo:</label>
+                        <input type="file" name="" id="">
+                    </div>
+                    <div>
+                        <a href="./datos-enviados.html"><button class="btn btn-primary txt-enviar" type="button">ENVIAR</button></a>
+                    </div>
                 </form>
             </div>
-        </section>
-        <div>
-            <img class="bannerVertical" src="../assets/img/ZAPAS IMAGEN.jpg" alt="">
         </div>
+        </section>
     </main>
     <footer>
         <section class="info-empresa">
