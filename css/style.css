@@ -19,7 +19,7 @@ body{
 
 header .navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 header .navbar .menu{
@@ -31,8 +31,7 @@ header .navbar .menu{
 
 header .navbar .logo-sitio{
     display: flex;
-    align-self: flex-start;
-    justify-self: flex-start;
+    align-self: center;
     justify-content: center;
 
 }
@@ -61,8 +60,6 @@ header .logo-sitio img{
 
 header .navbar .buscador{
     display: flex;
-    align-self: flex-start;
-    justify-self: flex-start;
     justify-content: right;
     align-items: center;
 }
@@ -80,6 +77,10 @@ header section .catalogo{
     justify-content: center;
     font-weight: bold;
     font-size: large;
+}
+
+header section .catalogo a{
+    color: black;
 }
 
 /* FINAL HEADER */
@@ -139,6 +140,10 @@ section .title-novedades{
     justify-content: center;
 }
 
+section .title-novedades h1{
+    font-weight: 700;
+}
+
 section .novedades{
     display: grid;
     grid-template: repeat(2,1fr) / repeat(3,1fr);
@@ -155,6 +160,7 @@ section .novedades img{
 section .novedades h3{
     display: grid;
     justify-content: center;
+    font-weight: 500;
 }
 
 /* INDEX MAIN FINAL */
@@ -175,6 +181,13 @@ footer{
 .info-empresa li{
     display: flex;
     text-align: left;
+    color: white;
+}
+
+.info-empresa li a{
+    display: flex;
+    text-align: left;
+    color: white;
 }
 
 .info-empresa{
@@ -191,6 +204,10 @@ footer{
 
 .info li{
     list-style: none;
+}
+
+.info li a{
+    color: white;
 }
 
 .info .info-general{
