@@ -587,3 +587,37 @@ main section .form .formulario a{
     cursor: pointer;
     margin: 10px 0 10px 100%;
 }
+
+main .envio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 70px;
+}
+
+main .info-envio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+main .info-envio p{
+    font-size: larger;
+}
+
+main .envio h1{
+    font-weight: 700;
+}
+
+main .info-envio button{
+    background-color: rgb(128, 18, 18);
+    color: white;
+    border-color: rgb(128, 18, 18);
+    border-radius: 10px;
+    width: 350px;
+
+}
+
