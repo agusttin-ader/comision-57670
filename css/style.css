@@ -4,7 +4,6 @@
     padding: 1px;
     box-sizing: border-box;
 }
-
 body{
     font-family: "Poppins", sans-serif;
     padding-right: 20px;
@@ -15,6 +14,8 @@ body{
 .box{
     display: flex;
 }
+
+/* HEADER */
 
 header .navbar{
     display: flex;
@@ -81,6 +82,10 @@ header section .catalogo{
     font-size: large;
 }
 
+/* FINAL HEADER */
+
+/* IMAGENES HOME */
+
 .knu{
     background-image: url("../assets/img/VANS/KNU.png");
     height: 200px;
@@ -125,6 +130,10 @@ header section .catalogo{
     width: 200px;
 }
 
+/* IMAGENES HOME FIN */
+
+/* INDEX MAIN */
+
 section .title-novedades{
     display: flex;
     justify-content: center;
@@ -147,6 +156,10 @@ section .novedades h3{
     display: grid;
     justify-content: center;
 }
+
+/* INDEX MAIN FINAL */
+
+/* FOOTER */
 
 footer{
     background-color: rgba(0, 0, 0, 0.9);
@@ -206,6 +219,10 @@ footer{
     text-align: right;
 }
 
+/* FOOTER FIN */
+
+/* PAGE ZAPATILLAS */
+
 main .general-zapatillas{
     display: flex;
     flex-wrap: nowrap;
@@ -235,6 +252,10 @@ main .paginas{
     font-size: calc(1.325rem + 1.5vw);
 }
 
+/* PAGE ZAPATILLAS FINAL */
+
+/* PAGE COMPRA */
+
 main .compra-proceso .articulo-compra{
     display: flex;
     justify-content: center;
@@ -254,6 +275,10 @@ main .compra-proceso .articulo-compra{
 
 main .compra-proceso article ul li{
     list-style: none;
+}
+
+main .compra-proceso article ul{
+    padding-left: 0%;
 }
 
 main .compra-proceso article .zapas-img{
@@ -280,23 +305,119 @@ main .interaccion a{
     width: 100%;
 }
 
+main .info-compra ul li{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 main .interaccion a button{
     background-color: rgb(128, 18, 18);
     color: white;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 main .interaccion a button{
     width: 100%;
 }
+
 .txt-comprar{
     padding: 25px 25px;
-    font-size: 6vh;
+    font-size: 3vh;
 }
+
+.txt-agregar-al-carrito{
+    padding: 20px 20px;
+    font-size: 1.5vh;
+}
+
+.txt-avisame{
+    padding: 17px 17px;
+    font-size: 1.2vh;
+}
+
 main .interes{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/* PAGE COMPRA FINAL */
+
+/* PAGE FINALIZA COMPRA */
+
+main .detalles-de-compra h1{
+    display: table;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    width: 100%;
+}
+
+main .detalles-de-compra table{
+    width: 75%;
+    margin: 20px 0;
+    display: inline-table;
+    border-collapse: collapse;
+    border: 0;
+}
+
+main .detalles-de-compra table th{
+    text-align: left;
+    padding: 5px 0;
+    font-size: small;
+}
+
+main .detalles-de-compra table tr{
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+
+main .detalles-de-compra .detalles-final{
+    width: 22%;
+    display: inline-table;
+    margin: 0 0 0 1%;
+    padding: 10px 1%;
+}
+
+main .detalles-de-compra .detalles-final .total-articulos{
+    width: 96%;
+    padding: 15px 2%;
+    margin: 10px 0 0;
+}
+
+main .detalles-de-compra .detalles-final .total-articulos .articulos{
+    display: flex;
+}
+
+main .detalles-de-compra .detalles-final .total-articulos .total{
+    display: flex;
+}
+
+main .detalles-de-compra .detalles-final .total-articulos .descuento{
+    display: flex;
+}
+
+main .detalles-de-compra .detalles-final .total-articulos .descuento h4{
+    font-size: medium;
+}
+
+main .interaccion-fin a button{
+    background-color: rgb(128, 18, 18);
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+main .interaccion-fin a button{
+    width: 100%;
+
+}
+
+main .interaccion-fin a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
