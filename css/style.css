@@ -507,12 +507,18 @@ main section .form .formulario label{
 }
 
 main section .form .formulario input{
-    padding: 8px 0;
+    padding: 2px 0;
     height: auto;
     display: inline-block;
-    width: 65%;
+    width: 100%;
     font-size: 16px;
     text-indent: 5px;
+    border-color: rgb(232, 232, 232);
+}
+
+
+main section .form .formulario select{
+    border-color: rgb(232, 232, 232);
 }
 
 main section .form .formulario textarea{
@@ -521,6 +527,7 @@ main section .form .formulario textarea{
     width: 65%;
     font-size: 16px;
     text-indent: 5px;
+    border-color: rgb(232, 232, 232);
 }
 
 main section .form .formulario .nombre{
