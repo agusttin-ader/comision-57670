@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 5px;
-    padding: 1px;
-    box-sizing: border-box;
+    padding: 3px;
+    box-sizing:border-box;
 }
 body{
     font-family: "Poppins", sans-serif;
@@ -189,6 +189,8 @@ footer .info-coppy{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 1.5px;
+    padding: 1.5px;
 }
 
 .info-empresa li{
@@ -206,7 +208,9 @@ footer .info-coppy{
 
 .coppy{
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
+    margin: .0625rem;
+    padding: .0625rem;
 }
 
 .coppy ul li{
@@ -246,6 +250,9 @@ footer .info-coppy{
 .info .tarjetas{
     display: flex;
     align-items: center ;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .info .tarjetas li{
@@ -681,9 +688,15 @@ main .info-envio button{
         font-weight: 400;
         justify-content: left;
     }
-    .info .tarjetas li a svg{
+    .info .tarjetas li svg{
         width: 25px;
         height: 25px;
+    }
+    .info .tarjetas {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        justify-content:right;
     }
     section .novedades img{
         display: grid;
@@ -708,8 +721,8 @@ main .info-envio button{
 
 @media (max-width: 426px){
     *{
-        margin: 1px;
-        padding: 1px;
+        margin: 0.5px;
+        padding: 0.5px;
         box-sizing: border-box;
     }
     header .navbar .lupa{
@@ -749,10 +762,15 @@ main .info-envio button{
         font-size: x-small;
         align-items: center;
     }
+    section .novedades{
+        display: grid;
+        grid-template: repeat(1,1fr) / repeat(2,1fr);
+        justify-items: center;
+    }
     section .novedades img{
         display: grid;
-        width: 80%;
-        height: 40%;
+        width: 95%;
+        height: 55%;
         justify-content: center;
         align-items: center;
     }
@@ -763,7 +781,7 @@ main .info-envio button{
         font-size: xx-small;
         display: flex;
         justify-content: flex-end;
-        height: 50%;
+        height: 80%;
         width: 100%;
         flex-wrap: nowrap;
     }
@@ -773,9 +791,14 @@ main .info-envio button{
         font-weight: 400;
         justify-content: left;
     }
-    .info .tarjetas li a svg{
+    .info .tarjetas li svg{
         width: 10px;
         height: 10px;
+    }
+    .info .tarjetas{
+        justify-content:right;
+        padding: 0;
+        margin: 0;
     }
     .info-coppy{
         display: flex;
@@ -794,8 +817,7 @@ main .info-envio button{
 
 @media (max-width: 320px){
     *{
-        margin: 0.5;
-        padding: 0.5px;
+        padding: 1%;
         box-sizing: border-box;
     }
     header .navbar .lupa{
@@ -832,7 +854,7 @@ main .info-envio button{
         display: grid;
         justify-content: center;
         font-weight: 700;
-        font-size: x-small;
+        font-size: xx-small;
         align-items: center;
     }
     section .novedades img{
@@ -849,17 +871,25 @@ main .info-envio button{
         font-size: xx-small;
         display: flex;
         justify-content: flex-end;
-        height: 30%;
+        height: 30vb;
         width: 100%;
         flex-wrap: nowrap;
     }
     .coppy ul li h5{
         color: white;
-        font-size:5px;
-        font-weight: 400;
-        justify-content: left;
+        font-size:7px;
+        font-weight: 300;
     }
-    .info .tarjetas li a svg{
+    .info .coppy{
+    justify-content: left;
+    }
+    .info .tarjetas{
+        justify-content: right;
+        align-items: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+    .info .tarjetas svg{
         width: 10px;
         height: 10px;
     }
@@ -876,4 +906,4 @@ main .info-envio button{
     .info-coppy .info-empresa li {
         font-size: 7px;
     }
-}
+} 
