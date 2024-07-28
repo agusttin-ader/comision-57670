@@ -20,6 +20,7 @@ body{
 header .navbar{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 header .navbar .menu{
@@ -54,7 +55,7 @@ header .logo-sitio img{
     display: flex;
     align-self: center;
     justify-self: center;
-    width: 10%;
+    width: 20%;
     height: 50%;
 }
 
@@ -174,14 +175,27 @@ footer{
     font-size: smaller;
     display: flex;
     height: 100%;
-    width: auto;
+    width: 100%;
     flex-wrap: nowrap;
+}
+
+footer .info-coppy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .info-empresa li{
     display: flex;
     text-align: left;
     color: white;
+    list-style: none;
 }
 
 .info-empresa li a{
@@ -190,9 +204,22 @@ footer{
     color: white;
 }
 
-.info-empresa{
+.coppy{
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+}
+
+.coppy ul li{
+    list-style: none;
+    display: inline;
+
+}
+
+.coppy ul li h5{
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    justify-content: left;
 }
 
 .info{
@@ -214,7 +241,6 @@ footer{
     display: flex;
     flex-direction: column-reverse;
     text-align: end;
-    position: relative;
 }
 
 .info .tarjetas{
@@ -227,13 +253,6 @@ footer{
     list-style: none;
     display: inline;
     flex-direction: column-reverse;
-}
-
-.info .tarjetas li img{
-    display: inline;
-    width: 40px;
-    height: 25px;
-    text-align: right;
 }
 
 /* FOOTER FIN */
@@ -618,6 +637,243 @@ main .info-envio button{
     border-color: rgb(128, 18, 18);
     border-radius: 10px;
     width: 350px;
-
 }
 
+@media (max-width: 768px){
+
+    header .navbar .menu svg{
+        width: 30px;
+        height: 30px;
+    }
+    header .navbar svg{
+        width: 20px;
+        height: 20px;
+    }
+    header section .catalogo{
+        display: flex;
+        list-style: none;
+        align-self: center;
+        justify-content: center;
+        font-weight: 650;
+        font-size: medium;
+    }
+    .banner{
+        background-image: url("../assets/img/vans-banner-posta.jpg");
+        width: 100%;
+        height: 150px;
+        background-position: 10% 59%;
+        background-size: cover;
+    }
+    footer{
+        background-color: rgba(0, 0, 0, 0.9);
+        color:white;
+        border-radius: 15px;
+        font-size: x-small;
+        display: flex;
+        justify-content: flex-end;
+        height: 80%;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .coppy ul li h5{
+        color: white;
+        font-size: xx-small;
+        font-weight: 400;
+        justify-content: left;
+    }
+    .info .tarjetas li a svg{
+        width: 25px;
+        height: 25px;
+    }
+    section .novedades img{
+        display: grid;
+        width: 95%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section .novedades h3{
+        display: grid;
+        justify-content: center;
+        font-weight: 500;
+        font-size: larger;
+        align-items: center;
+    }
+    section .title-novedades h1{
+        font-weight: 600;
+        font-size:x-large ;
+    }
+}
+
+@media (max-width: 426px){
+    *{
+        margin: 1px;
+        padding: 1px;
+        box-sizing: border-box;
+    }
+    header .navbar .lupa{
+        display: none;
+    }
+    header .navbar .menu svg{
+        width: 25px;
+        height: 25px;
+    }
+    header .navbar svg{
+        width: 20px;
+        height: 20px;
+    }
+    header section .catalogo{
+        display: flex;
+        list-style: none;
+        align-self: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: x-small;
+    }
+    .banner{
+        background-image: url("../assets/img/vans-banner-posta.jpg");
+        width: 100%;
+        height: 5rem;
+        background-position: 10% 59%;
+        background-size: cover;
+    }
+    section .title-novedades h1{
+        font-weight: 800;
+        font-size:medium ;
+    }
+    section .novedades h3{
+        display: grid;
+        justify-content: center;
+        font-weight: 700;
+        font-size: x-small;
+        align-items: center;
+    }
+    section .novedades img{
+        display: grid;
+        width: 80%;
+        height: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        background-color: rgba(0, 0, 0, 0.9);
+        color:white;
+        border-radius: 15px;
+        font-size: xx-small;
+        display: flex;
+        justify-content: flex-end;
+        height: 50%;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .coppy ul li h5{
+        color: white;
+        font-size:5px;
+        font-weight: 400;
+        justify-content: left;
+    }
+    .info .tarjetas li a svg{
+        width: 10px;
+        height: 10px;
+    }
+    .info-coppy{
+        display: flex;
+        justify-content: right;
+    }
+    .info .info-general li a{
+        font-size: 7px;
+    }
+    .info-coppy .info-empresa li a{
+        font-size: 7px;
+    }
+    .info-coppy .info-empresa li {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 320px){
+    *{
+        margin: 0.5;
+        padding: 0.5px;
+        box-sizing: border-box;
+    }
+    header .navbar .lupa{
+        display: none;
+    }
+    header .navbar .menu svg{
+        width: 20px;
+        height: 20px;
+    }
+    header .navbar svg{
+        width: 20px;
+        height: 20px;
+    }
+    header section .catalogo{
+        display: flex;
+        list-style: none;
+        align-self: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: x-small;
+    }
+    .banner{
+        background-image: url("../assets/img/vans-banner-posta.jpg");
+        width: 100%;
+        height: 4rem;
+        background-position: 10% 59%;
+        background-size: cover;
+    }
+    section .title-novedades h1{
+        font-weight: 800;
+        font-size:medium ;
+    }
+    section .novedades h3{
+        display: grid;
+        justify-content: center;
+        font-weight: 700;
+        font-size: x-small;
+        align-items: center;
+    }
+    section .novedades img{
+        display: grid;
+        width: 80%;
+        height: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        background-color: rgba(0, 0, 0, 0.9);
+        color:white;
+        border-radius: 5px;
+        font-size: xx-small;
+        display: flex;
+        justify-content: flex-end;
+        height: 30%;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .coppy ul li h5{
+        color: white;
+        font-size:5px;
+        font-weight: 400;
+        justify-content: left;
+    }
+    .info .tarjetas li a svg{
+        width: 10px;
+        height: 10px;
+    }
+    .info-coppy{
+        display: flex;
+        justify-content: right;
+    }
+    .info .info-general li a{
+        font-size: 7px;
+    }
+    .info-coppy .info-empresa li a{
+        font-size: 7px;
+    }
+    .info-coppy .info-empresa li {
+        font-size: 7px;
+    }
+}
