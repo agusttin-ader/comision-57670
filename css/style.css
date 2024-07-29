@@ -9,6 +9,8 @@ body{
     padding-right: 20px;
     display: flex;
     flex-direction: column ;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .box{
@@ -643,6 +645,10 @@ header .navbar .menu svg{
         width: 30px;
         height: 30px;
     }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
     header .navbar svg{
         width: 20px;
         height: 20px;
@@ -744,6 +750,10 @@ header .navbar .menu svg{
         margin: 0.5px;
         padding: 0.5px;
         box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
     }
     header .navbar .lupa{
         display: none;
@@ -871,6 +881,10 @@ header .navbar .menu svg{
         padding: 0%;
         margin: 1px;
         box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
     }
     header .navbar .lupa{
         display: none;
