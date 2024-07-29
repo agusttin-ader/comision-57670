@@ -633,8 +633,13 @@ main .info-envio button{
 }
 
 @media (max-width: 768px){
-
-    header .navbar .menu svg{
+/* INDEX INICIO */
+*{
+    margin: 2px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+header .navbar .menu svg{
         width: 30px;
         height: 30px;
     }
@@ -646,7 +651,7 @@ main .info-envio button{
         display: flex;
         align-self: center;
         justify-self: center;
-        width: 20%;
+        width: 15%;
         height: 50%;
     }
     header section .catalogo{
@@ -655,7 +660,7 @@ main .info-envio button{
         align-self: center;
         justify-content: center;
         font-weight: 650;
-        font-size: xx-small;
+        font-size: small;
     }
     .banner{
         background-image: url("../assets/img/vans-banner-posta.jpg");
@@ -710,7 +715,30 @@ main .info-envio button{
         font-weight: 600;
         font-size:x-large ;
     }
+    /* INDEX FINAL */
+    /* DATOS ENVIADOS INICIO */
+    main .envio{
+        justify-content: center;
+        align-items: center;
+    }
+    main .envio h1{
+        font-size: x-large;
+    }
+    main .info-envio{
+        justify-content: center;
+        align-items: center;
+    }
+    main .info-envio{
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+    }
+    main .info-envio a{
+        padding-bottom: 50px;
+    }
+    /* DATOS ENVIADOS FINAL */
 }
+
 
 @media (max-width: 426px){
     *{
