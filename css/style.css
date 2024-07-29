@@ -672,11 +672,10 @@ header .navbar .menu svg{
     footer{
         background-color: rgba(0, 0, 0, 0.9);
         color:white;
-        border-radius: 15px;
         font-size: x-small;
         display: flex;
         justify-content: flex-end;
-        height: 80%;
+        height: 100%;
         width: 100%;
         flex-wrap: nowrap;
     }
@@ -841,6 +840,30 @@ header .navbar .menu svg{
     .info-coppy .info-empresa li {
         font-size: 7px;
     }
+    /* Datos enviados incio */
+    main .envio{
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+    main .envio h1{
+        font-size: large;
+    }
+    main .info-envio{
+        justify-content: center;
+        align-items: center;
+    }
+    main .info-envio{
+        font-size: x-small;
+        justify-content: center;
+        text-align: center;
+    }
+    main .info-envio a{
+        padding-bottom: 50px;
+    }
+    main .info-envio a button{
+        width: 150px;
+    }
 }
 
 @media (max-width: 320px){
@@ -941,5 +964,29 @@ header .navbar .menu svg{
     }
     .info-coppy .info-empresa li {
         font-size: 7px;
+    }
+    /* Datos envio inicio */
+    main .envio{
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+    main .envio h1{
+        font-size: small;
+    }
+    main .info-envio{
+        justify-content: center;
+        align-items: center;
+    }
+    main .info-envio{
+        font-size: xx-small;
+        justify-content: center;
+        text-align: center;
+    }
+    main .info-envio a{
+        padding-bottom: 30px;
+    }
+    main .info-envio a button{
+        width: 100px;
     }
 } 
