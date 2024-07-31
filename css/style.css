@@ -891,6 +891,70 @@ header .navbar .menu svg{
     .info-coppy .info-empresa li {
         font-size: 7px;
     }
+    /* ZAPATILLAS */
+    main .general-zapatillas{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .general-zapatillas .seleccion-talle .vertical-img img{
+        display: none;
+        height: 300px;
+        width: auto;
+    }
+    
+    main .general-zapatillas .seleccion-talle{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    main .general-zapatillas .seleccion-talle h1{
+        font-size: large;
+    }
+
+    main .general-zapatillas .seleccion-talle .genero label{
+        font-size: small;
+    }
+
+    main .general-zapatillas .modelos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        object-fit: contain;
+        gap: 50px;
+    }
+
+    main .general-zapatillas .modelos article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    main .general-zapatillas .modelos a img{
+        width: 125px;
+    }
+
+    main .general-zapatillas .modelos h3{
+        font-size: large;
+    }
+    
+    main .general-zapatillas .modelos h5{
+        font-size: small;
+    }
+    main .paginas{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 25px;
+    }
     /* Datos enviados incio */
     main .envio{
         justify-content: center;
