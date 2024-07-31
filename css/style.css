@@ -643,6 +643,24 @@ main .info-envio button{
     width: 350px;
 }
 
+@media (min-width: 2560px){
+    main .general-zapatillas .modelos{
+        display: grid;
+        grid-template: repeat(7,1fr) / repeat(6,1fr);
+        justify-items: flex-start;
+        grid-gap: auto;
+    }
+}
+
+@media (min-width: 1920px){
+    main .general-zapatillas .modelos{
+        display: grid;
+        grid-template: repeat(6,1fr) / repeat(5,1fr);
+        justify-items: flex-start;
+        grid-gap: auto;
+    }
+}
+
 @media (max-width: 768px){
 /* INDEX INICIO */
 *{
