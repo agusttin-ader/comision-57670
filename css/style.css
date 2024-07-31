@@ -641,13 +641,13 @@ main .info-envio button{
     padding: 1px;
     box-sizing: border-box;
 }
+    html, body {
+        width: 100%!important;
+        overflow-x: hidden!important;
+    }
 header .navbar .menu svg{
         width: 30px;
         height: 30px;
-    }
-    body{
-        width: 100%;
-        overflow-x: hidden;
     }
     header .navbar svg{
         width: 20px;
@@ -729,7 +729,7 @@ header .navbar .menu svg{
     
     main .general-zapatillas .seleccion-talle .vertical-img img{
         display: flex;
-        height: 300px;
+        height: 250px;
         width: auto;
     }
     
@@ -747,6 +747,15 @@ header .navbar .menu svg{
         display: grid;
         grid-template: repeat(1,1fr) / repeat(2,1fr);
         justify-items: flex-start;
+        grid-gap: auto;
+    }
+
+    main .general-zapatillas .modelos img{
+        width: 150px;
+        margin: 1px;
+    }
+    main .general-zapatillas .seleccion-talle h1{
+        font-size: 25px ;
     }
 
     main .general-zapatillas .modelos h3{
@@ -792,9 +801,9 @@ header .navbar .menu svg{
         padding: 0.5px;
         box-sizing: border-box;
     }
-    body{
-        width: 100%;
-        overflow-x: hidden;
+    html, body {
+        width: 100%!important;
+        overflow-x: hidden!important;
     }
     header .navbar .lupa{
         display: none;
@@ -820,7 +829,7 @@ header .navbar .menu svg{
         align-self: center;
         justify-content: center;
         font-weight: 600;
-        font-size: x-small;
+        font-size: small;
     }
     .banner{
         background-image: url("../assets/img/vans-banner-posta.jpg");
@@ -865,7 +874,7 @@ header .navbar .menu svg{
     }
     .coppy ul li h5{
         color: white;
-        font-size:5px;
+        font-size:10px;
         font-weight: 400;
         justify-content: left;
     }
@@ -896,54 +905,39 @@ header .navbar .menu svg{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
         align-items: center;
     }
-
+    
     main .general-zapatillas .seleccion-talle .vertical-img img{
         display: none;
-        height: 300px;
-        width: auto;
     }
     
-    main .general-zapatillas .seleccion-talle{
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    main .general-zapatillas .seleccion-talle h1{
-        font-size: large;
-    }
-
-    main .general-zapatillas .seleccion-talle .genero label{
-        font-size: small;
-    }
-
     main .general-zapatillas .modelos{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
+        margin: 5px;
+        flex-wrap: wrap;
         object-fit: contain;
-        gap: 50px;
+        min-width: 700px ;
+    }
+    
+    main .general-zapatillas .modelos{
+        display: grid;
+        grid-template: repeat(1,1fr) / repeat(1,1fr);
+        justify-items: center;
+        grid-gap: auto;
     }
 
-    main .general-zapatillas .modelos article{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-
+    main .general-zapatillas .modelos img{
+        width: 150px;
+        margin: 1px;
     }
-
-    main .general-zapatillas .modelos a img{
-        width: 125px;
+    main .general-zapatillas .seleccion-talle h1{
+        font-size: 25px ;
     }
 
     main .general-zapatillas .modelos h3{
-        font-size: large;
+        font-size: medium;
     }
     
     main .general-zapatillas .modelos h5{
@@ -953,7 +947,6 @@ header .navbar .menu svg{
         display: flex;
         justify-content: center;
         align-self: center;
-        padding: 25px;
     }
     /* Datos enviados incio */
     main .envio{
@@ -1015,7 +1008,7 @@ header .navbar .menu svg{
         align-self: center;
         justify-content: center;
         font-weight: 600;
-        font-size: 8px;
+        font-size: 11px;
     }
     .banner{
         background-image: url("../assets/img/vans-banner-posta.jpg");
@@ -1055,12 +1048,18 @@ header .navbar .menu svg{
     }
     .coppy ul li h5{
         color: white;
-        font-size:7px;
+        font-size:8px;
         font-weight: 300;
+        display: flex;
+        text-align: left;
+        margin: 0px;
     }
-    .info .coppy{
-    justify-content: left;
+
+    .info-coppy .coppy{
+        justify-content: flex-start;
+        align-items: flex-start;
     }
+
     .info .tarjetas{
         justify-content: right;
         align-items: flex-end;
@@ -1068,21 +1067,19 @@ header .navbar .menu svg{
         padding: 0;
     }
     .info .tarjetas svg{
-        width: 10px;
-        height: 10px;
-    }
-    .info-coppy{
-        display: flex;
-        justify-content: right;
+        width: 20px;
+        height: 20px;
     }
     .info .info-general li a{
-        font-size: 7px;
+        font-size: 10px;
+        font-weight: 500;
     }
     .info-coppy .info-empresa li a{
-        font-size: 7px;
+        font-size: 10px;
+        font-weight: 500;
     }
     .info-coppy .info-empresa li {
-        font-size: 7px;
+        font-size: 10px;
     }
     /* Datos envio inicio */
     main .envio{
@@ -1108,4 +1105,4 @@ header .navbar .menu svg{
     main .info-envio a button{
         width: 100px;
     }
-} 
+}
