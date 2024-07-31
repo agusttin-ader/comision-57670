@@ -1146,6 +1146,7 @@ header .navbar .menu svg{
         display: flex;
         justify-content: center;
         align-self: center;
+        gap: 15px;
     }
     /* Datos envio inicio */
     main .envio{
