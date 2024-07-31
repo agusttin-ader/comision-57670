@@ -265,12 +265,21 @@ main .general-zapatillas .seleccion-talle .vertical-img img{
     width: auto;
 }
 
-main .general-zapatillas .modelos{
+/* main .general-zapatillas .modelos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     object-fit: contain;
-    min-width: 58.9375rem;
+    min-width: 700px;
+} */
+
+main .general-zapatillas .modelos{
+    display: grid;
+    grid-template: repeat(4,1fr) / repeat(3,1fr);
+}
+
+main .general-zapatillas .modelos img{
+    width: 200px;
 }
 
 main .paginas{
@@ -1080,6 +1089,44 @@ header .navbar .menu svg{
     }
     .info-coppy .info-empresa li {
         font-size: 10px;
+    }
+    /* Seccion zapatillas */
+    main .general-zapatillas{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    main .general-zapatillas .seleccion-talle .vertical-img img{
+        display: none;
+    }
+    main .general-zapatillas .modelos{
+        display: grid;
+        grid-template: repeat(1,1fr);
+        justify-items: center;
+        grid-gap: auto;
+    }
+    main .general-zapatillas .modelos
+
+    main .general-zapatillas .modelos img{
+        width: 200px;
+    }
+    main .general-zapatillas .seleccion-talle h1{
+        font-size: 25px ;
+    }
+
+    main .general-zapatillas .modelos h3{
+        font-size: medium;
+    }
+    
+    main .general-zapatillas .modelos h5{
+        font-size: small;
+    }
+    main .paginas{
+        display: flex;
+        justify-content: center;
+        align-self: center;
     }
     /* Datos envio inicio */
     main .envio{
