@@ -956,7 +956,7 @@ header .navbar .menu svg{
     }
 
     main .general-zapatillas .modelos img{
-        width: 150px;
+        width: 200px;
         margin: 1px;
     }
     main .general-zapatillas .seleccion-talle h1{
@@ -1128,7 +1128,8 @@ header .navbar .menu svg{
     main .general-zapatillas .modelos
 
     main .general-zapatillas .modelos img{
-        width: 200px;
+        width: 300px;
+        margin: 1px;
     }
     main .general-zapatillas .seleccion-talle h1{
         font-size: 25px ;
