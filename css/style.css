@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    margin: 5px;
+    margin: 0;
     padding: 3px;
     box-sizing:border-box;
 }
@@ -18,6 +18,12 @@ body{
 }
 
 /* HEADER */
+
+header{
+    padding-bottom: 0px;
+}
+
+
 
 header .navbar{
     display: flex;
@@ -66,11 +72,19 @@ header section .catalogo{
     justify-content: center;
     font-weight: bold;
     font-size: large;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    margin-bottom: 0px;
 }
 
 header section .catalogo a{
     color: black;
 }
+
+header .catalogo-section{
+    padding-bottom: 0px;
+}
+
 
 /* FINAL HEADER */
 
@@ -92,9 +106,9 @@ header section .catalogo a{
 }
 
 .banner{
-    background-image: url("../assets/img/vans-banner-posta.jpg");
     width: 100%;
-    height: 250px;
+    height: auto;
+    object-fit: contain;
     background-position: 10% 59%;
     background-size: cover;
 
@@ -106,6 +120,11 @@ header section .catalogo a{
     height: 100%;
     background-position: 10% 59%;
     background-size: cover;
+    border: 1px solid black;
+}
+
+.vertical-img{
+    padding-right: 0px;
 }
 
 .imageZapaUno{
@@ -124,9 +143,19 @@ header section .catalogo a{
 
 /* INDEX MAIN */
 
+main{
+    padding-top: 0px;
+}
+
+main .banner-section{
+    padding-top: 0px;
+}
+
 section .title-novedades{
     display: flex;
     justify-content: center;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
 }
 
 section .title-novedades h1{
@@ -144,6 +173,7 @@ section .novedades img{
     width: 100%;
     height: 60%;
     justify-content: center;
+    border-bottom: 1.5px solid black;
 }
 
 section .novedades h3{
@@ -171,6 +201,7 @@ footer .info-coppy{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .info-empresa{
@@ -201,13 +232,12 @@ footer .info-coppy{
     padding: .0625rem;
 }
 
-.coppy ul li{
-    list-style: none;
-    display: inline;
-
+.coppy{
+    padding-left: 0;
 }
 
-.coppy ul li h5{
+
+.coppy h5{
     color: white;
     font-size: medium;
     font-weight: 400;
@@ -259,24 +289,54 @@ main .general-zapatillas{
     flex-wrap: nowrap;
 }
 
+main h1{
+    font-size: x-large;
+}
+
+main .genero label{
+    font-size: small;
+    font-weight: 600;
+}
+
+main .genero{
+    display: flex;
+    flex-direction: column;
+}
+
+main .genero .genero-input{
+    display: block;
+}
+
+
+
+main .seleccion-talle .genero-talles{
+    border-right: 1px solid black;
+}
+
 main .general-zapatillas .seleccion-talle .vertical-img img{
     display: flex;
     height: 600px;
     width: auto;
 }
 
-/* main .general-zapatillas .modelos{
+main .general-zapatillas .modelos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     object-fit: contain;
     min-width: 700px;
-} */
+    gap: 20px;
+}
 
-main .general-zapatillas .modelos{
+
+main .general-zapatillas .seleccion-talle .genero .genero-input .boton{
+    background-color: black ;
+}
+
+/* main .general-zapatillas .modelos{
     display: grid;
     grid-template: repeat(4,1fr) / repeat(3,1fr);
-}
+} */
 
 main .general-zapatillas .modelos img{
     width: 200px;
