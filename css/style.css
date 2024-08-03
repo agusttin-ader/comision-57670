@@ -6,11 +6,15 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    padding-right: 20px;
     display: flex;
     flex-direction: column ;
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
+}
+
+a{
+    text-decoration: none !important;
+    color: black;
 }
 
 .box{
@@ -40,9 +44,8 @@ header .navbar .menu{
 
 header .navbar .logo-sitio{
     display: flex;
-    align-self: center;
-    justify-content: center;
-
+    justify-content: flex-start;
+    width: fit-content;
 }
 
 header .logo-sitio img{
@@ -64,6 +67,13 @@ header .navbar{
     flex-wrap: nowrap;
 }
 
+.nav-vicky{
+    display: flex;
+    align-items: center;
+}
+
+.d-flex{
+}
 
 header section .catalogo{
     display: flex;
@@ -72,8 +82,8 @@ header section .catalogo{
     justify-content: center;
     font-weight: bold;
     font-size: large;
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     margin-bottom: 0px;
 }
 
@@ -109,8 +119,8 @@ header .catalogo-section{
     width: 100%;
     height: auto;
     object-fit: contain;
-    background-position: 10% 59%;
     background-size: cover;
+    margin-top: 6px;
 
 }
 
@@ -153,9 +163,10 @@ main .banner-section{
 
 section .title-novedades{
     display: flex;
+    text-align: center;
     justify-content: center;
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 section .title-novedades h1{
@@ -173,12 +184,12 @@ section .novedades img{
     width: 100%;
     height: 60%;
     justify-content: center;
-    border-bottom: 1.5px solid black;
+    border-bottom: 1px solid black;
 }
 
 section .novedades h3{
     display: grid;
-    justify-content: center;
+    text-align: center;
     font-weight: 500;
 }
 
@@ -305,8 +316,8 @@ main .genero{
 
 main .genero .genero-input{
     display: block;
+    
 }
-
 
 
 main .seleccion-talle .genero-talles{
@@ -315,7 +326,7 @@ main .seleccion-talle .genero-talles{
 
 main .general-zapatillas .seleccion-talle .vertical-img img{
     display: flex;
-    height: 600px;
+    height: 800px;
     width: auto;
 }
 
@@ -328,10 +339,6 @@ main .general-zapatillas .modelos{
     gap: 20px;
 }
 
-
-main .general-zapatillas .seleccion-talle .genero .genero-input .boton{
-    background-color: black ;
-}
 
 /* main .general-zapatillas .modelos{
     display: grid;
@@ -346,6 +353,7 @@ main .paginas{
     display: flex;
     justify-content: center;
     align-self: center;
+    gap: 20px;
 }
 
 .info-compra ul li h2{
@@ -363,10 +371,15 @@ main .compra-proceso .articulo-compra{
 
 .colores{
     display: flex;
+    align-items: center;
 }
 
 .colores form{
     display: flex;
+}
+
+.colores .form-check{
+    padding-left: 0px;
 }
 
 .talles-compra{
@@ -384,17 +397,26 @@ main .compra-proceso article ul{
 main .compra-proceso article .zapas-img{
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    border-right: 1.5px solid black;
 }
 
 main .compra-proceso article .principal img{
     display: flex;
     width: 30vw;
-    height: auto;
+    max-height: fit-content;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
+
+main .compra-proceso article .secundarias{
+    border-top: 1.5px solid black;
+}
 main .compra-proceso article .secundarias img{
     width: 10vw;
-    gap: 1px;
+    gap: 10px;
+    border-right: 1px solid black;
 }
 
 main .interaccion{
@@ -405,6 +427,20 @@ main .interaccion a{
     width: 100%;
 }
 
+main .info-compra{
+    display: flex;
+    flex-direction: column;
+}
+
+main .info-compra h2{
+    font: large;
+}
+
+main .info-compra h3{
+    font-size: medium;
+}
+
+
 main .info-compra ul li{
     display: flex;
     flex-wrap: nowrap;
@@ -414,37 +450,72 @@ main .interaccion a button{
     background-color: rgb(128, 18, 18);
     color: white;
     font-weight: bolder;
-    border-radius: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-main .interaccion a button{
-    width: 100%;
+main .interaccion-fin{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+main .info-compra select{
+    font-size: small;
+    width: 50px;
+    height: fit-content;
+}
+
+main .info-compra .talles-compra{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .txt-comprar{
-    padding: 25px 25px;
+    padding: 10px 10px;
     font-size: 3vh;
 }
 
 .txt-agregar-al-carrito{
-    padding: 20px 20px;
-    font-size: 1.5vh;
+    padding: 5px 5px;
+    font-size: 15px;
 }
 
 .txt-avisame{
-    padding: 17px 17px;
-    font-size: 1.2vh;
+    padding: 2px 2px;
+    font-size: 15px;
 }
 
+.tmb{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
 main .interes{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+main .interes h5{
+    font-size: medium;
+}
+
 /* PAGE COMPRA FINAL */
 
 /* PAGE FINALIZA COMPRA */
+
+
+main .detalles-de-compra .detalles-final{
+    width: 22%;
+    display: inline-table;
+    margin: 0 0 0 1%;
+    padding: 10px 1%;
+    border-left:1px solid black ;
+}
 
 main .detalles-de-compra h1{
     display: table;
@@ -452,6 +523,10 @@ main .detalles-de-compra h1{
     font-size: 30px;
     font-weight: 500;
     width: 100%;
+}
+
+main .detalles-de-compra img{
+    width: 150px;
 }
 
 main .detalles-de-compra table{
@@ -462,9 +537,17 @@ main .detalles-de-compra table{
     border: 0;
 }
 
+main .detalles-de-compra table thead{
+    border-bottom: 1px solid black;
+}
+
+main .detalles-de-compra table tbody{
+    border-bottom: 1px solid black;
+}
+
 main .detalles-de-compra table th{
     text-align: left;
-    padding: 5px 0;
+    padding: 5px 3px;
     font-size: small;
 }
 
@@ -472,19 +555,22 @@ main .detalles-de-compra table tr{
     display: table-row;
     vertical-align: inherit;
     unicode-bidi: isolate;
+    font-size: small;
 }
 
 main .detalles-de-compra .detalles-final{
     width: 22%;
     display: inline-table;
     margin: 0 0 0 1%;
-    padding: 10px 1%;
+    padding-right: 0.5px ;
+    margin-right: 1px;
 }
 
 main .detalles-de-compra .detalles-final .total-articulos{
     width: 96%;
     padding: 15px 2%;
     margin: 10px 0 0;
+    font-size: 14px;
 }
 
 main .detalles-de-compra .detalles-final .total-articulos .articulos{
@@ -499,21 +585,86 @@ main .detalles-de-compra .detalles-final .total-articulos .descuento{
     display: flex;
 }
 
+main .detalles-de-compra .detalles-final .total-articulos .descuento input{
+    display: flex;
+    width: 100px;
+    height: 25px;
+    padding-left: 1px;
+    align-items: center;
+}
+
 main .detalles-de-compra .detalles-final .total-articulos .descuento h4{
-    font-size: medium;
+    font-size: 11px;
 }
 
 main .interaccion-fin a button{
-    background-color: rgb(128, 18, 18);
     color: white;
     font-weight: bolder;
-    border-radius: 15px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background: rgb(128, 18, 18);
+    border: 0;
+    border-radius: .375rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    padding: 1rem 1.25rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
-main .interaccion-fin a button{
-    width: 100%;
-
+.txt-final:disabled {
+    color: #787878;
+    cursor: auto;
 }
+
+.txt-final:not(:disabled):hover {
+    transform: scale(1.02);
+    background-color: rgb(128, 18, 18);
+}
+
+.txt-final:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+}
+
+.txt-final:focus {
+    outline: 0 solid transparent;
+}
+
+    .txt-final:focus:before {
+    border-width: .125rem;
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+}
+
+.txt-final:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+}
+
+.txt-final:not(:disabled):active {
+    transform: translateY(.125rem);
+}
+
+.detalles-final .total-articulos h4{
+    font-size: 18px;
+}
+
 
 main .interaccion-fin a{
     display: flex;
@@ -522,10 +673,22 @@ main .interaccion-fin a{
     width: 100%;
 }
 
+.tmb{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
 main .interes{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+main .interes a img{
+    width: 200px;
+}
+
+main .interes h5{
+    font-size: medium;
 }
 
 /* FIN SECCION FINALIZA COMPRA */
@@ -533,7 +696,13 @@ main .interes{
 /* SECCION SOPORTE */
 
 main .main{
-    padding: 40px;
+    padding-top: 0px;
+}
+
+main .banner{
+    padding-top: 0px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid black;
 }
 
 main .soporte{
@@ -549,8 +718,16 @@ main .soporte select{
     border-radius: 5px;
 }
 
+main h1{
+    display: table;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
 main h2{
     display: table;
+    font-size: large;
     text-transform: uppercase;
     width: 100%;
 }
@@ -676,6 +853,18 @@ main .envio{
     width: 100%;
     justify-content: center;
     padding: 70px;
+}
+
+main .vertical-img-2{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row-reverse;
+}
+
+main .vertical-img-2 img{
+    width: 150px;
+    height: fit-content;
 }
 
 main .info-envio{
