@@ -45,21 +45,19 @@ header .navbar .menu{
 header .navbar .logo-sitio{
     display: flex;
     justify-content: flex-start;
-    width: fit-content;
+    width: 20%;
 }
 
 header .logo-sitio img{
     display: flex;
     align-self: center;
     justify-self: center;
-    width: 10%;
-    height: 50%;
+    width: 10vw;
 }
 
 header .navbar .buscador{
     display: flex;
     justify-content: right;
-    align-items: center;
 }
 
 header .navbar{
@@ -70,9 +68,16 @@ header .navbar{
 .nav-vicky{
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 
-.d-flex{
+.nav-fixed{
+    display: flex;
+    align-items: center;
+}
+
+.nav-fixed form{
+    margin-top: 0px !important;
 }
 
 header section .catalogo{
