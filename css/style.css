@@ -700,9 +700,6 @@ main .interes h5{
 
 /* SECCION SOPORTE */
 
-main .main{
-    padding-top: 0px;
-}
 
 main .banner{
     padding-top: 0px;
@@ -772,12 +769,10 @@ main section .form .formulario label{
 }
 
 main section .form .formulario input{
-    padding: 2px 0;
+    padding: 2px;
     height: auto;
-    display: inline-block;
     width: 100%;
     font-size: 16px;
-    text-indent: 5px;
     border-color: rgb(232, 232, 232);
 }
 
@@ -860,18 +855,6 @@ main .envio{
     padding: 70px;
 }
 
-main .vertical-img-2{
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    flex-direction: row-reverse;
-}
-
-main .vertical-img-2 img{
-    width: 150px;
-    height: fit-content;
-}
-
 main .info-envio{
     display: flex;
     width: 100%;
@@ -895,6 +878,19 @@ main .info-envio button{
     border-color: rgb(128, 18, 18);
     border-radius: 10px;
     width: 350px;
+}
+main .main{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .main .vertical-img-2 img{
+    width: 40vw;
+    height: auto;
+    border: 2px solid black;
+
 }
 
 @media (min-width: 2560px){
