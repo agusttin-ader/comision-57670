@@ -82,6 +82,7 @@ header .navbar{
 
 header section .catalogo{
     display: flex;
+    padding-left: 0px;
     list-style: none;
     align-self: center;
     justify-content: center;
@@ -1084,21 +1085,46 @@ main .main .vertical-img-2 img{
     *{
         box-sizing: border-box;
     }
-    html, body {
-        width: 100%!important;
-        overflow-x: hidden!important;
+    *{
+        box-sizing: border-box;
     }
-    header .navbar .lupa{
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .cuenta{
         display: none;
     }
-    header .navbar .menu svg{
-        width: 25px;
-        height: 25px;
+    .carrito{
+        display: none;
     }
-    header .navbar svg{
-        width: 20px;
-        height: 20px;
+    .nav-fixed form{
+        display: none !important;
     }
+    
+    .container-fluid{
+        width: auto;
+        padding: 0px 0px 0px 0px;    
+    }
+    
+    .navbar-toggler-icon{
+        width: 1rem ;
+        height: 1rem ;
+    
+    }
+    .navbar.bg-body-tertiary{
+        padding: 0rem 0rem;
+    }
+
+    .logo-sitio img{
+        width: 20vw;
+    }
+
+    header section{
+        padding: 0rem 0rem;
+    }
+
     header section .catalogo{
         display: flex;
         list-style: none;
@@ -1244,6 +1270,58 @@ main .main .vertical-img-2 img{
     }
     main .info-envio a button{
         width: 150px;
+    }
+}
+
+@media (max-width: 375px){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .cuenta{
+        display: none;
+    }
+    .carrito{
+        display: none;
+    }
+    .nav-fixed form{
+        display: none !important;
+    }
+    
+    .container-fluid{
+        width: auto;
+        padding: 0px 0px 0px 0px;    
+    }
+    
+    .navbar-toggler-icon{
+        width: 1rem ;
+        height: 1rem ;
+    
+    }
+    .navbar.bg-body-tertiary{
+        padding: 0rem 0rem;
+    }
+
+    .logo-sitio img{
+        width: 20vw;
+    }
+
+    header section{
+        padding: 0rem 0rem;
+    }
+
+    header section .catalogo{
+        display: flex;
+        list-style: none;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 11px;
     }
 }
 
