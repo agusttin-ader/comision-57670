@@ -82,7 +82,6 @@ header .navbar{
 
 header section .catalogo{
     display: flex;
-    padding-left: 0px;
     list-style: none;
     align-self: center;
     justify-content: center;
@@ -170,7 +169,6 @@ section .title-novedades{
     display: flex;
     text-align: center;
     justify-content: center;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
@@ -948,6 +946,13 @@ main .main .vertical-img-2 img{
         width: 20px;
         height: 20px;
     }
+    header .logo-sitio img{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 15%;
+        height: 50%;
+    }
     header section .catalogo{
         display: flex;
         list-style: none;
@@ -1085,46 +1090,28 @@ main .main .vertical-img-2 img{
     *{
         box-sizing: border-box;
     }
-    *{
-        box-sizing: border-box;
+    html, body {
+        width: 100%!important;
+        overflow-x: hidden!important;
     }
-    body{
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .cuenta{
+    header .navbar .lupa{
         display: none;
     }
-    .carrito{
-        display: none;
+    header .navbar .menu svg{
+        width: 25px;
+        height: 25px;
     }
-    .nav-fixed form{
-        display: none !important;
+    header .navbar svg{
+        width: 20px;
+        height: 20px;
     }
-    
-    .container-fluid{
-        width: auto;
-        padding: 0px 0px 0px 0px;    
+    header .logo-sitio img{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 20%;
+        height: 50%;
     }
-    
-    .navbar-toggler-icon{
-        width: 1rem ;
-        height: 1rem ;
-    
-    }
-    .navbar.bg-body-tertiary{
-        padding: 0rem 0rem;
-    }
-
-    .logo-sitio img{
-        width: 20vw;
-    }
-
-    header section{
-        padding: 0rem 0rem;
-    }
-
     header section .catalogo{
         display: flex;
         list-style: none;
@@ -1306,16 +1293,17 @@ main .main .vertical-img-2 img{
         padding: 0rem 0rem;
     }
 
-    .logo-sitio img{
-        width: 20vw;
+    .logo-sitio{
+        width: 100%;
     }
 
-    header section{
-        padding: 0rem 0rem;
+    .logo-sitio img{
+        width: 20vw !important;
     }
 
     header section .catalogo{
         display: flex;
+        padding-left: 0px;
         list-style: none;
         text-align: center;
         align-self: center;
@@ -1358,16 +1346,17 @@ main .main .vertical-img-2 img{
         padding: 0rem 0rem;
     }
 
-    .logo-sitio img{
-        width: 20vw;
+    .logo-sitio{
+        width: 100%;
     }
 
-    header section{
-        padding: 0rem 0rem;
+    .logo-sitio img{
+        width: 20vw !important;
     }
 
     header section .catalogo{
         display: flex;
+        padding-left: 0px;
         list-style: none;
         text-align: center;
         align-self: center;
