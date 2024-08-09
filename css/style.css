@@ -436,7 +436,7 @@ main .info-compra{
     flex-direction: column;
 }
 
-main .info-compra h2{
+main .info-compra h1{
     font: large;
 }
 
@@ -933,8 +933,6 @@ main .main .vertical-img-2 img{
 @media (max-width: 768px){
 /* INDEX INICIO */
 *{
-    margin: 2px;
-    padding: 1px;
     box-sizing: border-box;
 }
     html, body {
@@ -949,13 +947,6 @@ main .main .vertical-img-2 img{
         width: 20px;
         height: 20px;
     }
-    header .logo-sitio img{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 15%;
-        height: 50%;
-    }
     header section .catalogo{
         display: flex;
         list-style: none;
@@ -965,9 +956,7 @@ main .main .vertical-img-2 img{
         font-size: small;
     }
     .banner{
-        background-image: url("../assets/img/vans-banner-posta.jpg");
         width: 100%;
-        height: 150px;
         background-position: 10% 59%;
         background-size: cover;
     }
@@ -1093,8 +1082,6 @@ main .main .vertical-img-2 img{
 
 @media (max-width: 426px){
     *{
-        margin: 0.5px;
-        padding: 0.5px;
         box-sizing: border-box;
     }
     html, body {
@@ -1112,13 +1099,6 @@ main .main .vertical-img-2 img{
         width: 20px;
         height: 20px;
     }
-    header .logo-sitio img{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 20%;
-        height: 50%;
-    }
     header section .catalogo{
         display: flex;
         list-style: none;
@@ -1127,12 +1107,9 @@ main .main .vertical-img-2 img{
         font-weight: 600;
         font-size: small;
     }
+
     .banner{
-        background-image: url("../assets/img/vans-banner-posta.jpg");
-        width: 100%;
-        height: 5rem;
-        background-position: 10% 59%;
-        background-size: cover;
+        padding: 0% 0%;
     }
     section .title-novedades h1{
         font-weight: 800;
@@ -1272,46 +1249,53 @@ main .main .vertical-img-2 img{
 
 @media (max-width: 320px){
     *{
-        padding: 0%;
-        margin: 1px;
         box-sizing: border-box;
     }
     body{
         width: 100%;
         overflow-x: hidden;
     }
-    header .navbar .lupa{
+
+    .cuenta{
         display: none;
     }
-    header .logo-sitio img{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 20%;
-        height: 50%;
+    .carrito{
+        display: none;
     }
-    header .navbar .menu svg{
-        width: 15px;
-        height: 15px;
+    .nav-fixed form{
+        display: none !important;
     }
-    header .navbar svg{
-        width: 15px;
-        height: 15px;
+    
+    .container-fluid{
+        width: auto;
+        padding: 0px 0px 0px 0px;    
     }
+    
+    .navbar-toggler-icon{
+        width: 1rem ;
+        height: 1rem ;
+    
+    }
+    .navbar.bg-body-tertiary{
+        padding: 0rem 0rem;
+    }
+
+    .logo-sitio img{
+        width: 20vw;
+    }
+
+    header section{
+        padding: 0rem 0rem;
+    }
+
     header section .catalogo{
         display: flex;
         list-style: none;
+        text-align: center;
         align-self: center;
         justify-content: center;
         font-weight: 600;
         font-size: 11px;
-    }
-    .banner{
-        background-image: url("../assets/img/vans-banner-posta.jpg");
-        width: 100%;
-        height: 4rem;
-        background-position: 10% 59%;
-        background-size: cover;
     }
     section .title-novedades h1{
         font-weight: 800;
@@ -1325,11 +1309,8 @@ main .main .vertical-img-2 img{
         align-items: center;
     }
     section .novedades img{
-        display: grid;
-        width: 95%;
-        height: 55%;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     footer{
         background-color: rgba(0, 0, 0, 0.9);
