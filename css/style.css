@@ -934,33 +934,53 @@ main .main .vertical-img-2 img{
 *{
     box-sizing: border-box;
 }
-    html, body {
-        width: 100%!important;
-        overflow-x: hidden!important;
-    }
-    header .navbar .menu svg{
-        width: 30px;
-        height: 30px;
-    }
-    header .navbar svg{
-        width: 20px;
-        height: 20px;
-    }
-    header .logo-sitio img{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 15%;
-        height: 50%;
-    }
-    header section .catalogo{
-        display: flex;
-        list-style: none;
-        align-self: center;
-        justify-content: center;
-        font-weight: 650;
-        font-size: small;
-    }
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cuenta{
+    display: none;
+}
+.carrito{
+    display: none;
+}
+.nav-fixed form{
+    display: none !important;
+}
+
+.container-fluid{
+    width: auto;
+    padding: 0px 0px 0px 0px;    
+}
+
+.navbar-toggler-icon{
+    width: 2rem ;
+    height: 2rem ;
+
+}
+.navbar.bg-body-tertiary{
+    padding: 0rem 0rem;
+}
+
+.logo-sitio{
+    width: 100%;
+}
+
+.logo-sitio img{
+    width: 20vw !important;
+}
+
+header section .catalogo{
+    display: flex;
+    padding-left: 0px;
+    list-style: none;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 11px;
+}
     .banner{
         width: 100%;
         background-position: 10% 59%;
@@ -976,9 +996,9 @@ main .main .vertical-img-2 img{
         width: 100%;
         flex-wrap: nowrap;
     }
-    .coppy ul li h5{
+    .coppy h5{
         color: white;
-        font-size: xx-small;
+        font-size: 10px;
         font-weight: 400;
         justify-content: left;
     }
@@ -1090,37 +1110,54 @@ main .main .vertical-img-2 img{
     *{
         box-sizing: border-box;
     }
-    html, body {
-        width: 100%!important;
-        overflow-x: hidden!important;
+    body{
+        width: 100%;
+        overflow-x: hidden;
     }
-    header .navbar .lupa{
+
+    .cuenta{
         display: none;
     }
-    header .navbar .menu svg{
-        width: 25px;
-        height: 25px;
+    .carrito{
+        display: none;
     }
-    header .navbar svg{
-        width: 20px;
-        height: 20px;
+    .nav-fixed form{
+        display: none !important;
     }
-    header .logo-sitio img{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 20%;
-        height: 50%;
+    
+    .container-fluid{
+        width: auto;
+        padding: 0px 0px 0px 0px;    
     }
+    
+    .navbar-toggler-icon{
+        width: 1rem ;
+        height: 1rem ;
+    
+    }
+    .navbar.bg-body-tertiary{
+        padding: 0rem 0rem;
+    }
+
+    .logo-sitio{
+        width: 100%;
+    }
+
+    .logo-sitio img{
+        width: 20vw !important;
+    }
+
     header section .catalogo{
         display: flex;
+        padding-left: 0px;
         list-style: none;
+        text-align: center;
         align-self: center;
         justify-content: center;
         font-weight: 600;
-        font-size: small;
+        font-size: 11px;
     }
-
+    
     .banner{
         padding: 0% 0%;
     }
@@ -1151,19 +1188,31 @@ main .main .vertical-img-2 img{
         background-color: rgba(0, 0, 0, 0.9);
         color:white;
         border-radius: 15px;
-        font-size: xx-small;
         display: flex;
         justify-content: flex-end;
         height: 80%;
         width: 100%;
         flex-wrap: nowrap;
     }
-    .coppy ul li h5{
+
+    .coppy{
+        margin-bottom: 0px;
+    }
+
+    .coppy h5{
         color: white;
-        font-size:10px;
+        font-size: 5px;
         font-weight: 400;
         justify-content: left;
+        margin-bottom: 0px;
     }
+
+    .info-general{
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
     .info .tarjetas li svg{
         width: 10px;
         height: 10px;
@@ -1176,15 +1225,6 @@ main .main .vertical-img-2 img{
     .info-coppy{
         display: flex;
         justify-content: right;
-    }
-    .info .info-general li a{
-        font-size: 7px;
-    }
-    .info-coppy .info-empresa li a{
-        font-size: 7px;
-    }
-    .info-coppy .info-empresa li {
-        font-size: 7px;
     }
     /* ZAPATILLAS */
     main .general-zapatillas{
@@ -1311,6 +1351,12 @@ main .main .vertical-img-2 img{
         font-weight: 600;
         font-size: 11px;
     }
+
+    .info-general{
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 @media (max-width: 320px){
@@ -1383,47 +1429,57 @@ main .main .vertical-img-2 img{
         background-color: rgba(0, 0, 0, 0.9);
         color:white;
         border-radius: 5px;
-        font-size: xx-small;
         display: flex;
         justify-content: flex-end;
-        height: 30vb;
+        height: 20vb;
         width: 100%;
         flex-wrap: nowrap;
     }
-    .coppy ul li h5{
+
+    }
+    .coppy h5{
         color: white;
-        font-size:8px;
+        font-size:4px;
         font-weight: 300;
         display: flex;
         text-align: left;
         margin: 0px;
+        padding-bottom: 0px;
     }
 
-    .info-coppy .coppy{
-        justify-content: flex-start;
-        align-items: flex-start;
+    .info .tarjetas li{
+        padding-bottom: 0px;
     }
 
-    .info .tarjetas{
-        justify-content: right;
-        align-items: flex-end;
-        margin: 0;
-        padding: 0;
+    .info{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+    }
+
+    .info li{
+        padding-bottom: 0px;
+    }
+
+    .info-general{
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
     }
     .info .tarjetas svg{
         width: 20px;
         height: 20px;
     }
     .info .info-general li a{
-        font-size: 10px;
+        font-size: 7px;
         font-weight: 500;
     }
     .info-coppy .info-empresa li a{
-        font-size: 10px;
+        font-size: 7px;
         font-weight: 500;
     }
     .info-coppy .info-empresa li {
-        font-size: 10px;
+        font-size: 7px;
     }
     /* Seccion zapatillas */
     main .general-zapatillas{
