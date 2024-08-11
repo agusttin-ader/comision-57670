@@ -910,40 +910,25 @@ main .main .vertical-img-2 img{
 
 }
 
-@media (min-width: 2560px){
+@media (max-width: 2560px){
     main .general-zapatillas .modelos{
         display: grid;
         grid-template: repeat(7,1fr) / repeat(6,1fr);
         justify-items: flex-start;
         grid-gap: auto;
     }
-    main .detalles-de-compra table tbody td label{
-        display: none;
-    }
 }
 
-@media (min-width: 1920px){
+@media (max-width: 1920px){
     main .general-zapatillas .modelos{
         display: grid;
         grid-template: repeat(6,1fr) / repeat(5,1fr);
         justify-items: flex-start;
         grid-gap: auto;
     }
-    main .detalles-de-compra table tbody td label{
-        display: none;
-    }
-}
-@media (min-width: 1024px){
-    main .detalles-de-compra table tbody td label{
-        display: none;
-    }
 }
 
-@media (min-width: 1440px){
-    main .detalles-de-compra table tbody td label{
-        display: none;
-    }
-}
+
 
 @media (max-width: 768px){
 /* INDEX INICIO */
@@ -1165,10 +1150,6 @@ header section .catalogo{
             flex-direction: column;
             align-items: center;
             text-align: center;
-        }
-
-        main .detalles-de-compra table tbody td label{
-            display: none;
         }
             /* soporte inicio */
 
@@ -1403,6 +1384,70 @@ header section .catalogo{
         }
             /* FINALIZA COMPRA INCIO */
 
+            /* Seccion zapatillas */
+    main .general-zapatillas{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .genero-talles{
+        display: ruby;
+        border-bottom: 2px solid black;
+    }
+
+    main .general-zapatillas .seleccion-talle .genero-talles h1{
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    .genero-talles .genero{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .talles select{
+        padding: 0px 0px 0px 0px;
+        font-size: 14px;
+    }
+
+    main .general-zapatillas .seleccion-talle .vertical-img img{
+        display: none;
+    }
+    main .general-zapatillas .modelos{
+        display: grid;
+        grid-template: repeat(1,1fr);
+        justify-items: center;
+        grid-gap: auto;
+    }
+
+    main .general-zapatillas .modelos article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .general-zapatillas .modelos img{
+        margin: 1px;
+    }
+
+    main .general-zapatillas .seleccion-talle h1{
+        font-size: 40px ;
+    }
+
+    main .general-zapatillas .modelos h3{
+        font-size: x-large;
+    }
+    
+    main .general-zapatillas .modelos h5{
+        font-size: medium;
+    }
+    main .paginas{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        gap: 15px;
+    }
+
     main .detalles-de-compra{
         width: 96%;
         max-width: 1600px;
@@ -1534,6 +1579,71 @@ header section .catalogo{
         padding-left: 0px;
         padding-bottom: 0px;
     }
+
+        /* Seccion zapatillas */
+        main .general-zapatillas{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        .genero-talles{
+            display: ruby;
+            border-bottom: 2px solid black;
+        }
+    
+        main .general-zapatillas .seleccion-talle .genero-talles h1{
+            font-size: 25px;
+            margin-bottom: 0px;
+        }
+    
+        .genero-talles .genero{
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .talles select{
+            padding: 0px 0px 0px 0px;
+            font-size: 14px;
+        }
+    
+        main .general-zapatillas .seleccion-talle .vertical-img img{
+            display: none;
+        }
+        main .general-zapatillas .modelos{
+            display: grid;
+            grid-template: repeat(1,1fr);
+            justify-items: center;
+            grid-gap: auto;
+        }
+    
+        main .general-zapatillas .modelos article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        main .general-zapatillas .modelos img{
+            margin: 1px;
+        }
+    
+        main .general-zapatillas .seleccion-talle h1{
+            font-size: 40px ;
+        }
+    
+        main .general-zapatillas .modelos h3{
+            font-size: x-large;
+        }
+        
+        main .general-zapatillas .modelos h5{
+            font-size: medium;
+        }
+        main .paginas{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            gap: 15px;
+        }
+
         /* compra inicio */
         .compra-proceso .articulo-compra{
             display: flex;
