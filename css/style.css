@@ -1104,11 +1104,20 @@ header section .catalogo{
         main .interes{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            text-align: start;
+            justify-content: space-evenly;
         }
 
-        main .interes article a img{
-            width: 250px;
+        main .interes a img{
+            width: 9.375rem;
+        }
+
+        main .interes article h3{
+            font-size: larger;
+        }
+
+        main .interes article h5{
+            font-size: small;
         }
         /* FINALIZA COMPRA INICIO */
 
@@ -1494,7 +1503,28 @@ header section .catalogo{
         padding: 10px 2%;
         border-left: none;
     }
-        /* soporte inicio */
+
+    main .interes{
+        display: flex;
+        text-align: center;
+    }
+
+    main .interes article{
+        border-bottom: 1px solid lightgrey;
+    }
+
+    main .interes a img{
+        width: 18.75rem;
+    }
+
+    main .interes article h3{
+        font-size: xx-large;
+    }
+
+    main .interes article h5{
+        font-size: large;
+    }
+         /* soporte inicio */
 
         main .vertical-img-2{
             display: none;
@@ -1654,6 +1684,10 @@ header section .catalogo{
             flex-direction: column;
             justify-content: space-between;
         }
+
+        main .interes article a img{
+            width: 150px;
+        }
             /* FINALIZA COMPRA INCIO */
 
     main .detalles-de-compra{
@@ -1718,6 +1752,27 @@ header section .catalogo{
         margin: 10px 2%;
         padding: 10px 2%;
         border-left: none;
+    }
+
+    main .interes{
+        display: flex;
+        text-align: center;
+    }
+
+    main .interes article{
+        border-bottom: 1px solid lightgrey;
+    }
+
+    main .interes a img{
+        width: 18.75rem;
+    }
+
+    main .interes article h3{
+        font-size: xx-large;
+    }
+
+    main .interes article h5{
+        font-size: large;
     }
         /* soporte inicio */
 
@@ -1966,6 +2021,27 @@ header section .catalogo{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    main .interes{
+        display: flex;
+        text-align: center;
+    }
+
+    main .interes article{
+        border-bottom: 1px solid lightgrey;
+    }
+
+    main .interes a img{
+        width: 15.625rem !important;
+    }
+
+    main .interes article h3{
+        font-size: xx-large;
+    }
+
+    main .interes article h5{
+        font-size: large;
     }
     /* FINALIZA COMPRA INCIO */
 
