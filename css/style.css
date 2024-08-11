@@ -372,18 +372,17 @@ main .compra-proceso .articulo-compra{
     justify-content: center;
 }
 
-.colores{
+.colores .colores-compra{
     display: flex;
     align-items: center;
+    width: 100px;
 }
 
-.colores form{
-    display: flex;
+.colores .colores-compra{
+    width: 100px;
 }
 
-.colores .form-check{
-    padding-left: 0px;
-}
+
 
 .talles-compra{
     display: flex;
@@ -918,6 +917,9 @@ main .main .vertical-img-2 img{
         justify-items: flex-start;
         grid-gap: auto;
     }
+    main .detalles-de-compra table tbody td label{
+        display: none;
+    }
 }
 
 @media (min-width: 1920px){
@@ -927,6 +929,20 @@ main .main .vertical-img-2 img{
         justify-items: flex-start;
         grid-gap: auto;
     }
+    main .detalles-de-compra table tbody td label{
+        display: none;
+    }
+}
+@media (min-width: 1024px){
+    main .detalles-de-compra table tbody td label{
+        display: none;
+    }
+}
+
+@media (min-width: 1440px){
+    main .detalles-de-compra table tbody td label{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
@@ -934,9 +950,9 @@ main .main .vertical-img-2 img{
 *{
     box-sizing: border-box;
 }
-body{
-    width: 100%;
-    overflow-x: hidden;
+html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
 }
 
 .cuenta{
@@ -1040,7 +1056,7 @@ header section .catalogo{
     
     main .general-zapatillas .seleccion-talle .vertical-img img{
         display: flex;
-        height: 250px;
+        height: 600px;
         width: auto;
     }
     
@@ -1103,6 +1119,66 @@ header section .catalogo{
         padding-bottom: 50px;
     }
     /* DATOS ENVIADOS FINAL */
+        /* compra inicio */
+        main .compra-proceso article .principal img{
+            display: flex;
+            width: 40vw;
+            max-height: fit-content;
+            padding-bottom: 100px;
+            padding-top: 50px;
+        }
+        main .compra-proceso article .secundarias img{
+            width: 15vw;
+            gap: 10px;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+        main .interes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        main .interes article a img{
+            width: 250px;
+        }
+        /* FINALIZA COMPRA INICIO */
+
+        main .detalles-de-compra .detalles-final{
+            width: 100%;
+            margin: 0;
+            padding: 10px 1%;
+            border-left: none;
+        }
+
+        main .detalles-de-compra .detalles-final .total-articulos span:last-of-type{
+        float: right;
+        color: rgb(126, 27, 27);
+        }
+        
+        main .detalles-de-compra .detalles-final .total-articulos{
+            border-bottom: 1px solid black;
+        }
+
+        main .detalles-de-compra .detalles-final .total-articulos-fin{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        main .detalles-de-compra table tbody td label{
+            display: none;
+        }
+            /* soporte inicio */
+
+    main .vertical-img-2{
+        display: none;
+    }
+
+    main .main .form .formulario label{
+        width: 40%;
+    }
 }
 
 
@@ -1110,9 +1186,9 @@ header section .catalogo{
     *{
         box-sizing: border-box;
     }
-    body{
-        width: 100%;
-        overflow-x: hidden;
+    html, body {
+        width: 100%!important;
+        overflow-x: hidden!important;
     }
 
     .cuenta{
@@ -1298,17 +1374,118 @@ header section .catalogo{
     main .info-envio a button{
         width: 150px;
     }
+        /* compra inicio */
+        .compra-proceso .articulo-compra{
+            display: flex;
+            flex-direction: column;
+        }
+        main .compra-proceso article .zapas-img{
+            border-right: none;
+        }
+    
+        main .compra-proceso article .principal img{
+            display: flex;
+            width: 80vw;
+            max-height: fit-content;
+            padding-bottom: 100px;
+            padding-top: 50px;
+        }
+        main .compra-proceso article .secundarias img{
+            width: 27.5vw;
+            gap: 10px;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+        main .interes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            /* FINALIZA COMPRA INCIO */
+
+    main .detalles-de-compra{
+        width: 96%;
+        max-width: 1600px;
+        margin: 0 auto 20px;
+        display: table;
+        position: relative;
+    }
+
+    main .detalles-de-compra h1{
+        font-size: 20px;
+        margin: 1px 1px;
+    }
+
+    main .detalles-de-compra table thead{
+        display: none;
+    }
+    main .detalles-de-compra table tr{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+    main .detalles-de-compra table{
+        width: 96%;
+        margin: 20px 2%;
+    }
+
+    main .detalles-de-compra tbody td{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+        margin: 0 0 0 auto;
+    }
+
+    main .detalles-de-compra tbody td .producto{
+        display: none;
+    }
+
+    main .detalles-de-compra tbody .producto-dos{
+        display: flex;
+        justify-content: center;
+    }
+
+    main .detalles-de-compra tbody .producto-dos a img{
+        width: 250px;
+    }
+
+    main .detalles-de-compra tbody .vector-finaliza{
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    main .detalles-de-compra .detalles-final{
+        width: 92%;
+        margin: 10px 2%;
+        padding: 10px 2%;
+        border-left: none;
+    }
+        /* soporte inicio */
+
+        main .vertical-img-2{
+            display: none;
+        }
+    
+        main .main .form .formulario label{
+            width: 40%;
+        }
 }
 
 @media (max-width: 375px){
     *{
         box-sizing: border-box;
     }
-    body{
-        width: 100%;
-        overflow-x: hidden;
+    html, body {
+        width: 100%!important;
+        overflow-x: hidden!important;
     }
-
+    
     .cuenta{
         display: none;
     }
@@ -1357,16 +1534,118 @@ header section .catalogo{
         padding-left: 0px;
         padding-bottom: 0px;
     }
+        /* compra inicio */
+        .compra-proceso .articulo-compra{
+            display: flex;
+            flex-direction: column;
+        }
+        main .compra-proceso article .zapas-img{
+            border-right: none;
+        }
+    
+        main .compra-proceso article .principal img{
+            display: flex;
+            width: 80vw;
+            max-height: fit-content;
+            padding-bottom: 100px;
+            padding-top: 50px;
+        }
+        main .compra-proceso article .secundarias img{
+            width: 27.5vw;
+            gap: 10px;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+        main .interes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            /* FINALIZA COMPRA INCIO */
+
+    main .detalles-de-compra{
+        width: 96%;
+        max-width: 1600px;
+        margin: 0 auto 20px;
+        display: table;
+        position: relative;
+    }
+
+    main .detalles-de-compra h1{
+        font-size: 20px;
+        margin: 1px 1px;
+    }
+
+    main .detalles-de-compra table thead{
+        display: none;
+    }
+    main .detalles-de-compra table tr{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+    main .detalles-de-compra table{
+        width: 96%;
+        margin: 20px 2%;
+    }
+
+    main .detalles-de-compra tbody td{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+        margin: 0 0 0 auto;
+    }
+
+    main .detalles-de-compra tbody td .producto{
+        display: none;
+    }
+
+    main .detalles-de-compra tbody .producto-dos{
+        display: flex;
+        justify-content: center;
+    }
+
+    main .detalles-de-compra tbody .producto-dos a img{
+        width: 250px;
+    }
+
+    main .detalles-de-compra tbody .vector-finaliza{
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    main .detalles-de-compra .detalles-final{
+        width: 92%;
+        margin: 10px 2%;
+        padding: 10px 2%;
+        border-left: none;
+    }
+        /* soporte inicio */
+
+        main .vertical-img-2{
+            display: none;
+        }
+    
+        main .main .form .formulario label{
+            width: 40%;
+        }
 }
 
 @media (max-width: 320px){
     *{
         box-sizing: border-box;
     }
-    body{
-        width: 100%;
-        overflow-x: hidden;
-    }
+
+    html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
+}
 
     .cuenta{
         display: none;
@@ -1435,8 +1714,6 @@ header section .catalogo{
         width: 100%;
         flex-wrap: nowrap;
     }
-
-    }
     .coppy h5{
         color: white;
         font-size:4px;
@@ -1484,11 +1761,29 @@ header section .catalogo{
     /* Seccion zapatillas */
     main .general-zapatillas{
         display: flex;
-        flex-direction: column;
         flex-wrap: nowrap;
-        align-items: center;
     }
     
+    .genero-talles{
+        display: ruby;
+        border-bottom: 2px solid black;
+    }
+
+    main .general-zapatillas .seleccion-talle .genero-talles h1{
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    .genero-talles .genero{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .talles select{
+        padding: 0px 0px 0px 0px;
+        font-size: 14px;
+    }
+
     main .general-zapatillas .seleccion-talle .vertical-img img{
         display: none;
     }
@@ -1498,22 +1793,27 @@ header section .catalogo{
         justify-items: center;
         grid-gap: auto;
     }
-    main .general-zapatillas .modelos
+
+    main .general-zapatillas .modelos article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     main .general-zapatillas .modelos img{
-        width: 300px;
         margin: 1px;
     }
+
     main .general-zapatillas .seleccion-talle h1{
-        font-size: 25px ;
+        font-size: 40px ;
     }
 
     main .general-zapatillas .modelos h3{
-        font-size: medium;
+        font-size: x-large;
     }
     
     main .general-zapatillas .modelos h5{
-        font-size: small;
+        font-size: medium;
     }
     main .paginas{
         display: flex;
@@ -1544,5 +1844,109 @@ header section .catalogo{
     }
     main .info-envio a button{
         width: 100px;
+    }
+    /* datos envio final */
+
+    /* compra inicio */
+    .compra-proceso .articulo-compra{
+        display: flex;
+        flex-direction: column;
+    }
+    main .compra-proceso article .zapas-img{
+        border-right: none;
+    }
+
+    main .compra-proceso article .principal img{
+        display: flex;
+        width: 80vw;
+        max-height: fit-content;
+        padding-bottom: 100px;
+        padding-top: 50px;
+    }
+    main .compra-proceso article .secundarias img{
+        width: 27.5vw;
+        gap: 10px;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    main .interes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* FINALIZA COMPRA INCIO */
+
+    main .detalles-de-compra{
+        width: 96%;
+        max-width: 1600px;
+        margin: 0 auto 20px;
+        display: table;
+        position: relative;
+    }
+
+    main .detalles-de-compra h1{
+        font-size: 20px;
+        margin: 1px 1px;
+    }
+
+    main .detalles-de-compra table thead{
+        display: none;
+    }
+    main .detalles-de-compra table tr{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+    main .detalles-de-compra table{
+        width: 96%;
+        margin: 20px 2%;
+    }
+
+    main .detalles-de-compra tbody td{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+        margin: 0 0 0 auto;
+    }
+
+    main .detalles-de-compra tbody td .producto{
+        display: none;
+    }
+
+    main .detalles-de-compra tbody .producto-dos{
+        display: flex;
+        justify-content: center;
+    }
+
+    main .detalles-de-compra tbody .producto-dos a img{
+        width: 250px;
+    }
+
+    main .detalles-de-compra tbody .vector-finaliza{
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    main .detalles-de-compra .detalles-final{
+        width: 92%;
+        margin: 10px 2%;
+        padding: 10px 2%;
+        border-left: none;
+    }
+
+    /* soporte inicio */
+
+    main .vertical-img-2{
+        display: none;
+    }
+
+    main .main .form .formulario label{
+        width: 40%;
     }
 }
