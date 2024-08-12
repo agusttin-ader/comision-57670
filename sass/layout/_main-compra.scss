@@ -1,0 +1,89 @@
+main{
+    .compra-proceso{
+        .articulo-compra{
+            display: flex;
+            justify-content: center;
+            .colores .colores-compra{
+                display: flex;
+                align-items: center;
+                width: 100px;
+            }
+        }
+        article{
+            ul{
+                padding-left: 0%;
+                li{
+                    list-style: none;
+                }
+            }
+            .zapas-img{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                border-right: 1.5px solid black;
+            }
+            .principal{
+                img{
+                    display: flex;
+                    width: 30vw;
+                    max-height: fit-content;
+                    padding-bottom: 100px;
+                    padding-top: 50px;
+                }
+            }
+            .secundarias{
+                border-top: 1.5px solid black;
+                img{
+                    width: 10vw;
+                    gap: 10px;
+                    border-right: 1px solid black;
+                }
+            }
+        }
+        .info-compra{
+            display: flex;
+            flex-direction: column;
+            select{
+                font-size: small;
+                width: 50px;
+                height: fit-content;
+            }
+            h1{
+                font-size: large;
+            }
+            h3{
+                font-size: medium;
+            }
+            ul{
+                li{
+                    display: flex;
+                    flex-wrap: nowrap;
+                }
+            }
+            .talles-compra{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        .interaccion{
+            display: grid;
+            a{
+                width: 100%;
+            }
+        }
+    }
+    .tmb{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid black;
+        }
+    .interes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h5{
+            font-size: medium;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+main{
+    .interaccion{
+        a{
+        button{
+    background-color: rgb(128, 18, 18);
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+        }
+    }
+}
+}
+main{
+    .interaccion-fin{
+        a{
+            button{
+                color: white;
+                font-weight: bolder;
+                border-radius: 5px;
+                backface-visibility: hidden;
+                background: rgb(128, 18, 18);
+                border: 0;
+                border-radius: .375rem;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 1.125rem;
+                font-weight: 700;
+                letter-spacing: -.01em;
+                line-height: 1.3;
+                padding: 1rem 1.25rem;
+                position: relative;
+                text-align: left;
+                text-decoration: none;
+                transform: translateZ(0) scale(1);
+                transition: transform .2s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;            
+            }
+        }
+    }
+}
+
+.txt-final:disabled {
+    color: #787878;
+    cursor: auto;
+}
+
+.txt-final:not(:disabled):hover {
+    transform: scale(1.02);
+    background-color: rgb(128, 18, 18);
+}
+
+.txt-final:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+}
+
+.txt-final:focus {
+    outline: 0 solid transparent;
+}
+
+    .txt-final:focus:before {
+    border-width: .125rem;
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+}
+
+.txt-final:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+}
+
+.txt-final:not(:disabled):active {
+    transform: translateY(.125rem);
+}
+
+main{
+    .info-envio{
+            button{
+                background-color: rgb(128, 18, 18);
+                color: white;
+                font-weight: bolder;
+                padding: 10px 10px;
+                }
+            }
+        }
+
+main{
+    .main{
+        .form{
+            form{
+                .txt-enviar{
+                    a{
+                        button{
+                            background-color: rgb(128, 18, 18);
+                            color: white;
+                            font-weight: bolder;
+                            padding: 10px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

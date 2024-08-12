@@ -1,749 +1,460 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 3px;
-    box-sizing:border-box;
-}
-body{
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column ;
-    max-width: 100%;
-    overflow-x: hidden;
-}
+main .interaccion a button {
+  background-color: #801212;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
 
-a{
-    text-decoration: none !important;
-    color: black;
-}
+main .interaccion-fin a button {
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background: #801212;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; }
 
-.box{
-    display: flex;
-}
+.txt-final:disabled {
+  color: #787878;
+  cursor: auto; }
 
-/* HEADER */
+.txt-final:not(:disabled):hover {
+  transform: scale(1.02);
+  background-color: #801212; }
 
-header{
-    padding-bottom: 0px;
-}
+.txt-final:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(0.125rem); }
 
+.txt-final:focus {
+  outline: 0 solid transparent; }
 
+.txt-final:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none; }
 
-header .navbar{
+.txt-final:focus:not(:focus-visible) {
+  outline: 0 solid transparent; }
+
+.txt-final:not(:disabled):active {
+  transform: translateY(0.125rem); }
+
+main .info-envio button {
+  background-color: #801212;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 10px; }
+
+main .main .form form .txt-enviar a button {
+  background-color: #801212;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 10px; }
+
+* {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none !important;
+  color: black; }
+
+.box {
+  display: flex; }
+
+header {
+  padding-bottom: 0px; }
+  header .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
+    flex-wrap: nowrap; }
+    header .navbar .buscador {
+      display: flex;
+      justify-content: right; }
+    header .navbar .logo-sitio {
+      display: flex;
+      justify-content: flex-start;
+      width: 20%; }
+      header .navbar .logo-sitio img {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 10vw; }
+    header .navbar .menu {
+      display: flex;
+      align-self: flex-start;
+      justify-self: flex-start;
+      justify-content: left; }
+    header .navbar .nav-vicky {
+      display: flex;
+      align-items: center;
+      justify-content: right; }
+    header .navbar .nav-fixed {
+      display: flex;
+      align-items: center; }
+      header .navbar .nav-fixed form {
+        margin-top: 0px !important; }
+  header .catalogo-section {
+    padding-bottom: 0px; }
+    header .catalogo-section .catalogo {
+      display: flex;
+      list-style: none;
+      align-self: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: large;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      margin-bottom: 0px; }
+      header .catalogo-section .catalogo a {
+        color: black; }
 
-header .navbar .menu{
-    display: flex;
-    align-self: flex-start;
-    justify-self: flex-start;
-    justify-content: left;
-}
-
-header .navbar .logo-sitio{
-    display: flex;
-    justify-content: flex-start;
-    width: 20%;
-}
-
-header .logo-sitio img{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 10vw;
-}
-
-header .navbar .buscador{
-    display: flex;
-    justify-content: right;
-}
-
-header .navbar{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.nav-vicky{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.nav-fixed{
-    display: flex;
-    align-items: center;
-}
-
-.nav-fixed form{
-    margin-top: 0px !important;
-}
-
-header section .catalogo{
-    display: flex;
-    list-style: none;
-    align-self: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: large;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin-bottom: 0px;
-}
-
-header section .catalogo a{
-    color: black;
-}
-
-header .catalogo-section{
-    padding-bottom: 0px;
-}
-
-
-/* FINAL HEADER */
-
-/* IMAGENES HOME */
-
-.knu{
-    background-image: url("../assets/img/VANS/KNU.png");
-    height: 200px;
-}
-
-.classic{
-    background-image: url("../assets/img/vans/autentico.webp");
-    height: 200px;
-}
-
-.chino{
-    background-image: url("../assets/img/Vans/Chino/Authentic.jpg");
-    height: 200px;
-}
-
-.banner{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    background-size: cover;
-    margin-top: 6px;
-}
-
-.bannerVertical{
-    background-image: url("../assets/img/ZAPAS/IMAGEN.jpg");
-    width: 30%;
-    height: 100%;
-    background-position: 10% 59%;
-    background-size: cover;
-    border: 1px solid black;
-}
-
-.vertical-img{
-    padding-right: 0px;
-}
-
-.imageZapaUno{
-    width: 200px;
-}
-
-.imageZapaDos{
-    width: 200px;
-}
-
-.imageZapaTres{
-    width: 200px;
-}
-
-/* IMAGENES HOME FIN */
-
-/* INDEX MAIN */
-
-main{
-    padding-top: 0px;
-}
-
-main .banner-section{
-    padding-top: 0px;
-}
-
-section .title-novedades{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border-bottom: 1px solid black;
-}
-
-section .title-novedades h1{
-    font-weight: 700;
-}
-
-section .novedades{
-    display: grid;
-    grid-template: repeat(2,1fr) / repeat(3,1fr);
-    justify-items: center;
-}
-
-section .novedades img{
-    display: grid;
-    width: 100%;
-    height: 60%;
-    justify-content: center;
-    border-bottom: 1px solid black;
-}
-
-section .novedades h3{
-    display: grid;
-    text-align: center;
-    font-weight: 500;
-}
-
-/* INDEX MAIN FINAL */
-
-/* FOOTER */
-
-footer{
-    background-color: rgba(0, 0, 0, 0.9);
-    color:white;
-    border-radius: 20px;
-    font-size: smaller;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-wrap: nowrap;
-}
-
-footer .info-coppy{
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 20px;
+  font-size: smaller;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: nowrap; }
+  footer .info-coppy {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-}
-
-.info-empresa{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 1.5px;
-    padding: 1.5px;
-}
-
-.info-empresa li{
-    display: flex;
-    text-align: left;
-    color: white;
-    list-style: none;
-}
-
-.info-empresa li a{
-    display: flex;
-    text-align: left;
-    color: white;
-}
-
-.coppy{
-    display: flex;
-    justify-content: flex-start;
-    margin: .0625rem;
-    padding: .0625rem;
-}
-
-.coppy{
-    padding-left: 0;
-}
-
-
-.coppy h5{
-    color: white;
-    font-size: medium;
-    font-weight: 400;
-    justify-content: left;
-}
-
-.info{
+    justify-content: space-between; }
+    footer .info-coppy .info-empresa {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 1.5px;
+      padding: 1.5px; }
+      footer .info-coppy .info-empresa li {
+        display: flex;
+        text-align: left;
+        color: white;
+        list-style: none; }
+        footer .info-coppy .info-empresa li a {
+          display: flex;
+          text-align: left;
+          color: white; }
+    footer .info-coppy .coppy {
+      display: flex;
+      justify-content: flex-start;
+      margin: .0625rem;
+      padding: .0625rem;
+      padding-left: 0; }
+      footer .info-coppy .coppy h5 {
+        color: white;
+        font-size: medium;
+        font-weight: 400;
+        justify-content: left; }
+  footer .info {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    margin-left: auto;
-}
+    margin-left: auto; }
+    footer .info li {
+      list-style: none; }
+      footer .info li a {
+        color: white; }
+    footer .info .info-general {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: end; }
+    footer .info .tarjetas {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      footer .info .tarjetas li {
+        display: flex;
+        list-style: none;
+        display: inline;
+        flex-direction: column-reverse; }
 
-.info li{
-    list-style: none;
-}
+.grid {
+  padding-top: 0px; }
+  .grid .banner-section {
+    padding-top: 0px; }
+    .grid .banner-section .banner {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background-size: cover;
+      margin-top: 6px; }
+    .grid .banner-section .title-novedades {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      border-bottom: 1px solid black; }
+      .grid .banner-section .title-novedades h1 {
+        font-weight: 700; }
+    .grid .banner-section .novedades {
+      display: grid;
+      grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+      justify-items: center; }
+      .grid .banner-section .novedades a img {
+        display: grid;
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+        border-bottom: 1px solid black; }
+      .grid .banner-section .novedades h3 {
+        display: grid;
+        text-align: center;
+        font-weight: 500; }
 
-.info li a{
-    color: white;
-}
-
-.info .info-general{
+main .general-zapatillas {
+  display: flex;
+  flex-wrap: nowrap; }
+  main .general-zapatillas .seleccion-talle .vertical-img img {
     display: flex;
-    flex-direction: column-reverse;
-    text-align: end;
-}
-
-.info .tarjetas{
-    display: flex;
-    align-items: center ;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.info .tarjetas li{
-    display: flex;
-    list-style: none;
-    display: inline;
-    flex-direction: column-reverse;
-}
-
-/* FOOTER FIN */
-
-/* PAGE ZAPATILLAS */
-
-main .general-zapatillas{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-main h1{
-    font-size: x-large;
-}
-
-main .genero label{
-    font-size: small;
-    font-weight: 600;
-}
-
-main .genero{
-    display: flex;
-    flex-direction: column;
-}
-
-main .genero .genero-input{
-    display: block;
-    
-}
-
-
-main .seleccion-talle .genero-talles{
-    border-right: 1px solid black;
-}
-
-main .general-zapatillas .seleccion-talle .vertical-img img{
-    display: flex;
-    height: 800px;
+    height: 928px;
     width: auto;
-}
-
-main .general-zapatillas .modelos{
+    border: 1px solid black; }
+  main .general-zapatillas .seleccion-talle .genero-talles {
+    border-right: 1px solid black;
+    padding-right: 0px; }
+    main .general-zapatillas .seleccion-talle .genero-talles h1 {
+      font: large;
+      padding-right: 0px; }
+    main .general-zapatillas .seleccion-talle .genero-talles .genero {
+      display: flex;
+      flex-direction: column; }
+      main .general-zapatillas .seleccion-talle .genero-talles .genero label {
+        font-size: small;
+        font-weight: 600; }
+      main .general-zapatillas .seleccion-talle .genero-talles .genero .genero-input {
+        display: block; }
+    main .general-zapatillas .seleccion-talle .genero-talles .talles {
+      padding-right: 0px; }
+  main .general-zapatillas .modelos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     object-fit: contain;
-    min-width: 700px;
-    gap: 20px;
-}
+    gap: 20px; }
+    main .general-zapatillas .modelos article {
+      border-bottom: 1px solid #b6b6b6; }
+    main .general-zapatillas .modelos img {
+      width: 200px; }
 
-main .general-zapatillas .modelos article{
-    border-bottom: 1px solid rgb(182, 182, 182);
-}
+main .paginas {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 20px; }
 
-/* main .general-zapatillas .modelos{
-    display: grid;
-    grid-template: repeat(4,1fr) / repeat(3,1fr);
-} */
-
-main .general-zapatillas .modelos img{
-    width: 200px;
-}
-
-main .paginas{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    gap: 20px;
-}
-
-.info-compra ul li h2{
-    font-size: calc(1.325rem + 1.5vw);
-}
-
-/* PAGE ZAPATILLAS FINAL */
-
-/* PAGE COMPRA */
-
-main .compra-proceso .articulo-compra{
-    display: flex;
-    justify-content: center;
-}
-
-.colores .colores-compra{
+main .compra-proceso .articulo-compra {
+  display: flex;
+  justify-content: center; }
+  main .compra-proceso .articulo-compra .colores .colores-compra {
     display: flex;
     align-items: center;
-    width: 100px;
-}
+    width: 100px; }
 
-.colores .colores-compra{
-    width: 100px;
-}
+main .compra-proceso article ul {
+  padding-left: 0%; }
+  main .compra-proceso article ul li {
+    list-style: none; }
 
+main .compra-proceso article .zapas-img {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  border-right: 1.5px solid black; }
 
+main .compra-proceso article .principal img {
+  display: flex;
+  width: 30vw;
+  max-height: fit-content;
+  padding-bottom: 100px;
+  padding-top: 50px; }
 
-.talles-compra{
-    display: flex;
-}
-
-main .compra-proceso article ul li{
-    list-style: none;
-}
-
-main .compra-proceso article ul{
-    padding-left: 0%;
-}
-
-main .compra-proceso article .zapas-img{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    border-right: 1.5px solid black;
-}
-
-main .compra-proceso article .principal img{
-    display: flex;
-    width: 30vw;
-    max-height: fit-content;
-    padding-bottom: 100px;
-    padding-top: 50px;
-}
-
-
-main .compra-proceso article .secundarias{
-    border-top: 1.5px solid black;
-}
-main .compra-proceso article .secundarias img{
+main .compra-proceso article .secundarias {
+  border-top: 1.5px solid black; }
+  main .compra-proceso article .secundarias img {
     width: 10vw;
     gap: 10px;
-    border-right: 1px solid black;
-}
+    border-right: 1px solid black; }
 
-main .interaccion{
-    display: grid;
-}
-
-main .interaccion a{
-    width: 100%;
-}
-
-main .info-compra{
-    display: flex;
-    flex-direction: column;
-}
-
-main .info-compra h1{
-    font: large;
-}
-
-main .info-compra h3{
-    font-size: medium;
-}
-
-
-main .info-compra ul li{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-main .interaccion a button{
-    background-color: rgb(128, 18, 18);
-    color: white;
-    font-weight: bolder;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-main .interaccion-fin{
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-}
-
-main .info-compra select{
+main .compra-proceso .info-compra {
+  display: flex;
+  flex-direction: column; }
+  main .compra-proceso .info-compra select {
     font-size: small;
     width: 50px;
-    height: fit-content;
-}
-
-main .info-compra .talles-compra{
+    height: fit-content; }
+  main .compra-proceso .info-compra h1 {
+    font-size: large; }
+  main .compra-proceso .info-compra h3 {
+    font-size: medium; }
+  main .compra-proceso .info-compra ul li {
+    display: flex;
+    flex-wrap: nowrap; }
+  main .compra-proceso .info-compra .talles-compra {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
+    gap: 10px; }
 
-.txt-comprar{
-    padding: 10px 10px;
-    font-size: 3vh;
-}
+main .compra-proceso .interaccion {
+  display: grid; }
+  main .compra-proceso .interaccion a {
+    width: 100%; }
 
-.txt-agregar-al-carrito{
-    padding: 5px 5px;
-    font-size: 15px;
-}
+main .tmb {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black; }
 
-.txt-avisame{
-    padding: 2px 2px;
-    font-size: 15px;
-}
+main .interes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  main .interes h5 {
+    font-size: medium; }
 
-.tmb{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid black;
-}
-main .interes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+main .detalles-de-compra h1 {
+  display: table;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%; }
 
-main .interes h5{
-    font-size: medium;
-}
+main .detalles-de-compra img {
+  width: 150px; }
 
-/* PAGE COMPRA FINAL */
-
-/* PAGE FINALIZA COMPRA */
-
-
-main .detalles-de-compra .detalles-final{
-    width: 22%;
-    display: inline-table;
-    margin: 0 0 0 1%;
-    padding: 10px 1%;
-    border-left:1px solid black ;
-}
-
-main .detalles-de-compra h1{
-    display: table;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 500;
-    width: 100%;
-}
-
-main .detalles-de-compra img{
-    width: 150px;
-}
-
-main .detalles-de-compra table{
-    width: 75%;
-    margin: 20px 0;
-    display: inline-table;
-    border-collapse: collapse;
-    border: 0;
-}
-
-main .detalles-de-compra table thead{
-    border-bottom: 1px solid black;
-}
-
-main .detalles-de-compra table tbody{
-    border-bottom: 1px solid black;
-}
-
-main .detalles-de-compra table th{
+main .detalles-de-compra table {
+  width: 75%;
+  margin: 20px 0;
+  display: inline-table;
+  border-collapse: collapse;
+  border: 0; }
+  main .detalles-de-compra table thead {
+    border-bottom: 1px solid black; }
+  main .detalles-de-compra table tbody {
+    border-bottom: 1px solid black; }
+  main .detalles-de-compra table th {
     text-align: left;
     padding: 5px 3px;
-    font-size: small;
-}
-
-main .detalles-de-compra table tr{
+    font-size: small; }
+  main .detalles-de-compra table tr {
     display: table-row;
     vertical-align: inherit;
     unicode-bidi: isolate;
-    font-size: small;
-}
+    font-size: small; }
 
-main .detalles-de-compra .detalles-final{
-    width: 22%;
-    display: inline-table;
-    margin: 0 0 0 1%;
-    padding-right: 0.5px ;
-    margin-right: 1px;
-}
-
-main .detalles-de-compra .detalles-final .total-articulos{
+main .detalles-de-compra .detalles-final {
+  width: 22%;
+  display: inline-table;
+  margin: 0 0 0 1%;
+  padding-right: 0.5px;
+  margin-right: 1px;
+  border-left: 1px solid black; }
+  main .detalles-de-compra .detalles-final .total-articulos {
     width: 96%;
     padding: 15px 2%;
     margin: 10px 0 0;
-    font-size: 14px;
-}
+    font-size: 14px; }
+    main .detalles-de-compra .detalles-final .total-articulos .articulos {
+      display: flex; }
+    main .detalles-de-compra .detalles-final .total-articulos .total {
+      display: flex; }
+    main .detalles-de-compra .detalles-final .total-articulos .descuento {
+      display: flex; }
+      main .detalles-de-compra .detalles-final .total-articulos .descuento input {
+        display: flex;
+        width: 100px;
+        height: 25px;
+        padding-left: 1px;
+        align-items: center; }
+      main .detalles-de-compra .detalles-final .total-articulos .descuento h4 {
+        font-size: 11px; }
 
-main .detalles-de-compra .detalles-final .total-articulos .articulos{
+main .banner {
+  padding-top: 0px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid black; }
+
+main .main {
+  padding-top: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 25px; }
+  main .main .vertical-img-2 img {
+    width: 40vw;
+    height: auto;
+    border: 2px solid black;
     display: flex;
-}
+    justify-content: flex-start; }
 
-main .detalles-de-compra .detalles-final .total-articulos .total{
-    display: flex;
-}
+main h1 {
+  display: table;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 100%; }
 
-main .detalles-de-compra .detalles-final .total-articulos .descuento{
-    display: flex;
-}
+main h2 {
+  display: table;
+  font-size: large;
+  text-transform: uppercase;
+  width: 100%; }
 
-main .detalles-de-compra .detalles-final .total-articulos .descuento input{
-    display: flex;
-    width: 100px;
-    height: 25px;
-    padding-left: 1px;
-    align-items: center;
-}
-
-main .detalles-de-compra .detalles-final .total-articulos .descuento h4{
-    font-size: 11px;
-}
-
-main .interaccion-fin a button{
-    color: white;
-    font-weight: bolder;
-    border-radius: 5px;
-    backface-visibility: hidden;
-    background: rgb(128, 18, 18);
-    border: 0;
-    border-radius: .375rem;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1.125rem;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    line-height: 1.3;
-    padding: 1rem 1.25rem;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transform: translateZ(0) scale(1);
-    transition: transform .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.txt-final:disabled {
-    color: #787878;
-    cursor: auto;
-}
-
-.txt-final:not(:disabled):hover {
-    transform: scale(1.02);
-    background-color: rgb(128, 18, 18);
-}
-
-.txt-final:not(:disabled):hover:active {
-    transform: scale(1.05) translateY(.125rem);
-}
-
-.txt-final:focus {
-    outline: 0 solid transparent;
-}
-
-    .txt-final:focus:before {
-    border-width: .125rem;
-    content: "";
-    left: calc(-1*.375rem);
-    pointer-events: none;
-    position: absolute;
-    top: calc(-1*.375rem);
-    transition: border-radius;
-    user-select: none;
-}
-
-.txt-final:focus:not(:focus-visible) {
-    outline: 0 solid transparent;
-}
-
-.txt-final:not(:disabled):active {
-    transform: translateY(.125rem);
-}
-
-.detalles-final .total-articulos h4{
-    font-size: 18px;
-}
-
-
-main .interaccion-fin a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.tmb{
-    margin-bottom: 20px;
-    border-bottom: 1px solid black;
-}
-main .interes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-main .interes a img{
-    width: 200px;
-}
-
-main .interes h5{
-    font-size: medium;
-}
-
-/* FIN SECCION FINALIZA COMPRA */
-
-/* SECCION SOPORTE */
-
-
-main .banner{
-    padding-top: 0px;
-    padding-bottom: 7px;
-    border-bottom: 1px solid black;
-}
-
-main .soporte{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-main .soporte select{
-    background-color: rgb(128, 18, 18);
+main .soporte {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+  main .soporte select {
+    background-color: #801212;
     color: white;
     font-weight: bold;
-    border-radius: 5px;
-}
+    border-radius: 5px; }
 
-main h1{
-    display: table;
-    font-size: 30px;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-main h2{
-    display: table;
-    font-size: large;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-main section .form{
-    justify-content:space-between ;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    display: flex;
-    width: 100%;
-    max-width: 600px;
-}
-
-main section .form .formulario{
+main section .form {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  max-width: 600px; }
+  main section .form .formulario {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -751,723 +462,380 @@ main section .form .formulario{
     align-content: space-between;
     align-items: flex-start;
     height: 100%;
-    max-width: 600px;
-}
+    max-width: 600px; }
+    main section .form .formulario h3 {
+      font-size: x-large; }
+    main section .form .formulario label {
+      width: 100%;
+      display: inline-block;
+      line-height: 14px;
+      font-size: 16px;
+      color: black;
+      font-weight: 600; }
+    main section .form .formulario input {
+      padding: 2px;
+      height: auto;
+      width: 100%;
+      font-size: 16px;
+      border-color: #e8e8e8;
+      justify-content: center; }
+    main section .form .formulario select {
+      border-color: #e8e8e8;
+      width: 100%; }
+    main section .form .formulario textarea {
+      padding: 8px 0;
+      display: inline-block;
+      width: 100%;
+      font-size: 16px;
+      border-color: #e8e8e8; }
+    main section .form .formulario .nombre {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+    main section .form .formulario .apellido {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+    main section .form .formulario .mail {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+    main section .form .formulario .telefono {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+    main section .form .formulario .zona {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+    main section .form .formulario .mensaje {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+    main section .form .formulario .archivo {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+    main section .form .formulario .txt-enviar {
+      width: 100%; }
+    main section .form .formulario a {
+      width: 20%;
+      padding: 15px 0;
+      height: auto;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 10px 0 10px 100%; }
 
-main section .form .formulario h3{
-    font-size: x-large;
-}
+main .banner {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-size: cover;
+  margin-top: 6px; }
 
+main .envio {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 70px; }
+  main .envio h1 {
+    font-weight: 700; }
 
-main section .form .formulario label{
+main .info-envio {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 25px; }
+  main .info-envio p {
+    font-size: larger; }
+
+@media (max-width: 768px) {
+  html body {
+    width: 100% !important;
+    overflow-x: hidden !important; }
+    html body header section .navbar.bg-body-tertiary {
+      padding: 0rem 0rem; }
+      html body header section .navbar.bg-body-tertiary .logo-sitio {
+        width: 100%; }
+        html body header section .navbar.bg-body-tertiary .logo-sitio img {
+          width: 20vw !important; }
+      html body header section .navbar.bg-body-tertiary .nav-fixed form {
+        display: none !important; }
+      html body header section .navbar.bg-body-tertiary .nav-vicky .cuente {
+        display: none; }
+      html body header section .navbar.bg-body-tertiary .nav-vicky .carrito {
+        display: none; }
+      html body header section .navbar.bg-body-tertiary .container-fluid {
+        width: auto;
+        padding: 0px 0px 0px 0px; }
+        html body header section .navbar.bg-body-tertiary .container-fluid .navbar-toggler-icon {
+          width: 2rem;
+          height: 2rem; }
+    html body header .catalogo {
+      display: flex;
+      padding-left: 0px;
+      list-style: none;
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 11px; }
+  html footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: x-small;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
     width: 100%;
-    display: inline-block;
-    line-height: 14px;
-    font-size: 16px;
-    color: black;
+    flex-wrap: nowrap; }
+    html footer .info-coppy .coppy h5 {
+      color: white;
+      font-size: 10px;
+      font-weight: 400;
+      justify-content: left; }
+    html footer .info .tarjetas {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      justify-content: right; }
+      html footer .info .tarjetas li svg {
+        width: 25px;
+        height: 25px; }
+  .grid .banner-section .banner {
+    width: 100%;
+    background-position: 10% 59%;
+    background-size: cover; }
+  .grid .banner-section .title-novedades h1 {
     font-weight: 600;
-}
-
-main section .form .formulario input{
-    padding: 2px;
-    height: auto;
-    width: 100%;
-    font-size: 16px;
-    border-color: rgb(232, 232, 232);
+    font-size: x-large; }
+  .grid .banner-section .novedades img {
+    display: grid;
+    width: 85%;
+    height: 45%;
     justify-content: center;
-}
-
-
-main section .form .formulario select{
-    border-color: rgb(232, 232, 232);
-    width: 100%;
-}
-
-main section .form .formulario textarea{
-    padding: 8px 0;
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-    border-color: rgb(232, 232, 232);
-}
-
-main section .form .formulario .nombre{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-main section .form .formulario .apellido{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-main section .form .formulario .mail{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-main section .form .formulario .telefono{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-main section .form .formulario .zona{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-main section .form .formulario .mensaje{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-main section .form .formulario .archivo{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-main section .form .formulario .txt-enviar{
-    width: 100%;
-}
-
-main section .form .formulario a button{
-    background-color: rgb(128, 18, 18);
-    color: white;
-    font-weight: bolder;
-    padding: 10px 10px;
-}
-
-main section .form .formulario a{
-    width: 20%;
-    padding: 15px 0;
-    height: auto;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 10px 0 10px 100%;
-}
-
-/* SECCION DATOS ENVIADOS */
-
-main .envio{
-    display: flex;
-    width: 100%;
+    align-items: center; }
+  .grid .banner-section .novedades h3 {
+    display: grid;
     justify-content: center;
-    text-align: center;
-    padding: 70px;
-}
-
-main .info-envio{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-main .info-envio p{
+    font-weight: 500;
     font-size: larger;
-}
-
-main .envio h1{
-    font-weight: 700;
-}
-
-main .info-envio button{
-    background-color: rgb(128, 18, 18);
-    color: white;
-    border-color: rgb(128, 18, 18);
-    border-radius: 10px;
-    width: 350px;
-}
-
-main .info-envio{
-    padding-bottom: 25px;
-}
-
-main .soporte{
-    padding-top: 1.5625rem;
-}
-
-main .main{
-    padding-top: 0%;
+    align-items: center; }
+  main .general-zapatillas .seleccion-talle h1 {
+    font-size: 25px; }
+  main .general-zapatillas .seleccion-talle .vertical-img img {
+    display: flex;
+    height: 600px;
+    width: auto; }
+  main .general-zapatillas .modelos {
+    display: flex;
+    justify-items: center;
+    grid-gap: 2px; }
+    main .general-zapatillas .modelos img {
+      width: 150px;
+      margin: 1px; }
+    main .general-zapatillas .modelos h3 {
+      font-size: large; }
+    main .general-zapatillas .modelos h5 {
+      font-size: small; }
+  main .paginas {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+  main .compra-proceso article .principal img {
+    display: flex;
+    width: 40vw;
+    max-height: fit-content;
+    padding-bottom: 100px;
+    padding-top: 50px; }
+  main .compra-proceso article .secundarias img {
+    width: 15vw;
+    gap: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black; }
+  main .interes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom:25px ;
-}
-
-main .main .vertical-img-2 img{
-    width: 40vw;
-    height: auto;
-    border: 2px solid black;
-    display: flex;
-    justify-content: flex-start;
-
-}
-
-@media (max-width: 768px){
-/* INDEX INICIO */
-*{
-    box-sizing: border-box;
-}
-html, body {
-    width: 100%!important;
-    overflow-x: hidden!important;
-}
-
-.cuenta{
-    display: none;
-}
-.carrito{
-    display: none;
-}
-.nav-fixed form{
-    display: none !important;
-}
-
-.container-fluid{
-    width: auto;
-    padding: 0px 0px 0px 0px;    
-}
-
-.navbar-toggler-icon{
-    width: 2rem ;
-    height: 2rem ;
-
-}
-.navbar.bg-body-tertiary{
-    padding: 0rem 0rem;
-}
-
-.logo-sitio{
+    text-align: start;
+    justify-content: space-evenly; }
+    main .interes a img {
+      width: 9.375rem; }
+    main .interes article h3 {
+      font-size: larger; }
+    main .interes article h5 {
+      font-size: small; }
+  main .detalles-de-compra table {
+    display: inline; }
+  main .detalles-de-compra .detalles-final {
     width: 100%;
-}
-
-.logo-sitio img{
-    width: 20vw !important;
-}
-
-header section .catalogo{
-    display: flex;
-    padding-left: 0px;
-    list-style: none;
-    text-align: center;
-    align-self: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 11px;
-}
-    .banner{
-        width: 100%;
-        background-position: 10% 59%;
-        background-size: cover;
-    }
-    footer{
-        background-color: rgba(0, 0, 0, 0.9);
-        color:white;
-        font-size: x-small;
-        display: flex;
-        justify-content: flex-end;
-        height: 100%;
-        width: 100%;
-        flex-wrap: nowrap;
-    }
-    .coppy h5{
-        color: white;
-        font-size: 10px;
-        font-weight: 400;
-        justify-content: left;
-    }
-    .info .tarjetas li svg{
-        width: 25px;
-        height: 25px;
-    }
-    .info .tarjetas {
-        margin: 0px;
-        padding: 0px;
-        list-style: none;
-        justify-content:right;
-    }
-    section .novedades img{
-        display: grid;
-        width: 85%;
-        height: 45%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    section .novedades h3{
-        display: grid;
-        justify-content: center;
-        font-weight: 500;
-        font-size: larger;
-        align-items: center;
-    }
-    section .title-novedades h1{
-        font-weight: 600;
-        font-size:x-large ;
-    }
-    /* INDEX FINAL */
-    /* ZAPATILLAS */
-    main .general-zapatillas{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
-    main .general-zapatillas .seleccion-talle .vertical-img img{
-        display: flex;
-        height: 600px;
-        width: auto;
-    }
-    
-    main .general-zapatillas .modelos{
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-        justify-content: center;
-        flex-wrap: wrap;
-        object-fit: contain;
-        min-width: 700px ;
-    }
-    
-    main .general-zapatillas .modelos{
-        display: grid;
-        grid-template: repeat(1,200px) / repeat(2,300px);
-        justify-items: flex-start;
-        grid-gap: 2px;
-    }
-
-    main .general-zapatillas .modelos img{
-        width: 150px;
-        margin: 1px;
-    }
-    main .general-zapatillas .seleccion-talle h1{
-        font-size: 25px ;
-    }
-
-    main .general-zapatillas .modelos h3{
-        font-size: large;
-    }
-    
-    main .general-zapatillas .modelos h5{
-        font-size: small;
-    }
-    main .paginas{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    }
-    
-    /* DATOS ENVIADOS INICIO */
-    main .envio{
-        justify-content: center;
-        align-items: center;
-    }
-    main .envio h1{
-        font-size: x-large;
-    }
-    main .info-envio{
-        justify-content: center;
-        align-items: center;
-    }
-    main .info-envio{
-        font-size: small;
-        justify-content: center;
-        text-align: center;
-    }
-    main .info-envio a{
-        padding-bottom: 50px;
-    }
-    /* DATOS ENVIADOS FINAL */
-        /* compra inicio */
-        main .compra-proceso article .principal img{
-            display: flex;
-            width: 40vw;
-            max-height: fit-content;
-            padding-bottom: 100px;
-            padding-top: 50px;
-        }
-        main .compra-proceso article .secundarias img{
-            width: 15vw;
-            gap: 10px;
-            border-right: 1px solid black;
-            border-left: 1px solid black;
-        }
-        main .interes{
-            display: flex;
-            flex-direction: row;
-            text-align: start;
-            justify-content: space-evenly;
-        }
-
-        main .interes a img{
-            width: 9.375rem;
-        }
-
-        main .interes article h3{
-            font-size: larger;
-        }
-
-        main .interes article h5{
-            font-size: small;
-        }
-        /* FINALIZA COMPRA INICIO */
-
-        main .detalles-de-compra .detalles-final{
-            width: 100%;
-            margin: 0;
-            padding: 10px 1%;
-            border-left: none;
-        }
-
-        main .detalles-de-compra .detalles-final .total-articulos span:last-of-type{
+    border-left: none; }
+    main .detalles-de-compra .detalles-final .total-articulos {
+      border-bottom: 1px solid black; }
+      main .detalles-de-compra .detalles-final .total-articulos span:last-of-type {
         float: right;
-        color: rgb(126, 27, 27);
-        }
-        
-        main .detalles-de-compra .detalles-final .total-articulos{
-            border-bottom: 1px solid black;
-        }
+        color: #7e1b1b; }
+    main .detalles-de-compra .detalles-final .total-articulos-fin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 25px; }
+    main .detalles-de-compra .detalles-final .interaccion-fin {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+  main .vertical-img-2 {
+    display: none; } }
 
-        main .detalles-de-compra .detalles-final .total-articulos-fin{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-            /* soporte inicio */
-
-    main .vertical-img-2{
-        display: none;
-    }
-
-    main .main .form .formulario label{
-        width: 40%;
-    }
-}
-
-
-@media (max-width: 426px){
-    *{
-        box-sizing: border-box;
-    }
-    html, body {
-        width: 100%!important;
-        overflow-x: hidden!important;
-    }
-
-    .cuenta{
-        display: none;
-    }
-    .carrito{
-        display: none;
-    }
-    .nav-fixed form{
-        display: none !important;
-    }
-    
-    .container-fluid{
+@media (max-width: 426px) {
+  html body {
+    width: 100% !important;
+    overflow-x: hidden !important; }
+    html body header .navbar {
+      padding: 0rem 0rem; }
+      html body header .navbar .logo-sitio {
+        width: 100%; }
+        html body header .navbar .logo-sitio img {
+          width: 20vw !important; }
+      html body header .navbar .nav-fixed form {
+        display: none !important; }
+      html body header .navbar .nav-vicky .cuenta {
+        display: none; }
+      html body header .navbar .nav-vicky .carrito {
+        display: none; }
+      html body header .navbar .nav-vicky .container-fluid {
         width: auto;
-        padding: 0px 0px 0px 0px;    
-    }
-    
-    .navbar-toggler-icon{
-        width: 1rem ;
-        height: 1rem ;
-    
-    }
-    .navbar.bg-body-tertiary{
-        padding: 0rem 0rem;
-    }
-
-    .logo-sitio{
-        width: 100%;
-    }
-
-    .logo-sitio img{
-        width: 20vw !important;
-    }
-
-    header section .catalogo{
-        display: flex;
-        padding-left: 0px;
-        list-style: none;
-        text-align: center;
-        align-self: center;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 11px;
-    }
-    
-    .banner{
-        padding: 0% 0%;
-    }
-    section .title-novedades h1{
-        font-weight: 800;
-        font-size:medium ;
-    }
-    section .novedades h3{
-        display: grid;
-        justify-content: center;
-        font-weight: 700;
-        font-size: x-small;
-        align-items: center;
-    }
-    section .novedades{
-        display: grid;
-        grid-template: repeat(1,1fr) / repeat(2,1fr);
-        justify-items: center;
-    }
-    section .novedades img{
-        display: grid;
-        width: 95%;
-        height: 55%;
-        justify-content: center;
-        align-items: center;
-    }
-    footer{
-        background-color: rgba(0, 0, 0, 0.9);
-        color:white;
-        border-radius: 15px;
-        display: flex;
-        justify-content: flex-end;
-        height: 80%;
-        width: 100%;
-        flex-wrap: nowrap;
-    }
-
-    .coppy{
-        margin-bottom: 0px;
-    }
-
-    .coppy h5{
-        color: white;
-        font-size: 5px;
-        font-weight: 400;
-        justify-content: left;
-        margin-bottom: 0px;
-    }
-
-    .info-general{
-        margin-bottom: 0px;
-        padding-left: 0px;
-        padding-bottom: 0px;
-    }
-
-    .info .tarjetas li svg{
-        width: 10px;
-        height: 10px;
-    }
-    .info .tarjetas{
-        justify-content:right;
-        padding: 0;
-        margin: 0;
-    }
-    .info-coppy{
-        display: flex;
-        justify-content: right;
-    }
-    /* ZAPATILLAS */
-    main .general-zapatillas{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    
-    main .general-zapatillas .seleccion-talle .vertical-img img{
-        display: none;
-    }
-    
-    main .general-zapatillas .modelos{
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-        flex-wrap: wrap;
-        object-fit: contain;
-        min-width: 700px ;
-    }
-    
-    main .general-zapatillas .modelos{
-        display: grid;
-        grid-template: repeat(1,1fr) / repeat(1,1fr);
-        justify-items: center;
-        grid-gap: auto;
-    }
-
-    main .general-zapatillas .modelos img{
-        width: 200px;
-        margin: 1px;
-    }
-    main .general-zapatillas .seleccion-talle h1{
-        font-size: 25px ;
-    }
-
-    main .general-zapatillas .modelos h3{
-        font-size: medium;
-    }
-    
-    main .general-zapatillas .modelos h5{
-        font-size: small;
-    }
-    main .paginas{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    }
-    /* Datos enviados incio */
-    main .envio{
-        justify-content: center;
-        align-items: center;
-        padding-top: 30px;
-    }
-    main .envio h1{
-        font-size: large;
-    }
-    main .info-envio{
-        justify-content: center;
-        align-items: center;
-    }
-    main .info-envio{
-        font-size: x-small;
-        justify-content: center;
-        text-align: center;
-    }
-    main .info-envio a{
-        padding-bottom: 50px;
-    }
-    main .info-envio a button{
-        width: 150px;
-    }
-        /* compra inicio */
-        .compra-proceso .articulo-compra{
-            display: flex;
-            flex-direction: column;
-        }
-        main .compra-proceso article .zapas-img{
-            border-right: none;
-        }
-    
-        main .compra-proceso article .principal img{
-            display: flex;
-            width: 80vw;
-            max-height: fit-content;
-            padding-bottom: 100px;
-            padding-top: 50px;
-        }
-        main .compra-proceso article .secundarias img{
-            width: 27.5vw;
-            gap: 10px;
-            border-right: 1px solid black;
-            border-left: 1px solid black;
-        }
-        main .interes{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-            /* FINALIZA COMPRA INCIO */
-
-            /* Seccion zapatillas */
-    main .general-zapatillas{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
-    .genero-talles{
-        display: ruby;
-        border-bottom: 2px solid black;
-    }
-
-    main .general-zapatillas .seleccion-talle .genero-talles h1{
-        font-size: 25px;
-        margin-bottom: 0px;
-    }
-
-    .genero-talles .genero{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .talles select{
-        padding: 0px 0px 0px 0px;
-        font-size: 14px;
-    }
-
-    main .general-zapatillas .seleccion-talle .vertical-img img{
-        display: none;
-    }
-    main .general-zapatillas .modelos{
-        display: grid;
-        grid-template: repeat(1,1fr);
-        justify-items: center;
-        grid-gap: auto;
-    }
-
-    main .general-zapatillas .modelos article{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    main .general-zapatillas .modelos img{
-        margin: 1px;
-    }
-
-    main .general-zapatillas .seleccion-talle h1{
-        font-size: 40px ;
-    }
-
-    main .general-zapatillas .modelos h3{
-        font-size: x-large;
-    }
-    
-    main .general-zapatillas .modelos h5{
-        font-size: medium;
-    }
-    main .paginas{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        gap: 15px;
-    }
-
-    main .detalles-de-compra{
-        width: 96%;
-        max-width: 1600px;
-        margin: 0 auto 20px;
-        display: table;
-        position: relative;
-    }
-
-    main .detalles-de-compra h1{
-        font-size: 20px;
-        margin: 1px 1px;
-    }
-
-    main .detalles-de-compra table thead{
-        display: none;
-    }
-    main .detalles-de-compra table tr{
+        padding: 0px 0px 0px 0px; }
+      html body header .navbar .nav-vicky .navbar-toggler-icon {
+        width: 1rem;
+        height: 1rem; }
+    html body header .catalogo-section .catalogo {
+      display: flex;
+      padding-left: 0px;
+      list-style: none;
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 11px; }
+  footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    flex-wrap: nowrap; }
+  .grid .banner-section .banner {
+    padding: 0% 0%; }
+  .grid .banner-section .titile-novedades h1 {
+    font-weight: 800;
+    font-size: medium; }
+  .grid .banner-section .novedades {
+    display: grid;
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+    justify-items: center; }
+    .grid .banner-section .novedades h3 {
+      display: grid;
+      justify-content: center;
+      font-weight: 700;
+      font-size: x-small;
+      align-items: center; }
+    .grid .banner-section .novedades img {
+      display: grid;
+      width: 95%;
+      height: 55%;
+      justify-content: center;
+      align-items: center; }
+  main .general-zapatillas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+    main .general-zapatillas .modelos {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      grid-gap: auto; }
+      main .general-zapatillas .modelos img {
+        width: 300px;
+        margin: 1px; }
+      main .general-zapatillas .modelos h3 {
+        font-size: medium; }
+      main .general-zapatillas .modelos h5 {
+        font-size: small; }
+    main .general-zapatillas .seleccion-talle .genero-talles {
+      border-right: none; }
+    main .general-zapatillas .seleccion-talle h1 {
+      font-size: 25px; }
+    main .general-zapatillas .seleccion-talle .vertical-img img {
+      display: none; }
+  main .paginas {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+  main .envio {
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px; }
+    main .envio h1 {
+      font-size: large; }
+  main .info-envio {
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    main .info-envio a {
+      padding-bottom: 50px; }
+      main .info-envio a button {
+        width: 150px; }
+  main .compra-proceso .articulo-compra {
+    display: flex;
+    flex-direction: column; }
+  main .compra-proceso article .zapas-img {
+    border-right: none; }
+  main .compra-proceso article .principal img {
+    display: flex;
+    width: 80vw;
+    max-height: fit-content;
+    padding-bottom: 100px;
+    padding-top: 50px; }
+  main .compra-proceso article .secundarias img {
+    width: 27.5vw;
+    gap: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black; }
+  main .interes {
+    display: flex;
+    flex-direction: column; }
+    main .interes article a img {
+      width: 300px; }
+  main .detalles-de-compra {
+    width: 96%;
+    max-width: 1600px;
+    margin: 0 auto 20px;
+    display: table;
+    position: relative; }
+    main .detalles-de-compra h1 {
+      font-size: 20px;
+      margin: 1px 1px; }
+    main .detalles-de-compra table {
+      width: 96%;
+      margin: 20px 2%; }
+      main .detalles-de-compra table thead {
+        display: none; }
+      main .detalles-de-compra table tr {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: end;
-    }
-    main .detalles-de-compra table{
-        width: 96%;
-        margin: 20px 2%;
-    }
-
-    main .detalles-de-compra tbody td{
+        align-items: end; }
+      main .detalles-de-compra table tbody td {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1475,249 +843,184 @@ header section .catalogo{
         text-align: left;
         padding: 10px 0;
         border-bottom: 1px solid black;
-        margin: 0 0 0 auto;
-    }
-
-    main .detalles-de-compra tbody td .producto{
-        display: none;
-    }
-
-    main .detalles-de-compra tbody .producto-dos{
+        margin: 0 0 0 auto; }
+        main .detalles-de-compra table tbody td .producto {
+          display: none; }
+      main .detalles-de-compra table tbody .producto-dos {
+        display: flex;
+        justify-content: center; }
+        main .detalles-de-compra table tbody .producto-dos a img {
+          width: 250px; }
+      main .detalles-de-compra table tbody .vector-finaliza {
         display: flex;
         justify-content: center;
-    }
+        border-bottom: none; }
+    main .detalles-de-compra .detalles-final {
+      width: 92%;
+      margin: 10px 2%;
+      padding: 10px 2%;
+      border-left: none; }
+  .interes {
+    display: flex;
+    text-align: center; }
+    .interes a img {
+      width: 18.75rem; }
+    .interes article {
+      border-bottom: 1px solid lightgrey; }
+      .interes article h5 {
+        font-size: large; }
+      .interes article h3 {
+        font-size: xx-large; }
+  main .vertical-img-2 {
+    display: none; }
+  main .main .form .formulario label {
+    width: 40%; } }
 
-    main .detalles-de-compra tbody .producto-dos a img{
-        width: 250px;
-    }
-
-    main .detalles-de-compra tbody .vector-finaliza{
-        display: flex;
-        justify-content: center;
-        border-bottom: none;
-    }
-
-    main .detalles-de-compra .detalles-final{
-        width: 92%;
-        margin: 10px 2%;
-        padding: 10px 2%;
-        border-left: none;
-    }
-
-    main .interes{
-        display: flex;
-        text-align: center;
-    }
-
-    main .interes article{
-        border-bottom: 1px solid lightgrey;
-    }
-
-    main .interes a img{
-        width: 18.75rem;
-    }
-
-    main .interes article h3{
-        font-size: xx-large;
-    }
-
-    main .interes article h5{
-        font-size: large;
-    }
-         /* soporte inicio */
-
-        main .vertical-img-2{
-            display: none;
-        }
-    
-        main .main .form .formulario label{
-            width: 40%;
-        }
-}
-
-@media (max-width: 375px){
-    *{
-        box-sizing: border-box;
-    }
-    html, body {
-        width: 100%!important;
-        overflow-x: hidden!important;
-    }
-    
-    .cuenta{
-        display: none;
-    }
-    .carrito{
-        display: none;
-    }
-    .nav-fixed form{
-        display: none !important;
-    }
-    
-    .container-fluid{
+@media (max-width: 375px) {
+  html body {
+    width: 100% !important;
+    overflow-x: hidden !important; }
+    html body header .navbar {
+      padding: 0rem 0rem; }
+      html body header .navbar .logo-sitio {
+        width: 100%; }
+        html body header .navbar .logo-sitio img {
+          width: 20vw !important; }
+      html body header .navbar .nav-fixed form {
+        display: none !important; }
+      html body header .navbar .nav-vicky .cuenta {
+        display: none; }
+      html body header .navbar .nav-vicky .carrito {
+        display: none; }
+      html body header .navbar .nav-vicky .container-fluid {
         width: auto;
-        padding: 0px 0px 0px 0px;    
-    }
-    
-    .navbar-toggler-icon{
-        width: 1rem ;
-        height: 1rem ;
-    
-    }
-    .navbar.bg-body-tertiary{
-        padding: 0rem 0rem;
-    }
-
-    .logo-sitio{
-        width: 100%;
-    }
-
-    .logo-sitio img{
-        width: 20vw !important;
-    }
-
-    header section .catalogo{
-        display: flex;
-        padding-left: 0px;
-        list-style: none;
-        text-align: center;
-        align-self: center;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 11px;
-    }
-
-    .info-general{
-        margin-bottom: 0px;
-        padding-left: 0px;
-        padding-bottom: 0px;
-    }
-
-        /* Seccion zapatillas */
-        main .general-zapatillas{
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        
-        .genero-talles{
-            display: ruby;
-            border-bottom: 2px solid black;
-        }
-    
-        main .general-zapatillas .seleccion-talle .genero-talles h1{
-            font-size: 25px;
-            margin-bottom: 0px;
-        }
-    
-        .genero-talles .genero{
-            display: flex;
-            flex-direction: row;
-        }
-    
-        .talles select{
-            padding: 0px 0px 0px 0px;
-            font-size: 14px;
-        }
-    
-        main .general-zapatillas .seleccion-talle .vertical-img img{
-            display: none;
-        }
-        main .general-zapatillas .modelos{
-            display: grid;
-            grid-template: repeat(1,1fr);
-            justify-items: center;
-            grid-gap: auto;
-        }
-    
-        main .general-zapatillas .modelos article{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    
-        main .general-zapatillas .modelos img{
-            margin: 1px;
-        }
-    
-        main .general-zapatillas .seleccion-talle h1{
-            font-size: 40px ;
-        }
-    
-        main .general-zapatillas .modelos h3{
-            font-size: x-large;
-        }
-        
-        main .general-zapatillas .modelos h5{
-            font-size: medium;
-        }
-        main .paginas{
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            gap: 15px;
-        }
-
-        /* compra inicio */
-        .compra-proceso .articulo-compra{
-            display: flex;
-            flex-direction: column;
-        }
-        main .compra-proceso article .zapas-img{
-            border-right: none;
-        }
-    
-        main .compra-proceso article .principal img{
-            display: flex;
-            width: 80vw;
-            max-height: fit-content;
-            padding-bottom: 100px;
-            padding-top: 50px;
-        }
-        main .compra-proceso article .secundarias img{
-            width: 27.5vw;
-            gap: 10px;
-            border-right: 1px solid black;
-            border-left: 1px solid black;
-        }
-        main .interes{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        main .interes article a img{
-            width: 150px;
-        }
-            /* FINALIZA COMPRA INCIO */
-
-    main .detalles-de-compra{
-        width: 96%;
-        max-width: 1600px;
-        margin: 0 auto 20px;
-        display: table;
-        position: relative;
-    }
-
-    main .detalles-de-compra h1{
-        font-size: 20px;
-        margin: 1px 1px;
-    }
-
-    main .detalles-de-compra table thead{
-        display: none;
-    }
-    main .detalles-de-compra table tr{
+        padding: 0px 0px 0px 0px; }
+      html body header .navbar .nav-vicky .navbar-toggler-icon {
+        width: 1rem;
+        height: 1rem; }
+    html body header .catalogo-section .catalogo {
+      display: flex;
+      padding-left: 0px;
+      list-style: none;
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 11px; }
+  footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    flex-wrap: nowrap; }
+  .grid .banner-section .banner {
+    padding: 0% 0%; }
+  .grid .banner-section .titile-novedades h1 {
+    font-weight: 800;
+    font-size: medium; }
+  .grid .banner-section .novedades {
+    display: grid;
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+    justify-items: center; }
+    .grid .banner-section .novedades h3 {
+      display: grid;
+      justify-content: center;
+      font-weight: 700;
+      font-size: x-small;
+      align-items: center; }
+    .grid .banner-section .novedades img {
+      display: grid;
+      width: 95%;
+      height: 55%;
+      justify-content: center;
+      align-items: center; }
+  main .general-zapatillas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+    main .general-zapatillas .modelos {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      grid-gap: auto; }
+      main .general-zapatillas .modelos img {
+        width: 300px;
+        margin: 1px; }
+      main .general-zapatillas .modelos h3 {
+        font-size: medium; }
+      main .general-zapatillas .modelos h5 {
+        font-size: small; }
+    main .general-zapatillas .seleccion-talle .genero-talles {
+      border-right: none; }
+    main .general-zapatillas .seleccion-talle h1 {
+      font-size: 25px; }
+    main .general-zapatillas .seleccion-talle .vertical-img img {
+      display: none; }
+  main .paginas {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+  main .envio {
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px; }
+    main .envio h1 {
+      font-size: large; }
+  main .info-envio {
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    main .info-envio a {
+      padding-bottom: 50px; }
+      main .info-envio a button {
+        width: 150px; }
+  main .compra-proceso .articulo-compra {
+    display: flex;
+    flex-direction: column; }
+  main .compra-proceso article .zapas-img {
+    border-right: none; }
+  main .compra-proceso article .principal img {
+    display: flex;
+    width: 80vw;
+    max-height: fit-content;
+    padding-bottom: 100px;
+    padding-top: 50px; }
+  main .compra-proceso article .secundarias img {
+    width: 27.5vw;
+    gap: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black; }
+  main .interes {
+    display: flex;
+    flex-direction: column; }
+    main .interes article a img {
+      width: 300px; }
+  main .detalles-de-compra {
+    width: 96%;
+    max-width: 1600px;
+    margin: 0 auto 20px;
+    display: table;
+    position: relative; }
+    main .detalles-de-compra h1 {
+      font-size: 20px;
+      margin: 1px 1px; }
+    main .detalles-de-compra table {
+      width: 96%;
+      margin: 20px 2%; }
+      main .detalles-de-compra table thead {
+        display: none; }
+      main .detalles-de-compra table tr {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: end;
-    }
-    main .detalles-de-compra table{
-        width: 96%;
-        margin: 20px 2%;
-    }
-
-    main .detalles-de-compra tbody td{
+        align-items: end; }
+      main .detalles-de-compra table tbody td {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1725,354 +1028,184 @@ header section .catalogo{
         text-align: left;
         padding: 10px 0;
         border-bottom: 1px solid black;
-        margin: 0 0 0 auto;
-    }
-
-    main .detalles-de-compra tbody td .producto{
-        display: none;
-    }
-
-    main .detalles-de-compra tbody .producto-dos{
+        margin: 0 0 0 auto; }
+        main .detalles-de-compra table tbody td .producto {
+          display: none; }
+      main .detalles-de-compra table tbody .producto-dos {
+        display: flex;
+        justify-content: center; }
+        main .detalles-de-compra table tbody .producto-dos a img {
+          width: 250px; }
+      main .detalles-de-compra table tbody .vector-finaliza {
         display: flex;
         justify-content: center;
-    }
+        border-bottom: none; }
+    main .detalles-de-compra .detalles-final {
+      width: 92%;
+      margin: 10px 2%;
+      padding: 10px 2%;
+      border-left: none; }
+  .interes {
+    display: flex;
+    text-align: center; }
+    .interes a img {
+      width: 18.75rem; }
+    .interes article {
+      border-bottom: 1px solid lightgrey; }
+      .interes article h5 {
+        font-size: large; }
+      .interes article h3 {
+        font-size: xx-large; }
+  main .vertical-img-2 {
+    display: none; }
+  main .main .form .formulario label {
+    width: 40%; } }
 
-    main .detalles-de-compra tbody .producto-dos a img{
-        width: 250px;
-    }
-
-    main .detalles-de-compra tbody .vector-finaliza{
-        display: flex;
-        justify-content: center;
-        border-bottom: none;
-    }
-
-    main .detalles-de-compra .detalles-final{
-        width: 92%;
-        margin: 10px 2%;
-        padding: 10px 2%;
-        border-left: none;
-    }
-
-    main .interes{
-        display: flex;
-        text-align: center;
-    }
-
-    main .interes article{
-        border-bottom: 1px solid lightgrey;
-    }
-
-    main .interes a img{
-        width: 18.75rem;
-    }
-
-    main .interes article h3{
-        font-size: xx-large;
-    }
-
-    main .interes article h5{
-        font-size: large;
-    }
-        /* soporte inicio */
-
-        main .vertical-img-2{
-            display: none;
-        }
-    
-        main .main .form .formulario label{
-            width: 40%;
-        }
-}
-
-@media (max-width: 320px){
-    *{
-        box-sizing: border-box;
-    }
-
-    html, body {
-    width: 100%!important;
-    overflow-x: hidden!important;
-}
-
-    .cuenta{
-        display: none;
-    }
-    .carrito{
-        display: none;
-    }
-    .nav-fixed form{
-        display: none !important;
-    }
-    
-    .container-fluid{
+@media (max-width: 320px) {
+  html body {
+    width: 100% !important;
+    overflow-x: hidden !important; }
+    html body header .navbar {
+      padding: 0rem 0rem; }
+      html body header .navbar .logo-sitio {
+        width: 100%; }
+        html body header .navbar .logo-sitio img {
+          width: 20vw !important; }
+      html body header .navbar .nav-fixed form {
+        display: none !important; }
+      html body header .navbar .nav-vicky .cuenta {
+        display: none; }
+      html body header .navbar .nav-vicky .carrito {
+        display: none; }
+      html body header .navbar .nav-vicky .container-fluid {
         width: auto;
-        padding: 0px 0px 0px 0px;    
-    }
-    
-    .navbar-toggler-icon{
-        width: 1rem ;
-        height: 1rem ;
-    
-    }
-    .navbar.bg-body-tertiary{
-        padding: 0rem 0rem;
-    }
-
-    .logo-sitio{
-        width: 100%;
-    }
-
-    .logo-sitio img{
-        width: 20vw !important;
-    }
-
-    header section .catalogo{
-        display: flex;
-        padding-left: 0px;
-        list-style: none;
-        text-align: center;
-        align-self: center;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 11px;
-    }
-    section .title-novedades h1{
-        font-weight: 800;
-        font-size:medium ;
-    }
-    section .novedades h3{
-        display: grid;
-        justify-content: center;
-        font-weight: 700;
-        font-size: xx-small;
-        align-items: center;
-    }
-    section .novedades img{
-        display: flex;
-        flex-direction: column;
-    }
-    footer{
-        background-color: rgba(0, 0, 0, 0.9);
-        color:white;
-        border-radius: 5px;
-        display: flex;
-        justify-content: flex-end;
-        height: 20vb;
-        width: 100%;
-        flex-wrap: nowrap;
-    }
-    .coppy h5{
-        color: white;
-        font-size:4px;
-        font-weight: 300;
-        display: flex;
-        text-align: left;
-        margin: 0px;
-        padding-bottom: 0px;
-    }
-
-    .info .tarjetas li{
-        padding-bottom: 0px;
-    }
-
-    .info{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0px;
-    }
-
-    .info li{
-        padding-bottom: 0px;
-    }
-
-    .info-general{
-        margin-bottom: 0px;
-        padding-left: 0px;
-        padding-bottom: 0px;
-    }
-    .info .tarjetas svg{
-        width: 20px;
-        height: 20px;
-    }
-    .info .info-general li a{
-        font-size: 7px;
-        font-weight: 500;
-    }
-    .info-coppy .info-empresa li a{
-        font-size: 7px;
-        font-weight: 500;
-    }
-    .info-coppy .info-empresa li {
-        font-size: 7px;
-    }
-    /* Seccion zapatillas */
-    main .general-zapatillas{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
-    .genero-talles{
-        display: ruby;
-        border-bottom: 2px solid black;
-    }
-
-    main .general-zapatillas .seleccion-talle .genero-talles h1{
-        font-size: 25px;
-        margin-bottom: 0px;
-    }
-
-    .genero-talles .genero{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .talles select{
-        padding: 0px 0px 0px 0px;
-        font-size: 14px;
-    }
-
-    main .general-zapatillas .seleccion-talle .vertical-img img{
-        display: none;
-    }
-    main .general-zapatillas .modelos{
-        display: grid;
-        grid-template: repeat(1,1fr);
-        justify-items: center;
-        grid-gap: auto;
-    }
-
-    main .general-zapatillas .modelos article{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    main .general-zapatillas .modelos img{
-        margin: 1px;
-    }
-
-    main .general-zapatillas .seleccion-talle h1{
-        font-size: 40px ;
-    }
-
-    main .general-zapatillas .modelos h3{
-        font-size: x-large;
-    }
-    
-    main .general-zapatillas .modelos h5{
-        font-size: medium;
-    }
-    main .paginas{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        gap: 15px;
-    }
-    /* Datos envio inicio */
-    main .envio{
-        justify-content: center;
-        align-items: center;
-        padding-top: 30px;
-    }
-    main .envio h1{
-        font-size: small;
-    }
-    main .info-envio{
-        justify-content: center;
-        align-items: center;
-    }
-    main .info-envio{
-        font-size: xx-small;
-        justify-content: center;
-        text-align: center;
-    }
-    main .info-envio a{
-        padding-bottom: 30px;
-    }
-    main .info-envio a button{
-        width: 100px;
-    }
-    /* datos envio final */
-
-    /* compra inicio */
-    .compra-proceso .articulo-compra{
-        display: flex;
-        flex-direction: column;
-    }
-    main .compra-proceso article .zapas-img{
-        border-right: none;
-    }
-
-    main .compra-proceso article .principal img{
-        display: flex;
-        width: 80vw;
-        max-height: fit-content;
-        padding-bottom: 100px;
-        padding-top: 50px;
-    }
-    main .compra-proceso article .secundarias img{
-        width: 27.5vw;
-        gap: 10px;
-        border-right: 1px solid black;
-        border-left: 1px solid black;
-    }
-    main .interes{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    main .interes{
-        display: flex;
-        text-align: center;
-    }
-
-    main .interes article{
-        border-bottom: 1px solid lightgrey;
-    }
-
-    main .interes a img{
-        width: 15.625rem !important;
-    }
-
-    main .interes article h3{
-        font-size: xx-large;
-    }
-
-    main .interes article h5{
-        font-size: large;
-    }
-    /* FINALIZA COMPRA INCIO */
-
-    main .detalles-de-compra{
-        width: 96%;
-        max-width: 1600px;
-        margin: 0 auto 20px;
-        display: table;
-        position: relative;
-    }
-
-    main .detalles-de-compra h1{
-        font-size: 20px;
-        margin: 1px 1px;
-    }
-
-    main .detalles-de-compra table thead{
-        display: none;
-    }
-    main .detalles-de-compra table tr{
+        padding: 0px 0px 0px 0px; }
+      html body header .navbar .nav-vicky .navbar-toggler-icon {
+        width: 1rem;
+        height: 1rem; }
+    html body header .catalogo-section .catalogo {
+      display: flex;
+      padding-left: 0px;
+      list-style: none;
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 11px; }
+  footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    flex-wrap: nowrap; }
+  .grid .banner-section .banner {
+    padding: 0% 0%; }
+  .grid .banner-section .titile-novedades h1 {
+    font-weight: 800;
+    font-size: medium; }
+  .grid .banner-section .novedades {
+    display: grid;
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+    justify-items: center; }
+    .grid .banner-section .novedades h3 {
+      display: grid;
+      justify-content: center;
+      font-weight: 700;
+      font-size: x-small;
+      align-items: center; }
+    .grid .banner-section .novedades img {
+      display: grid;
+      width: 95%;
+      height: 55%;
+      justify-content: center;
+      align-items: center; }
+  main .general-zapatillas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+    main .general-zapatillas .modelos {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      grid-gap: auto; }
+      main .general-zapatillas .modelos img {
+        width: 300px;
+        margin: 1px; }
+      main .general-zapatillas .modelos h3 {
+        font-size: medium; }
+      main .general-zapatillas .modelos h5 {
+        font-size: small; }
+    main .general-zapatillas .seleccion-talle .genero-talles {
+      border-right: none; }
+    main .general-zapatillas .seleccion-talle h1 {
+      font-size: 25px; }
+    main .general-zapatillas .seleccion-talle .vertical-img img {
+      display: none; }
+  main .paginas {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+  main .envio {
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px; }
+    main .envio h1 {
+      font-size: large; }
+  main .info-envio {
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    main .info-envio a {
+      padding-bottom: 50px; }
+      main .info-envio a button {
+        width: 150px; }
+  main .compra-proceso .articulo-compra {
+    display: flex;
+    flex-direction: column; }
+  main .compra-proceso article .zapas-img {
+    border-right: none; }
+  main .compra-proceso article .principal img {
+    display: flex;
+    width: 80vw;
+    max-height: fit-content;
+    padding-bottom: 100px;
+    padding-top: 50px; }
+  main .compra-proceso article .secundarias img {
+    width: 27.5vw;
+    gap: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black; }
+  main .interes {
+    display: flex;
+    flex-direction: column; }
+    main .interes article a img {
+      width: 300px; }
+  main .detalles-de-compra {
+    width: 96%;
+    max-width: 1600px;
+    margin: 0 auto 20px;
+    display: table;
+    position: relative; }
+    main .detalles-de-compra h1 {
+      font-size: 20px;
+      margin: 1px 1px; }
+    main .detalles-de-compra table {
+      width: 96%;
+      margin: 20px 2%; }
+      main .detalles-de-compra table thead {
+        display: none; }
+      main .detalles-de-compra table tr {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: end;
-    }
-    main .detalles-de-compra table{
-        width: 96%;
-        margin: 20px 2%;
-    }
-
-    main .detalles-de-compra tbody td{
+        align-items: end; }
+      main .detalles-de-compra table tbody td {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -2080,42 +1213,35 @@ header section .catalogo{
         text-align: left;
         padding: 10px 0;
         border-bottom: 1px solid black;
-        margin: 0 0 0 auto;
-    }
-
-    main .detalles-de-compra tbody td .producto{
-        display: none;
-    }
-
-    main .detalles-de-compra tbody .producto-dos{
+        margin: 0 0 0 auto; }
+        main .detalles-de-compra table tbody td .producto {
+          display: none; }
+      main .detalles-de-compra table tbody .producto-dos {
+        display: flex;
+        justify-content: center; }
+        main .detalles-de-compra table tbody .producto-dos a img {
+          width: 250px; }
+      main .detalles-de-compra table tbody .vector-finaliza {
         display: flex;
         justify-content: center;
-    }
-
-    main .detalles-de-compra tbody .producto-dos a img{
-        width: 250px;
-    }
-
-    main .detalles-de-compra tbody .vector-finaliza{
-        display: flex;
-        justify-content: center;
-        border-bottom: none;
-    }
-
-    main .detalles-de-compra .detalles-final{
-        width: 92%;
-        margin: 10px 2%;
-        padding: 10px 2%;
-        border-left: none;
-    }
-
-    /* soporte inicio */
-
-    main .vertical-img-2{
-        display: none;
-    }
-
-    main .main .form .formulario label{
-        width: 40%;
-    }
-}
+        border-bottom: none; }
+    main .detalles-de-compra .detalles-final {
+      width: 92%;
+      margin: 10px 2%;
+      padding: 10px 2%;
+      border-left: none; }
+  .interes {
+    display: flex;
+    text-align: center; }
+    .interes a img {
+      width: 18.75rem; }
+    .interes article {
+      border-bottom: 1px solid lightgrey; }
+      .interes article h5 {
+        font-size: large; }
+      .interes article h3 {
+        font-size: xx-large; }
+  main .vertical-img-2 {
+    display: none; }
+  main .main .form .formulario label {
+    width: 40%; } }

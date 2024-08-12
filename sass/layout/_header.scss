@@ -1,0 +1,59 @@
+header{
+    padding-bottom: 0px;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: nowrap;
+        .buscador{
+            display:flex;
+            justify-content: right;
+        }
+        .logo-sitio{
+            display: flex;
+            justify-content: flex-start;
+            width: 20%;
+            img{
+                display:flex;
+                align-self: center;
+                justify-self: center;
+                width: 10vw;
+            }
+        }
+        .menu{
+            display: flex;
+            align-self: flex-start;
+            justify-self: flex-start;
+            justify-content: left;
+        }
+        .nav-vicky{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        .nav-fixed{
+            display: flex;
+            align-items: center;
+            form{
+                margin-top: 0px !important;
+            }
+        }
+    }
+    .catalogo-section{
+        padding-bottom: 0px;
+        .catalogo{
+            display: flex;
+            list-style: none;
+            align-self: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: large;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            margin-bottom: 0px;
+            a{
+                color: black;
+            }
+        }
+    }
+}

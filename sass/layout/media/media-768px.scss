@@ -1,0 +1,233 @@
+@media (max-width: 768px){
+    html{
+        body{
+            width: 100%!important;
+            overflow-x: hidden!important;
+            header{
+                section{
+                    .navbar.bg-body-tertiary{
+                        padding: 0rem 0rem;
+                        .logo-sitio{
+                            width: 100%;
+                            img{
+                                width: 20vw !important;
+                            }
+                        }
+                        .nav-fixed{
+                            form{
+                                display:none !important;
+                            }
+                        }
+                        .nav-vicky{
+                            .cuente{
+                                display:none;
+                            }
+                            .carrito{
+                                display:none;
+                            }
+                        }
+                        .container-fluid{
+                            width: auto;
+                            padding: 0px 0px 0px 0px;
+                            .navbar-toggler-icon{
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                        }
+                    }
+                }
+                .catalogo{
+                    display: flex;
+                    padding-left: 0px;
+                    list-style: none;
+                    text-align: center;
+                    align-self: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    font-size: 11px;
+                }
+            }
+        }
+        footer{
+            background-color: rgba(0, 0, 0, 0.9);
+            color:white;
+            font-size: x-small;
+            display: flex;
+            justify-content: flex-end;
+            height: 100%;
+            width: 100%;
+            flex-wrap: nowrap;
+            .info-coppy{
+                .coppy{
+                    h5{
+                        color: white;
+                        font-size: 10px;
+                        font-weight: 400;
+                        justify-content: left;
+                    }
+                }
+            }
+            .info{
+                .tarjetas{
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    justify-content:right;
+                    li{
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .grid{
+        .banner-section{
+            .banner{
+                width: 100%;
+                background-position: 10% 59%;
+                background-size: cover;
+            }
+            .title-novedades{
+                h1{
+                    font-weight: 600;
+                    font-size:x-large ;
+                }
+            }
+            .novedades{
+                img{
+                    display: grid;
+                    width: 85%;
+                    height: 45%;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h3{
+                    display: grid;
+                    justify-content: center;
+                    font-weight: 500;
+                    font-size: larger;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    main{
+        .general-zapatillas{
+            .seleccion-talle{
+                h1{
+                    font-size: 25px ;
+                }
+                .vertical-img{
+                    img{
+                        display: flex;
+                        height: 600px;
+                        width: auto;
+                    }
+                }
+            }
+            .modelos{
+                display: flex;
+                justify-items: center;
+                grid-gap: 2px;
+                img{
+                    width: 150px;
+                    margin: 1px;
+                }
+                h3{
+                    font-size: large;
+                }
+                h5{
+                    font-size: small;
+                }
+            }
+        }
+        .paginas{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+    main{
+        .compra-proceso{
+            article{
+                .principal{
+                    img{
+                        display: flex;
+                        width: 40vw;
+                        max-height: fit-content;
+                        padding-bottom: 100px;
+                        padding-top: 50px;
+                    }
+                }
+                .secundarias{
+                    img{
+                        width: 15vw;
+                        gap: 10px;
+                        border-right: 1px solid black;
+                        border-left: 1px solid black;
+                    }
+                }
+            }
+        }
+        .interes{
+            display: flex;
+            flex-direction: row;
+            text-align: start;
+            justify-content: space-evenly;
+            a{
+                img{
+                    width: 9.375rem;
+                }
+            }
+            article{
+                h3{
+                    font-size: larger;
+                }
+                h5{
+                    font-size: small;
+                }
+            }
+        }
+    }
+    main{
+        .detalles-de-compra{
+            table{
+                display: inline;
+            }
+            .detalles-final{
+                width: 100%;
+                border-left: none;
+                .total-articulos{
+                    span:last-of-type{
+                        float: right;
+                        color: rgb(126, 27, 27);
+                    }
+                    border-bottom: 1px solid black;
+                }
+                .total-articulos-fin{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 25px;
+                }
+                .interaccion-fin{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    main{
+        .vertical-img-2{
+            display: none;
+        }
+    }
+}
+
+
+

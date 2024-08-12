@@ -1,0 +1,58 @@
+main{
+    .general-zapatillas{
+        display: flex;
+        flex-wrap: nowrap;
+        .seleccion-talle{
+            .vertical-img{
+                img{
+                    display: flex;
+                    height: 928px;
+                    width: auto;
+                    border: 1px solid black;
+                }
+            }
+            .genero-talles{
+                border-right: 1px solid black;
+                padding-right: 0px;
+                h1{
+                    font: large;
+                    padding-right: 0px;
+                }
+                .genero{
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        font-size: small;
+                        font-weight: 600;
+                    }
+                    .genero-input{
+                        display: block;
+                    }
+                }
+                .talles{
+                    padding-right: 0px;
+                }
+            }
+        }
+        .modelos{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            object-fit: contain;
+            gap: 20px;
+            
+            article{
+                border-bottom: 1px solid rgb(182, 182, 182);
+            }
+            img{
+                width: 200px;
+            }
+        }
+    }
+    .paginas{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        gap: 20px;
+    }
+}

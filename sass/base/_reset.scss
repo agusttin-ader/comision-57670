@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 3px;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column ;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
+    color: black;
+}
+.box{
+    display: flex;
+}

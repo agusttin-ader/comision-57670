@@ -1,0 +1,71 @@
+main{
+    .detalles-de-compra{
+        h1{
+            display: table;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 500;
+            width: 100%;
+        }
+        img{
+            width: 150px;
+        }
+        table{
+            width: 75%;
+            margin: 20px 0;
+            display: inline-table;
+            border-collapse: collapse;
+            border: 0;
+            thead{
+                border-bottom: 1px solid black;
+            }
+            tbody{
+                border-bottom: 1px solid black;
+            }
+            th{
+                text-align: left;
+                padding: 5px 3px;
+                font-size: small;
+            }
+            tr{
+                display: table-row;
+                vertical-align: inherit;
+                unicode-bidi: isolate;
+                font-size: small;
+            }
+        }
+        .detalles-final{
+            width: 22%;
+            display: inline-table;
+            margin: 0 0 0 1%;
+            padding-right: 0.5px ;
+            margin-right: 1px;
+            border-left:1px solid black ;
+            .total-articulos{
+                width: 96%;
+                padding: 15px 2%;
+                margin: 10px 0 0;
+                font-size: 14px;
+                .articulos{
+                    display: flex;
+                }
+                .total{
+                    display: flex;
+                }
+                .descuento{
+                    display: flex;
+                    input{
+                        display: flex;
+                        width: 100px;
+                        height: 25px;
+                        padding-left: 1px;
+                        align-items: center;
+                    }
+                    h4{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
