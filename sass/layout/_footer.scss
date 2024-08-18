@@ -8,16 +8,9 @@ footer{
     width: 100%;
     flex-wrap: nowrap;
     .info-coppy{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
+        @include flex(column,flex-start,space-between,none,none,none,none,none,none);
         .info-empresa{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin: 1.5px;
-            padding: 1.5px;
+            @include flex(column,none,flex-start,1.5px,1.5px,none,none,none,none);
             li{
                 display: flex;
                 text-align: left;
@@ -31,11 +24,7 @@ footer{
             }
         }
         .coppy{
-            display: flex;
-            justify-content: flex-start;
-            margin: .0625rem;
-            padding: .0625rem;
-            padding-left: 0;
+            @include flex(none,none,flex-start,.0625rem,.0625rem,0,none,none,none);
             h5{
                 color:$colorFooterLetras;
                 font-size: medium;
@@ -45,10 +34,7 @@ footer{
         }
     }
     .info{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        margin-left: auto;
+        @include flex(column-reverse,none,flex-end,none,none,none,none,none,auto);
         li{
             list-style: none;
             a{
@@ -56,9 +42,7 @@ footer{
             }
         }
         .info-general{
-            display: flex;
-            flex-direction: column-reverse;
-            text-align: end;
+            @include flex(column-reverse,none,none,none,none,end,none,none,none);
         }
         .tarjetas{
             display: flex;

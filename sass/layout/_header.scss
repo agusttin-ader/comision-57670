@@ -6,8 +6,7 @@ header{
         width: 100%;
         flex-wrap: nowrap;
         .buscador{
-            display:flex;
-            justify-content: right;
+            @include flex(none,none,right,none,none,none,none,none,none);
         }
         .logo-sitio{
             display: flex;
@@ -27,13 +26,10 @@ header{
             justify-content: left;
         }
         .nav-vicky{
-            display: flex;
-            align-items: center;
-            justify-content: right;
+            @include flex(none,center,right,none,none,none,none,none,none);
         }
         .nav-fixed{
-            display: flex;
-            align-items: center;
+            @include flex(none,center,none,none,none,none,none,none,none);
             form{
                 margin-top: 0px !important;
             }

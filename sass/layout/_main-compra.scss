@@ -1,8 +1,7 @@
 main{
     .compra-proceso{
         .articulo-compra{
-            display: flex;
-            justify-content: center;
+            @include flex(none,none,center,none,none,none,none,none,none);
             .colores .colores-compra{
                 display: flex;
                 align-items: center;
@@ -41,19 +40,18 @@ main{
             }
         }
         .info-compra{
-            display: flex;
-            flex-direction: column;
+            @include flex(column,none,none,none,none,none,none,none,none);
             select{
                 font-size: small;
                 width: 50px;
                 height: fit-content;
             }
             h1{
-                font-size: large;
+                font-size: xx-large;
             }
-            h3{
-                font-size: medium;
-            }
+            h2{
+                font-size: 20px;
+            }       
             ul{
                 li{
                     display: flex;
@@ -74,14 +72,16 @@ main{
         }
     }
     .tmb{
+        h2{
+            font-size: xx-large;
+            font-weight: 500;
+        }
         margin-top: 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid black;
         }
     .interes{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex(row,none,space-around,none,none,none,none,none,none);
         h5{
             font-size: medium;
         }

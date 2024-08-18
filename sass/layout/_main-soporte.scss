@@ -97,34 +97,22 @@ main{
                     align-items: center;
                 }
                 .apellido{
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
+                    @extend .nombre;
                 }
                 .mail{
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
+                    @extend .nombre;
                 }
                 .telefono{
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
+                    @extend .nombre;
                 }
                 .zona{
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
+                    @extend .nombre;
                 }
                 .mensaje{
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
+                    @extend .nombre;
                 }
                 .archivo{
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
+                    @extend .nombre;
                 }
                 .txt-enviar{
                     width: 100%;

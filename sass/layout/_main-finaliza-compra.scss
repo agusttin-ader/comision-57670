@@ -61,11 +61,14 @@ main{
                         padding-left: 1px;
                         align-items: center;
                     }
-                    h4{
-                        font-size: 11px;
-                    }
                 }
             }
+        }
+    }
+    .interes{
+        @include flex(row,none,space-around,none,none,none,none,none,none);
+        h5{
+            font-size: medium;
         }
     }
 }

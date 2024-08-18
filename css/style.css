@@ -29,7 +29,15 @@ header {
     flex-wrap: nowrap; }
     header .navbar .buscador {
       display: flex;
-      justify-content: right; }
+      flex-direction: none;
+      align-items: none;
+      justify-content: right;
+      margin: none;
+      padding: none;
+      text-align: none;
+      flex-wrap: none;
+      padding-left: none;
+      margin-left: none; }
     header .navbar .logo-sitio {
       display: flex;
       justify-content: flex-start;
@@ -46,11 +54,26 @@ header {
       justify-content: left; }
     header .navbar .nav-vicky {
       display: flex;
+      flex-direction: none;
       align-items: center;
-      justify-content: right; }
+      justify-content: right;
+      margin: none;
+      padding: none;
+      text-align: none;
+      flex-wrap: none;
+      padding-left: none;
+      margin-left: none; }
     header .navbar .nav-fixed {
       display: flex;
-      align-items: center; }
+      flex-direction: none;
+      align-items: center;
+      justify-content: none;
+      margin: none;
+      padding: none;
+      text-align: none;
+      flex-wrap: none;
+      padding-left: none;
+      margin-left: none; }
       header .navbar .nav-fixed form {
         margin-top: 0px !important; }
   header .catalogo-section {
@@ -81,13 +104,24 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: none;
+    padding: none;
+    text-align: none;
+    flex-wrap: none;
+    padding-left: none;
+    margin-left: none; }
     footer .info-coppy .info-empresa {
       display: flex;
       flex-direction: column;
+      align-items: none;
       justify-content: flex-start;
       margin: 1.5px;
-      padding: 1.5px; }
+      padding: 1.5px;
+      text-align: none;
+      flex-wrap: none;
+      padding-left: none;
+      margin-left: none; }
       footer .info-coppy .info-empresa li {
         display: flex;
         text-align: left;
@@ -99,10 +133,15 @@ footer {
           color: white; }
     footer .info-coppy .coppy {
       display: flex;
+      flex-direction: none;
+      align-items: none;
       justify-content: flex-start;
-      margin: .0625rem;
-      padding: .0625rem;
-      padding-left: 0; }
+      margin: 0.0625rem;
+      padding: 0.0625rem;
+      text-align: 0;
+      flex-wrap: none;
+      padding-left: none;
+      margin-left: none; }
       footer .info-coppy .coppy h5 {
         color: white;
         font-size: medium;
@@ -111,7 +150,13 @@ footer {
   footer .info {
     display: flex;
     flex-direction: column-reverse;
+    align-items: none;
     justify-content: flex-end;
+    margin: none;
+    padding: none;
+    text-align: none;
+    flex-wrap: none;
+    padding-left: none;
     margin-left: auto; }
     footer .info li {
       list-style: none; }
@@ -120,7 +165,14 @@ footer {
     footer .info .info-general {
       display: flex;
       flex-direction: column-reverse;
-      text-align: end; }
+      align-items: none;
+      justify-content: none;
+      margin: none;
+      padding: none;
+      text-align: end;
+      flex-wrap: none;
+      padding-left: none;
+      margin-left: none; }
     footer .info .tarjetas {
       display: flex;
       align-items: center;
@@ -160,10 +212,11 @@ footer {
         height: 60%;
         justify-content: center;
         border-bottom: 1px solid black; }
-      .grid .banner-section .novedades h3 {
+      .grid .banner-section .novedades h2 {
         display: grid;
         text-align: center;
-        font-weight: 500; }
+        font-weight: 500;
+        font-size: x-large; }
 
 main .general-zapatillas {
   display: flex;
@@ -196,6 +249,9 @@ main .general-zapatillas {
     object-fit: contain;
     gap: 20px; }
     main .general-zapatillas .modelos article {
+      display: grid;
+      justify-items: start;
+      align-items: center;
       border-bottom: 1px solid #b6b6b6; }
     main .general-zapatillas .modelos img {
       width: 200px; }
@@ -208,7 +264,15 @@ main .paginas {
 
 main .compra-proceso .articulo-compra {
   display: flex;
-  justify-content: center; }
+  flex-direction: none;
+  align-items: none;
+  justify-content: center;
+  margin: none;
+  padding: none;
+  text-align: none;
+  flex-wrap: none;
+  padding-left: none;
+  margin-left: none; }
   main .compra-proceso .articulo-compra .colores .colores-compra {
     display: flex;
     align-items: center;
@@ -241,15 +305,23 @@ main .compra-proceso article .secundarias {
 
 main .compra-proceso .info-compra {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  margin: none;
+  padding: none;
+  text-align: none;
+  flex-wrap: none;
+  padding-left: none;
+  margin-left: none; }
   main .compra-proceso .info-compra select {
     font-size: small;
     width: 50px;
     height: fit-content; }
   main .compra-proceso .info-compra h1 {
-    font-size: large; }
-  main .compra-proceso .info-compra h3 {
-    font-size: medium; }
+    font-size: xx-large; }
+  main .compra-proceso .info-compra h2 {
+    font-size: 20px; }
   main .compra-proceso .info-compra ul li {
     display: flex;
     flex-wrap: nowrap; }
@@ -267,11 +339,21 @@ main .tmb {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid black; }
+  main .tmb h2 {
+    font-size: xx-large;
+    font-weight: 500; }
 
 main .interes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  align-items: none;
+  justify-content: space-around;
+  margin: none;
+  padding: none;
+  text-align: none;
+  flex-wrap: none;
+  padding-left: none;
+  margin-left: none; }
   main .interes h5 {
     font-size: medium; }
 
@@ -329,8 +411,20 @@ main .detalles-de-compra .detalles-final {
         height: 25px;
         padding-left: 1px;
         align-items: center; }
-      main .detalles-de-compra .detalles-final .total-articulos .descuento h4 {
-        font-size: 11px; }
+
+main .interes {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: space-around;
+  margin: none;
+  padding: none;
+  text-align: none;
+  flex-wrap: none;
+  padding-left: none;
+  margin-left: none; }
+  main .interes h5 {
+    font-size: medium; }
 
 main .banner {
   padding-top: 0px;
@@ -414,31 +508,7 @@ main section .form {
       width: 100%;
       font-size: 16px;
       border-color: #e8e8e8; }
-    main section .form .formulario .nombre {
-      display: flex;
-      width: 100%;
-      align-items: center; }
-    main section .form .formulario .apellido {
-      display: flex;
-      width: 100%;
-      align-items: center; }
-    main section .form .formulario .mail {
-      display: flex;
-      width: 100%;
-      align-items: center; }
-    main section .form .formulario .telefono {
-      display: flex;
-      width: 100%;
-      align-items: center; }
-    main section .form .formulario .zona {
-      display: flex;
-      width: 100%;
-      align-items: center; }
-    main section .form .formulario .mensaje {
-      display: flex;
-      width: 100%;
-      align-items: center; }
-    main section .form .formulario .archivo {
+    main section .form .formulario .nombre, main section .form .formulario .apellido, main section .form .formulario .mail, main section .form .formulario .telefono, main section .form .formulario .zona, main section .form .formulario .mensaje, main section .form .formulario .archivo {
       display: flex;
       width: 100%;
       align-items: center; }
