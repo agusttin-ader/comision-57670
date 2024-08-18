@@ -1,6 +1,6 @@
 footer{
-    background-color: rgba(0, 0, 0, 0.9);
-    color:white;
+    background-color: $colorFooter;
+    color:$colorFooterLetras;
     border-radius: 20px;
     font-size: smaller;
     display: flex;
@@ -21,12 +21,12 @@ footer{
             li{
                 display: flex;
                 text-align: left;
-                color: white;
+                color: $colorFooterLetras;
                 list-style: none;
                 a{
                     display: flex;
                     text-align: left;
-                    color: white;
+                    color: $colorFooterLetras;
                 }
             }
         }
@@ -37,7 +37,7 @@ footer{
             padding: .0625rem;
             padding-left: 0;
             h5{
-                color: white;
+                color:$colorFooterLetras;
                 font-size: medium;
                 font-weight: 400;
                 justify-content: left;
@@ -52,7 +52,7 @@ footer{
         li{
             list-style: none;
             a{
-                color: white;
+                color:$colorFooterLetras;
             }
         }
         .info-general{

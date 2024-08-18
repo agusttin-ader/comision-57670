@@ -2,7 +2,7 @@ main{
     .interaccion{
         a{
         button{
-    background-color: rgb(128, 18, 18);
+    background-color: $colorButton;
     color: white;
     font-weight: bolder;
     display: flex;
@@ -17,15 +17,15 @@ main{
     .interaccion-fin{
         a{
             button{
-                color: white;
+                color: $colorButtonLetras;
                 font-weight: bolder;
                 border-radius: 5px;
                 backface-visibility: hidden;
-                background: rgb(128, 18, 18);
+                background: $colorButton;
                 border: 0;
                 border-radius: .375rem;
                 box-sizing: border-box;
-                color: #fff;
+                color:$colorButtonLetras;
                 cursor: pointer;
                 display: inline-block;
                 font-size: 1.125rem;
@@ -53,7 +53,7 @@ main{
 
 .txt-final:not(:disabled):hover {
     transform: scale(1.02);
-    background-color: rgb(128, 18, 18);
+    background-color: $colorButton;
 }
 
 .txt-final:not(:disabled):hover:active {
@@ -86,10 +86,12 @@ main{
 main{
     .info-envio{
             button{
-                background-color: rgb(128, 18, 18);
-                color: white;
-                font-weight: bolder;
+                @extend .txt-final;
+                background-color: $colorButton;
+                color:$colorButtonLetras;
+                font-weight: bolder; 
                 padding: 10px 10px;
+                border-radius: 25px;
                 }
             }
         }
@@ -101,8 +103,9 @@ main{
                 .txt-enviar{
                     a{
                         button{
-                            background-color: rgb(128, 18, 18);
-                            color: white;
+                            @extend .txt-final;
+                            background-color:$colorButton;
+                            color:$colorButtonLetras;
                             font-weight: bolder;
                             padding: 10px 10px;
                             }

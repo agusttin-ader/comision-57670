@@ -1,5 +1,13 @@
-@import "./components/button.scss";
+/**ultilities*/
+
+@import "./utilities/variables";
+
+/**base*/
+
 @import "./base/reset";
+
+/**layouts*/
+
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/main-index";
@@ -8,6 +16,12 @@
 @import "./layout/main-finaliza-compra";
 @import "./layout/main-soporte";
 @import "./layout/main-datos-enviados";
+
+/**components*/
+@import "./components/button.scss";
+
+/**media*/
+
 @import "./layout/media/media-768px.scss";
 @import "./layout/media/media-425px.scss";
 @import "./layout/media/media-375px";
