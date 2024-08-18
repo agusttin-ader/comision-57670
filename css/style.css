@@ -201,7 +201,8 @@ footer {
       justify-content: center;
       border-bottom: 1px solid black; }
       .grid .banner-section .title-novedades h1 {
-        font-weight: 700; }
+        font-weight: 700;
+        margin-bottom: 0px; }
     .grid .banner-section .novedades {
       display: grid;
       grid-template: repeat(2, 1fr)/repeat(3, 1fr);
