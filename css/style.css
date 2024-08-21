@@ -759,6 +759,8 @@ main .main .form form .txt-enviar a button {
       font-size: small; }
   main .detalles-de-compra table {
     display: inline; }
+    main .detalles-de-compra table tbody td p {
+      font-size: x-small; }
   main .detalles-de-compra .detalles-final {
     width: 100%;
     border-left: none; }

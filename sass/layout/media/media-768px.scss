@@ -196,6 +196,13 @@
         .detalles-de-compra{
             table{
                 display: inline;
+                tbody{
+                    td{
+                        p{
+                            font-size: x-small;
+                        }
+                    }
+                }
             }
             .detalles-final{
                 width: 100%;
