@@ -630,6 +630,18 @@ main .main .form form .txt-enviar a button {
   padding: 10px 10px; }
 
 /**media*/
+@media (max-width: 1920px) {
+  main .detalles-de-compra table tbody td label {
+    display: none; } }
+
+@media (max-width: 1440px) {
+  main .detalles-de-compra table tbody td label {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  main .detalles-de-compra table tbody td label {
+    display: none; } }
+
 @media (max-width: 768px) {
   html body {
     width: 100% !important;
