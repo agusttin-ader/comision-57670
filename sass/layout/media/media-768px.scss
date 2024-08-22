@@ -1,8 +1,10 @@
 @media (max-width: 768px){
     html{
+        padding: 1px;
         body{
             width: 100%!important;
             overflow-x: hidden!important;
+            padding: 1.5px;
             header{
                 section{
                     .navbar.bg-body-tertiary{
@@ -84,7 +86,12 @@
         }
     }
     .grid{
+        padding: 0px;
         .banner-section{
+            .carousel-inner{
+                padding: 0px;
+            }
+            padding: 0px;
             .banner{
                 width: 100%;
                 background-position: 10% 59%;
@@ -233,6 +240,7 @@
         .vertical-img-2{
             display: none;
         }
+        padding: 0px;
     }
 }
 

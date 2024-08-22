@@ -657,77 +657,86 @@ main .main .form form .txt-enviar a button {
     display: none; } }
 
 @media (max-width: 768px) {
-  html body {
-    width: 100% !important;
-    overflow-x: hidden !important; }
-    html body header section .navbar.bg-body-tertiary {
-      padding: 0rem 0rem; }
-      html body header section .navbar.bg-body-tertiary .logo-sitio {
-        width: 100%; }
-        html body header section .navbar.bg-body-tertiary .logo-sitio img {
-          width: 20vw !important; }
-      html body header section .navbar.bg-body-tertiary .nav-fixed form {
-        display: none !important; }
-      html body header section .navbar.bg-body-tertiary .nav-vicky .cuente {
-        display: none; }
-      html body header section .navbar.bg-body-tertiary .nav-vicky .carrito {
-        display: none; }
-      html body header section .navbar.bg-body-tertiary .container-fluid {
-        width: auto;
-        padding: 0px 0px 0px 0px; }
-        html body header section .navbar.bg-body-tertiary .container-fluid .navbar-toggler-icon {
-          width: 2rem;
-          height: 2rem; }
-    html body header .catalogo {
-      display: flex;
-      padding-left: 0px;
-      list-style: none;
-      text-align: center;
-      align-self: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 11px; }
-  html footer {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    font-size: x-small;
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
-    width: 100%;
-    flex-wrap: nowrap; }
-    html footer .info-coppy .coppy h5 {
+  html {
+    padding: 1px; }
+    html body {
+      width: 100% !important;
+      overflow-x: hidden !important;
+      padding: 1.5px; }
+      html body header section .navbar.bg-body-tertiary {
+        padding: 0rem 0rem; }
+        html body header section .navbar.bg-body-tertiary .logo-sitio {
+          width: 100%; }
+          html body header section .navbar.bg-body-tertiary .logo-sitio img {
+            width: 20vw !important; }
+        html body header section .navbar.bg-body-tertiary .nav-fixed form {
+          display: none !important; }
+        html body header section .navbar.bg-body-tertiary .nav-vicky .cuente {
+          display: none; }
+        html body header section .navbar.bg-body-tertiary .nav-vicky .carrito {
+          display: none; }
+        html body header section .navbar.bg-body-tertiary .container-fluid {
+          width: auto;
+          padding: 0px 0px 0px 0px; }
+          html body header section .navbar.bg-body-tertiary .container-fluid .navbar-toggler-icon {
+            width: 2rem;
+            height: 2rem; }
+      html body header .catalogo {
+        display: flex;
+        padding-left: 0px;
+        list-style: none;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 11px; }
+    html footer {
+      background-color: rgba(0, 0, 0, 0.9);
       color: white;
-      font-size: 10px;
-      font-weight: 400;
-      justify-content: left; }
-    html footer .info .tarjetas {
-      margin: 0px;
-      padding: 0px;
-      list-style: none;
-      justify-content: right; }
-      html footer .info .tarjetas li svg {
-        width: 25px;
-        height: 25px; }
-  .grid .banner-section .banner {
-    width: 100%;
-    background-position: 10% 59%;
-    background-size: cover; }
-  .grid .banner-section .title-novedades h1 {
-    font-weight: 600;
-    font-size: x-large; }
-  .grid .banner-section .novedades img {
-    display: grid;
-    width: 85%;
-    height: 45%;
-    justify-content: center;
-    align-items: center; }
-  .grid .banner-section .novedades h3 {
-    display: grid;
-    justify-content: center;
-    font-weight: 500;
-    font-size: larger;
-    align-items: center; }
+      font-size: x-small;
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      width: 100%;
+      flex-wrap: nowrap; }
+      html footer .info-coppy .coppy h5 {
+        color: white;
+        font-size: 10px;
+        font-weight: 400;
+        justify-content: left; }
+      html footer .info .tarjetas {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        justify-content: right; }
+        html footer .info .tarjetas li svg {
+          width: 25px;
+          height: 25px; }
+  .grid {
+    padding: 0px; }
+    .grid .banner-section {
+      padding: 0px; }
+      .grid .banner-section .carousel-inner {
+        padding: 0px; }
+      .grid .banner-section .banner {
+        width: 100%;
+        background-position: 10% 59%;
+        background-size: cover; }
+      .grid .banner-section .title-novedades h1 {
+        font-weight: 600;
+        font-size: x-large; }
+      .grid .banner-section .novedades img {
+        display: grid;
+        width: 85%;
+        height: 45%;
+        justify-content: center;
+        align-items: center; }
+      .grid .banner-section .novedades h3 {
+        display: grid;
+        justify-content: center;
+        font-weight: 500;
+        font-size: larger;
+        align-items: center; }
   main .general-zapatillas .seleccion-talle h1 {
     font-size: 25px; }
   main .general-zapatillas .seleccion-talle .vertical-img img {
@@ -793,40 +802,45 @@ main .main .form form .txt-enviar a button {
       display: flex;
       justify-content: center;
       text-align: center; }
-  main .vertical-img-2 {
-    display: none; } }
+  main {
+    padding: 0px; }
+    main .vertical-img-2 {
+      display: none; } }
 
 @media (max-width: 426px) {
-  html body {
-    width: 100% !important;
-    overflow-x: hidden !important; }
-    html body header .navbar {
-      padding: 0rem 0rem; }
-      html body header .navbar .logo-sitio {
-        width: 100%; }
-        html body header .navbar .logo-sitio img {
-          width: 20vw !important; }
-      html body header .navbar .nav-fixed form {
-        display: none !important; }
-      html body header .navbar .nav-vicky .cuenta {
-        display: none; }
-      html body header .navbar .nav-vicky .carrito {
-        display: none; }
-      html body header .navbar .nav-vicky .container-fluid {
-        width: auto;
-        padding: 0px 0px 0px 0px; }
-      html body header .navbar .nav-vicky .navbar-toggler-icon {
-        width: 1rem;
-        height: 1rem; }
-    html body header .catalogo-section .catalogo {
-      display: flex;
-      padding-left: 0px;
-      list-style: none;
-      text-align: center;
-      align-self: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 11px; }
+  html {
+    padding: 1px; }
+    html body {
+      width: 100% !important;
+      overflow-x: hidden !important;
+      padding: 1.5px; }
+      html body header .navbar {
+        padding: 0rem 0rem; }
+        html body header .navbar .logo-sitio {
+          width: 100%; }
+          html body header .navbar .logo-sitio img {
+            width: 20vw !important; }
+        html body header .navbar .nav-fixed form {
+          display: none !important; }
+        html body header .navbar .nav-vicky .cuenta {
+          display: none; }
+        html body header .navbar .nav-vicky .carrito {
+          display: none; }
+        html body header .navbar .nav-vicky .container-fluid {
+          width: auto;
+          padding: 0px 0px 0px 0px; }
+        html body header .navbar .nav-vicky .navbar-toggler-icon {
+          width: 1rem;
+          height: 1rem; }
+      html body header .catalogo-section .catalogo {
+        display: flex;
+        padding-left: 0px;
+        list-style: none;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 11px; }
   footer {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
@@ -836,27 +850,33 @@ main .main .form form .txt-enviar a button {
     height: 80%;
     width: 100%;
     flex-wrap: nowrap; }
-  .grid .banner-section .banner {
-    padding: 0% 0%; }
-  .grid .banner-section .titile-novedades h1 {
-    font-weight: 800;
-    font-size: medium; }
-  .grid .banner-section .novedades {
-    display: grid;
-    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
-    justify-items: center; }
-    .grid .banner-section .novedades h3 {
-      display: grid;
-      justify-content: center;
-      font-weight: 700;
-      font-size: x-small;
-      align-items: center; }
-    .grid .banner-section .novedades img {
-      display: grid;
-      width: 95%;
-      height: 55%;
-      justify-content: center;
-      align-items: center; }
+  .grid {
+    padding: 0px; }
+    .grid .banner-section {
+      padding: 0px; }
+      .grid .banner-section .carousel-inner {
+        padding: 0px; }
+      .grid .banner-section .banner {
+        padding: 0% 0%; }
+      .grid .banner-section .titile-novedades h1 {
+        font-weight: 800;
+        font-size: medium; }
+      .grid .banner-section .novedades {
+        display: grid;
+        grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+        justify-items: center; }
+        .grid .banner-section .novedades h3 {
+          display: grid;
+          justify-content: center;
+          font-weight: 700;
+          font-size: x-small;
+          align-items: center; }
+        .grid .banner-section .novedades img {
+          display: grid;
+          width: 95%;
+          height: 55%;
+          justify-content: center;
+          align-items: center; }
   main .general-zapatillas {
     display: flex;
     flex-direction: column;
@@ -976,42 +996,47 @@ main .main .form form .txt-enviar a button {
         font-size: large; }
       .interes article h3 {
         font-size: xx-large; }
-  main .vertical-img-2 {
-    display: none; }
-  main .main .form .formulario label {
-    width: 40%; } }
+  main {
+    padding: 0px; }
+    main .vertical-img-2 {
+      display: none; }
+    main .main .form .formulario label {
+      width: 40%; } }
 
 @media (max-width: 375px) {
-  html body {
-    width: 100% !important;
-    overflow-x: hidden !important; }
-    html body header .navbar {
-      padding: 0rem 0rem; }
-      html body header .navbar .logo-sitio {
-        width: 100%; }
-        html body header .navbar .logo-sitio img {
-          width: 20vw !important; }
-      html body header .navbar .nav-fixed form {
-        display: none !important; }
-      html body header .navbar .nav-vicky .cuenta {
-        display: none; }
-      html body header .navbar .nav-vicky .carrito {
-        display: none; }
-      html body header .navbar .nav-vicky .container-fluid {
-        width: auto;
-        padding: 0px 0px 0px 0px; }
-      html body header .navbar .nav-vicky .navbar-toggler-icon {
-        width: 1rem;
-        height: 1rem; }
-    html body header .catalogo-section .catalogo {
-      display: flex;
-      padding-left: 0px;
-      list-style: none;
-      text-align: center;
-      align-self: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 11px; }
+  html {
+    padding: 1px; }
+    html body {
+      width: 100% !important;
+      overflow-x: hidden !important;
+      padding: 1.5px; }
+      html body header .navbar {
+        padding: 0rem 0rem; }
+        html body header .navbar .logo-sitio {
+          width: 100%; }
+          html body header .navbar .logo-sitio img {
+            width: 20vw !important; }
+        html body header .navbar .nav-fixed form {
+          display: none !important; }
+        html body header .navbar .nav-vicky .cuenta {
+          display: none; }
+        html body header .navbar .nav-vicky .carrito {
+          display: none; }
+        html body header .navbar .nav-vicky .container-fluid {
+          width: auto;
+          padding: 0px 0px 0px 0px; }
+        html body header .navbar .nav-vicky .navbar-toggler-icon {
+          width: 1rem;
+          height: 1rem; }
+      html body header .catalogo-section .catalogo {
+        display: flex;
+        padding-left: 0px;
+        list-style: none;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 11px; }
   footer {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
@@ -1021,27 +1046,33 @@ main .main .form form .txt-enviar a button {
     height: 80%;
     width: 100%;
     flex-wrap: nowrap; }
-  .grid .banner-section .banner {
-    padding: 0% 0%; }
-  .grid .banner-section .titile-novedades h1 {
-    font-weight: 800;
-    font-size: medium; }
-  .grid .banner-section .novedades {
-    display: grid;
-    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
-    justify-items: center; }
-    .grid .banner-section .novedades h3 {
-      display: grid;
-      justify-content: center;
-      font-weight: 700;
-      font-size: x-small;
-      align-items: center; }
-    .grid .banner-section .novedades img {
-      display: grid;
-      width: 95%;
-      height: 55%;
-      justify-content: center;
-      align-items: center; }
+  .grid {
+    padding: 0px; }
+    .grid .banner-section {
+      padding: 0px; }
+      .grid .banner-section .carousel-inner {
+        padding: 0px; }
+      .grid .banner-section .banner {
+        padding: 0% 0%; }
+      .grid .banner-section .titile-novedades h1 {
+        font-weight: 800;
+        font-size: medium; }
+      .grid .banner-section .novedades {
+        display: grid;
+        grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+        justify-items: center; }
+        .grid .banner-section .novedades h3 {
+          display: grid;
+          justify-content: center;
+          font-weight: 700;
+          font-size: x-small;
+          align-items: center; }
+        .grid .banner-section .novedades img {
+          display: grid;
+          width: 95%;
+          height: 55%;
+          justify-content: center;
+          align-items: center; }
   main .general-zapatillas {
     display: flex;
     flex-direction: column;
@@ -1161,42 +1192,47 @@ main .main .form form .txt-enviar a button {
         font-size: large; }
       .interes article h3 {
         font-size: xx-large; }
-  main .vertical-img-2 {
-    display: none; }
-  main .main .form .formulario label {
-    width: 40%; } }
+  main {
+    padding: 0px; }
+    main .vertical-img-2 {
+      display: none; }
+    main .main .form .formulario label {
+      width: 40%; } }
 
 @media (max-width: 320px) {
-  html body {
-    width: 100% !important;
-    overflow-x: hidden !important; }
-    html body header .navbar {
-      padding: 0rem 0rem; }
-      html body header .navbar .logo-sitio {
-        width: 100%; }
-        html body header .navbar .logo-sitio img {
-          width: 20vw !important; }
-      html body header .navbar .nav-fixed form {
-        display: none !important; }
-      html body header .navbar .nav-vicky .cuenta {
-        display: none; }
-      html body header .navbar .nav-vicky .carrito {
-        display: none; }
-      html body header .navbar .nav-vicky .container-fluid {
-        width: auto;
-        padding: 0px 0px 0px 0px; }
-      html body header .navbar .nav-vicky .navbar-toggler-icon {
-        width: 1rem;
-        height: 1rem; }
-    html body header .catalogo-section .catalogo {
-      display: flex;
-      padding-left: 0px;
-      list-style: none;
-      text-align: center;
-      align-self: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 11px; }
+  html {
+    padding: 1px; }
+    html body {
+      width: 100% !important;
+      overflow-x: hidden !important;
+      padding: 1.5px; }
+      html body header .navbar {
+        padding: 0rem 0rem; }
+        html body header .navbar .logo-sitio {
+          width: 100%; }
+          html body header .navbar .logo-sitio img {
+            width: 20vw !important; }
+        html body header .navbar .nav-fixed form {
+          display: none !important; }
+        html body header .navbar .nav-vicky .cuenta {
+          display: none; }
+        html body header .navbar .nav-vicky .carrito {
+          display: none; }
+        html body header .navbar .nav-vicky .container-fluid {
+          width: auto;
+          padding: 0px 0px 0px 0px; }
+        html body header .navbar .nav-vicky .navbar-toggler-icon {
+          width: 1rem;
+          height: 1rem; }
+      html body header .catalogo-section .catalogo {
+        display: flex;
+        padding-left: 0px;
+        list-style: none;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 11px; }
   footer {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
@@ -1206,27 +1242,33 @@ main .main .form form .txt-enviar a button {
     height: 80%;
     width: 100%;
     flex-wrap: nowrap; }
-  .grid .banner-section .banner {
-    padding: 0% 0%; }
-  .grid .banner-section .titile-novedades h1 {
-    font-weight: 800;
-    font-size: medium; }
-  .grid .banner-section .novedades {
-    display: grid;
-    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
-    justify-items: center; }
-    .grid .banner-section .novedades h3 {
-      display: grid;
-      justify-content: center;
-      font-weight: 700;
-      font-size: x-small;
-      align-items: center; }
-    .grid .banner-section .novedades img {
-      display: grid;
-      width: 95%;
-      height: 55%;
-      justify-content: center;
-      align-items: center; }
+  .grid {
+    padding: 0px; }
+    .grid .banner-section {
+      padding: 0px; }
+      .grid .banner-section .carousel-inner {
+        padding: 0px; }
+      .grid .banner-section .banner {
+        padding: 0% 0%; }
+      .grid .banner-section .titile-novedades h1 {
+        font-weight: 800;
+        font-size: medium; }
+      .grid .banner-section .novedades {
+        display: grid;
+        grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+        justify-items: center; }
+        .grid .banner-section .novedades h3 {
+          display: grid;
+          justify-content: center;
+          font-weight: 700;
+          font-size: x-small;
+          align-items: center; }
+        .grid .banner-section .novedades img {
+          display: grid;
+          width: 95%;
+          height: 55%;
+          justify-content: center;
+          align-items: center; }
   main .general-zapatillas {
     display: flex;
     flex-direction: column;
@@ -1346,7 +1388,9 @@ main .main .form form .txt-enviar a button {
         font-size: large; }
       .interes article h3 {
         font-size: xx-large; }
-  main .vertical-img-2 {
-    display: none; }
-  main .main .form .formulario label {
-    width: 40%; } }
+  main {
+    padding: 0px; }
+    main .vertical-img-2 {
+      display: none; }
+    main .main .form .formulario label {
+      width: 40%; } }
