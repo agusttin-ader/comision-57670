@@ -37,6 +37,7 @@ main{
         display: flex;
         flex-direction: column;
         padding: 10px;
+        border-top: 1px solid black;
         select{
             background-color: rgb(128, 18, 18);
             color: white;

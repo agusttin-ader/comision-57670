@@ -189,9 +189,12 @@ footer {
   padding-top: 0px; }
   .grid .banner-section {
     padding-top: 0px; }
+    .grid .banner-section .carousel-inner img {
+      width: 100%;
+      height: 300px; }
     .grid .banner-section .banner {
       width: 100%;
-      height: auto;
+      height: 300px;
       object-fit: contain;
       background-size: cover;
       margin-top: 6px; }
@@ -199,6 +202,7 @@ footer {
       display: flex;
       text-align: center;
       justify-content: center;
+      border-top: 1px solid black;
       border-bottom: 1px solid black; }
       .grid .banner-section .title-novedades h1 {
         font-weight: 700;
@@ -461,7 +465,8 @@ main h2 {
 main .soporte {
   display: flex;
   flex-direction: column;
-  padding: 10px; }
+  padding: 10px;
+  border-top: 1px solid black; }
   main .soporte select {
     background-color: #801212;
     color: white;
@@ -535,7 +540,8 @@ main .envio {
   width: 100%;
   justify-content: center;
   text-align: center;
-  padding: 70px; }
+  padding: 70px;
+  border-top: 1px solid black; }
   main .envio h1 {
     font-weight: 700; }
 
