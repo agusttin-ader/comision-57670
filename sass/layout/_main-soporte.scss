@@ -4,6 +4,12 @@ main{
         padding-bottom: 7px;
         border-bottom: 1px solid black;
     }
+    .carousel-inner{
+        img{
+            width: 100%;
+            height: 22vw;
+        }
+    }
     .main{
         padding-top: 0%;
         display: flex;

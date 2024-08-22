@@ -191,7 +191,7 @@ footer {
     padding-top: 0px; }
     .grid .banner-section .carousel-inner img {
       width: 100%;
-      height: 300vw; }
+      height: 22vw; }
     .grid .banner-section .banner {
       width: 100%;
       height: 300px;
@@ -436,6 +436,10 @@ main .banner {
   padding-bottom: 7px;
   border-bottom: 1px solid black; }
 
+main .carousel-inner img {
+  width: 100%;
+  height: 22vw; }
+
 main .main {
   padding-top: 0%;
   display: flex;
@@ -534,6 +538,10 @@ main .banner {
   object-fit: contain;
   background-size: cover;
   margin-top: 6px; }
+
+main .carousel-inner img {
+  width: 100%;
+  height: 22vw; }
 
 main .envio {
   display: flex;
