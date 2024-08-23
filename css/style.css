@@ -191,7 +191,7 @@ footer {
     padding-top: 0px; }
     .grid .banner-section .carousel-inner img {
       width: 100%;
-      height: 22vw; }
+      height: 25vw; }
     .grid .banner-section .banner {
       width: 100%;
       height: 300px;
@@ -431,14 +431,9 @@ main .interes {
   main .interes h5 {
     font-size: medium; }
 
-main .banner {
-  padding-top: 0px;
-  padding-bottom: 7px;
-  border-bottom: 1px solid black; }
-
 main .carousel-inner img {
   width: 100%;
-  height: 22vw; }
+  height: 25vw; }
 
 main .main {
   padding-top: 0%;
@@ -532,16 +527,9 @@ main section .form {
       cursor: pointer;
       margin: 10px 0 10px 100%; }
 
-main .banner {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  background-size: cover;
-  margin-top: 6px; }
-
 main .carousel-inner img {
   width: 100%;
-  height: 22vw; }
+  height: 25vw; }
 
 main .envio {
   display: flex;
@@ -856,6 +844,8 @@ main .main .form form .txt-enviar a button {
       padding: 0px; }
       .grid .banner-section .carousel-inner {
         padding: 0px; }
+        .grid .banner-section .carousel-inner img {
+          height: 27vw; }
       .grid .banner-section .banner {
         padding: 0% 0%; }
       .grid .banner-section .titile-novedades h1 {
@@ -865,11 +855,11 @@ main .main .form form .txt-enviar a button {
         display: grid;
         grid-template: repeat(1, 1fr)/repeat(2, 1fr);
         justify-items: center; }
-        .grid .banner-section .novedades h3 {
+        .grid .banner-section .novedades h2 {
           display: grid;
           justify-content: center;
-          font-weight: 700;
-          font-size: x-small;
+          font-weight: 600;
+          font-size: medium;
           align-items: center; }
         .grid .banner-section .novedades img {
           display: grid;
@@ -998,6 +988,10 @@ main .main .form form .txt-enviar a button {
         font-size: xx-large; }
   main {
     padding: 0px; }
+    main .carousel-inner {
+      padding: 0px; }
+      main .carousel-inner img {
+        height: 27vw; }
     main .vertical-img-2 {
       display: none; }
     main .main .form .formulario label {
@@ -1052,6 +1046,8 @@ main .main .form form .txt-enviar a button {
       padding: 0px; }
       .grid .banner-section .carousel-inner {
         padding: 0px; }
+        .grid .banner-section .carousel-inner img {
+          height: 27vw; }
       .grid .banner-section .banner {
         padding: 0% 0%; }
       .grid .banner-section .titile-novedades h1 {
@@ -1061,11 +1057,11 @@ main .main .form form .txt-enviar a button {
         display: grid;
         grid-template: repeat(1, 1fr)/repeat(2, 1fr);
         justify-items: center; }
-        .grid .banner-section .novedades h3 {
+        .grid .banner-section .novedades h2 {
           display: grid;
           justify-content: center;
-          font-weight: 700;
-          font-size: x-small;
+          font-weight: 600;
+          font-size: medium;
           align-items: center; }
         .grid .banner-section .novedades img {
           display: grid;
@@ -1194,6 +1190,10 @@ main .main .form form .txt-enviar a button {
         font-size: xx-large; }
   main {
     padding: 0px; }
+    main .carousel-inner {
+      padding: 0px; }
+      main .carousel-inner img {
+        height: 27vw; }
     main .vertical-img-2 {
       display: none; }
     main .main .form .formulario label {
@@ -1248,8 +1248,8 @@ main .main .form form .txt-enviar a button {
       padding: 0px; }
       .grid .banner-section .carousel-inner {
         padding: 0px; }
-      .grid .banner-section .banner {
-        padding: 0% 0%; }
+        .grid .banner-section .carousel-inner img {
+          height: 27vw; }
       .grid .banner-section .titile-novedades h1 {
         font-weight: 800;
         font-size: medium; }
@@ -1257,11 +1257,11 @@ main .main .form form .txt-enviar a button {
         display: grid;
         grid-template: repeat(1, 1fr)/repeat(2, 1fr);
         justify-items: center; }
-        .grid .banner-section .novedades h3 {
+        .grid .banner-section .novedades h2 {
           display: grid;
           justify-content: center;
-          font-weight: 700;
-          font-size: x-small;
+          font-weight: 600;
+          font-size: medium;
           align-items: center; }
         .grid .banner-section .novedades img {
           display: grid;
@@ -1390,6 +1390,10 @@ main .main .form form .txt-enviar a button {
         font-size: xx-large; }
   main {
     padding: 0px; }
+    main .carousel-inner {
+      padding: 0px; }
+      main .carousel-inner img {
+        height: 27vw; }
     main .vertical-img-2 {
       display: none; }
     main .main .form .formulario label {

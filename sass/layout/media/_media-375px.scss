@@ -66,6 +66,9 @@
         .banner-section{
             .carousel-inner{
                 padding: 0px;
+                img{
+                    height: 27vw;
+                }
             }
             padding: 0px;
             .banner{
@@ -81,11 +84,11 @@
                 display: grid;
                 grid-template: repeat(1,1fr) / repeat(2,1fr);
                 justify-items: center;
-                h3{
+                h2{
                     display: grid;
                     justify-content: center;
-                    font-weight: 700;
-                    font-size: x-small;
+                    font-weight: 600;
+                    font-size: medium;
                     align-items: center;
                 }
                 img{
@@ -284,6 +287,12 @@
         }
     }
     main{
+        .carousel-inner{
+            padding: 0px;
+            img{
+                height: 27vw;
+            }
+        }
         .vertical-img-2{
             display: none;
         }
