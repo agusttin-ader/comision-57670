@@ -1,9 +1,11 @@
 footer{
     background-color: $colorFooter;
     color:$colorFooterLetras;
-    border-radius: 20px;
     font-size: smaller;
     display: flex;
+    width: 98%;
+    border-radius: 25px;
+    padding: 20px 1% 5px 1%;
     height: 100%;
     width: 100%;
     flex-wrap: nowrap;
